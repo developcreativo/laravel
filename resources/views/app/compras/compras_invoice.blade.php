@@ -114,7 +114,7 @@
             </div>
             <div class="modal-footer push-20-t">
                 <button class="btn btn-sm btn-default" type="button" data-dismiss="modal">Close</button>
-                {!! Form::submit('Enviar!',['class'=>'btn btn-sm btn-primary','data-dismiss'=>'modal'])!!}
+                {!! Form::submit('Enviar!',['class'=>'btn btn-sm btn-primary'])!!}
             </div>
             {!! Form::close() !!}
         </div>

@@ -130,7 +130,7 @@ class ComprasController extends Controller
 
     public function mail(Request $request, $id)
     {
-
+        
         $pdf = compras::crear_pdf($id);
         Mail::send('app.compras.compras_email', compact(['request']), function ($message) use ($pdf, $request) {
             $message->to($request->email_address)->subject('Envio de factura de compra ');
