@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9 no-focus"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus"> <!--<![endif]-->
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+
+<meta name="csrf-token" content="b4nQsN3mM1ittlrloKFWQBNPHTZZ1RndCQ0hAxb7" />
+<title> </title>
+
+<meta name="description" content="OneUI - Admin Dashboard Template & UI Framework created by pixelcave and published on Themeforest">
+<meta name="author" content="pixelcave">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+<!-- Icons -->
+<!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+<link rel="shortcut icon" href="http://localhost/assets/img/favicons/favicon.png">
+
+<link rel="icon" type="image/png" href="http://localhost/assets/img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="http://localhost/assets/img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost/assets/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost/assets/img/favicons/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="http://localhost/assets/img/favicons/favicon-192x192.png" sizes="192x192">
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost/assets/img/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost/assets/img/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost/assets/img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost/assets/img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost/assets/img/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost/assets/img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost/assets/img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost/assets/img/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost/assets/img/favicons/apple-touch-icon-180x180.png">
+
+<!-- END Icons -->
+
+<!-- Stylesheets -->
+    <link media="all" type="text/css" rel="stylesheet" href="http://localhost/assets/js/plugins/dropzonejs/dropzone.min.css">
+
+<!-- Web fonts -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+
+<!-- Page JS Plugins CSS go here -->
+<link media="all" type="text/css" rel="stylesheet" href="http://localhost/assets/js/plugins/datatables/jquery.dataTables.min.css">
+
+<!-- Bootstrap and OneUI CSS framework -->
+
+<link media="all" type="text/css" rel="stylesheet" href="http://localhost/css/all.css">
+
+<link media="all" type="text/css" rel="stylesheet" href="http://localhost/css/contapp.css">
+
+
+<!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+<!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
+<!-- END Stylesheets -->
+<link media="all" type="text/css" rel="stylesheet" href="http://localhost/assets/js/plugins/select2/select2.min.css">
+
+<link media="all" type="text/css" rel="stylesheet" href="http://localhost/assets/js/plugins/select2/select2-bootstrap.css">
+
+
+<!-- jquery -->
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- END jquery -->
+
+
+
+
+    </head>
+    <body>
+    <!-- Page Container -->
+    <!--
+        Available Classes:
+
+        'enable-cookies'             Remembers active color theme between pages (when set through color theme list)
+
+        'sidebar-l'                  Left Sidebar and right Side Overlay
+        'sidebar-r'                  Right Sidebar and left Side Overlay
+        'sidebar-mini'               Mini hoverable Sidebar (> 991px)
+        'sidebar-o'                  Visible Sidebar by default (> 991px)
+        'sidebar-o-xs'               Visible Sidebar by default (< 992px)
+
+        'side-overlay-hover'         Hoverable Side Overlay (> 991px)
+        'side-overlay-o'             Visible Side Overlay by default (> 991px)
+
+        'side-scroll'                Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (> 991px)
+
+        'header-navbar-fixed'        Enables fixed header
+    -->
+
+
+    <div id="page-container" class="enable-cookies sidebar-l sidebar-o side-scroll header-navbar-fixed">
+        <!--  aqui se inlcuye el sidebar static xenon -->
+        <!-- Side Overlay-->
+<aside id="side-overlay">
+    <!-- Side Overlay Scroll Container -->
+    <div id="side-overlay-scroll">
+        <!-- Side Header -->
+        <div class="side-header side-content">
+            <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+            <button class="btn btn-default pull-right" type="button" data-toggle="layout" data-action="side_overlay_close">
+                <i class="fa fa-times"></i>
+            </button>
+            <span class="font-w600 push-10-l">Admin</span>
+        </div>
+        <!-- END Side Header -->
+
+        <!-- Side Content -->
+        <div class="side-content remove-padding-t">
+            <!-- Block -->
+            <div class="block pull-r-l">
+                <div class="block-header bg-gray-lighter">
+                    <ul class="block-options">
+                        <li>
+                            <button type="button" data-toggle="block-option" data-action="refresh_toggle" data-action-mode="demo"><i class="si si-refresh"></i></button>
+                        </li>
+                        <li>
+                            <button type="button" data-toggle="block-option" data-action="content_toggle"></button>
+                        </li>
+                    </ul>
+                    <h3 class="block-title">Block</h3>
+                </div>
+                <div class="block-content">
+                    <p>...</p>
+                </div>
+            </div>
+            <!-- END Block -->
+        </div>
+        <!-- END Side Content -->
+    </div>
+    <!-- END Side Overlay Scroll Container -->
+</aside>
+<!-- END Side Overlay -->
+
+<!-- Sidebar -->
+<nav id="sidebar">
+    <!-- Sidebar Scroll Container -->
+    <div id="sidebar-scroll">
+        <!-- Sidebar Content -->
+        <!-- Adding .sidebar-mini-hide to an element will hide it when the sidebar is in mini mode -->
+        <div class="sidebar-content">
+            <!-- Side Header -->
+            <div class="side-header side-content bg-white-op">
+                <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                <button class="btn btn-link text-gray pull-right hidden-md hidden-lg" type="button" data-toggle="layout" data-action="sidebar_close">
+                    <i class="fa fa-times"></i>
+                </button>
+                <!-- Themes functionality initialized in App() -> uiHandleTheme() -->
+                <div class="btn-group pull-right">
+                    <button class="btn btn-link text-gray dropdown-toggle" data-toggle="dropdown" type="button">
+                        <i class="si si-drop"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right font-s13 sidebar-mini-hide">
+                        <li>
+                            <a data-toggle="theme" data-theme="default" tabindex="-1" href="javascript:void(0)">
+                                <i class="fa fa-circle text-default pull-right"></i> <span class="font-w600">Default</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="theme" data-theme="http://localhost/assets/css/themes/amethyst.min.css" tabindex="-1" href="javascript:void(0)">
+                                <i class="fa fa-circle text-amethyst pull-right"></i> <span class="font-w600">Amethyst</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="theme" data-theme="http://localhost/assets/css/themes/city.min.css" tabindex="-1" href="javascript:void(0)">
+                                <i class="fa fa-circle text-city pull-right"></i> <span class="font-w600">City</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="theme" data-theme="http://localhost/assets/css/themes/flat.min.css" tabindex="-1" href="javascript:void(0)">
+                                <i class="fa fa-circle text-flat pull-right"></i> <span class="font-w600">Flat</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="theme" data-theme="http://localhost/assets/css/themes/modern.min.css" tabindex="-1" href="javascript:void(0)">
+                                <i class="fa fa-circle text-modern pull-right"></i> <span class="font-w600">Modern</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="theme" data-theme="http://localhost/assets/css/themes/smooth.min.css" tabindex="-1" href="javascript:void(0)">
+                                <i class="fa fa-circle text-smooth pull-right"></i> <span class="font-w600">Smooth</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="h5 text-white" href="http://localhost">
+                    <i class="fa fa-circle-o-notch text-primary"></i> <span class="h4 font-w600 sidebar-mini-hide">Contapp</span>
+                </a>
+            </div>
+            <!-- END Side Header -->
+
+            <!-- Side Content -->
+            <div class="side-content">
+                <ul class="nav-main">
+                    <li>
+                        <a class="active" href="http://localhost"><i class="si si-speedometer"></i><span class="sidebar-mini-hide">Dashboard</span></a>
+                    </li>
+                    <li class="nav-main-heading"><span class="sidebar-mini-hide">Administrativo</span></li>
+                    <li>
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-grid"></i><span class="sidebar-mini-hide">Productos</span></a>
+                        <ul>
+                            <li>
+                                <a href="http://localhost/productos">Productos</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/productos">Atributos</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/productos">Informes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="http://localhost/productos"><i class="si si-handbag"></i><span class="sidebar-mini-hide">Compras</span></a>
+                        <ul>
+                            <li>
+                                <a href="start_backend.html">Link #1</a>
+                            </li>
+                            <li>
+                                <a href="start_backend.html">Link #2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-main-heading"><span class="sidebar-mini-hide">Facturación</span></li>
+                    <li>
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="http://localhost/productos"><i class="si si-basket"></i><span class="sidebar-mini-hide">Ventas</span></a>
+                        <ul>
+                            <li>
+                                <a href="start_backend.html">Link #1</a>
+                            </li>
+                            <li>
+                                <a href="start_backend.html">Link #2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="http://localhost/productos"><i class="si si-wallet"></i><span class="sidebar-mini-hide">Caja</span></a>
+                        <ul>
+                            <li>
+                                <a href="start_backend.html">Link #1</a>
+                            </li>
+                            <li>
+                                <a href="start_backend.html">Link #2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-main-heading"><span class="sidebar-mini-hide">Configuraciones</span></li>
+                    <li>
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="http://localhost/productos"><i class="si si-home"></i><span class="sidebar-mini-hide">Tiendas</span></a>
+                        <ul>
+                            <li>
+                                <a href="start_backend.html">Link #1</a>
+                            </li>
+                            <li>
+                                <a href="start_backend.html">Link #2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="http://localhost/productos"><i class="si si-users"></i><span class="sidebar-mini-hide">Usuarios</span></a>
+                        <ul>
+                            <li>
+                                <a href="start_backend.html">Link #1</a>
+                            </li>
+                            <li>
+                                <a href="start_backend.html">Link #2</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- END Side Content -->
+        </div>
+        <!-- Sidebar Content -->
+    </div>
+    <!-- END Sidebar Scroll Container -->
+</nav>
+<!-- END Sidebar -->        <!-- fin del sidebar -->
+        <!-- Header -->
+<header id="header-navbar" class="content-mini content-mini-full">
+    <!-- Page Header -->
+            <!-- Header Navigation Left -->
+            <ul class="nav-header pull-left">
+                <li class="hidden-md hidden-lg">
+                    <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                    <button class="btn btn-default" data-toggle="layout" data-action="sidebar_toggle" type="button">
+                        <i class="fa fa-navicon"></i>
+                    </button>
+                </li>
+                <li class="hidden-xs hidden-sm">
+                    <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                    <button class="btn btn-default" data-toggle="layout" data-action="sidebar_mini_toggle" type="button">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </li>
+
+            </ul>
+            <!-- END Header Navigation Left -->
+            <div class="col-xs-4">
+                <h1 class="page-heading"></h1>
+            </div>
+            <div class="col-sm-6 text-right hidden-xs">
+                <ol class="breadcrumb push-10-t">
+                    <li><a class="link-effect" href="http://localhost">Inicio</a></li>
+                        <li><a href="http://localhost/productos">Productos</a></li>
+                    <li></li>
+                </ol>
+            </div>
+            <!-- Header Navigation Right -->
+            <ul class="nav-header pull-right">
+                <li>
+                    <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                    <button class="btn btn-default" data-toggle="layout" data-action="side_overlay_toggle" type="button">
+                        <i class="fa fa-tasks"></i>
+                    </button>
+                </li>
+            </ul>
+            <!-- END Header Navigation Right -->
+
+</header>
+<!-- END Header -->        <div id="loading">
+            <i id="loading-image" class="fa fa-3x fa-cog fa-spin">
+            </i>
+        </div>
+        <main id="main-container">
+            <!-- Content -->
+            <div class="content">
+                    <div class="col-sm-6">
+        <div class="block">
+
+            <div class="block-content">
+                <p class="lead">Carga masiva de productos w.</p>
+
+                <div class="nice-copy">
+                    <p>Sabemos que una de las cosas que mas toma tiempo es la creación de productos, con este modulo
+                        podras realizarlo de la forma más fácil. Además puedes crear de una vez todas tus marcas,
+                        categorias e impuestos.</p>
+
+                    <p>Acontinuación te dejamos las plantillas de cada uno.</p>
+                </div>
+                <div class="content-grid">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3">
+                            <a class="block block-link-hover2 text-center"
+                               href="http://localhost/productos/carga_masiva/download/marcas">
+                                <div class="block-content block-content-full bg-amethyst">
+                                    <i class="si si-list fa-4x text-white"></i>
+
+                                    <div class="font-w600 text-white-op push-15-t">Marcas</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <a class="block block-link-hover2 text-center"
+                               href="http://localhost/productos/carga_masiva/download/categorias">
+                                <div class="block-content block-content-full bg-city">
+                                    <i class="si si-list fa-4x text-white"></i>
+
+                                    <div class="font-w600 text-white-op push-15-t">Categorias</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <a class="block block-link-hover2 text-center"
+                               href="http://localhost/productos/carga_masiva/download/impuestos">
+                                <div class="block-content block-content-full bg-success">
+                                    <i class="si si-calculator fa-4x text-white"></i>
+
+                                    <div class="font-w600 text-white-op push-15-t">Impuestos</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <a class="block block-link-hover2 text-center"
+                               href="http://localhost/productos/carga_masiva/download/productos">
+                                <div class="block-content block-content-full bg-primary">
+                                    <i class="si si-grid fa-4x text-white"></i>
+
+                                    <div class="font-w600 text-white-op push-15-t">Productos</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block">
+                <div class="block-content block-content-full">
+                    <form method="POST" action="http://localhost/productos/carga_masiva" accept-charset="UTF-8" class="dropzone
+                    dz-clickable" id="excel" enctype="multipart/form-data"><input name="_token" type="hidden" value="b4nQsN3mM1ittlrloKFWQBNPHTZZ1RndCQ0hAxb7">
+                    <div class="dz-default dz-message"><span>Drop files here to upload</span></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="block">
+
+            <div class="block-content">
+                <p class="lead">Ayuda inicial.</p>
+
+                <div class="nice-copy">
+                    <p>Dentro del archivo productos encontrarás <strong>marca_id, categoria_id y impuestos</strong> ahí
+                        deberas poner el id al que correspone cada producto, para ello te relacionamos el nombre de cada
+                        uno y al lado su ID para que sea mas fácil para ti.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-sm-3">
+        <div class="block block-themed">
+            <div class="block-header bg-amethyst">
+                <ul class="block-options">
+                    <li>
+                        <button type="button" data-toggle="block-option" data-action="content_toggle"><i
+                                    class="si si-arrow-up"></i></button>
+                    </li>
+                </ul>
+                <h3 class="block-title">Marcas</h3>
+            </div>
+            <div class="block-content">
+                <ul class="list-group">
+                                            <li class="list-group-item"><span class="badge">2</span>Muscletech</li>
+                                            <li class="list-group-item"><span class="badge">3</span>nueva marca</li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="block block-themed">
+            <div class="block-header bg-city">
+                <ul class="block-options">
+                    <li>
+                        <button type="button" data-toggle="block-option" data-action="content_toggle"><i
+                                    class="si si-arrow-up"></i></button>
+                    </li>
+                </ul>
+                <h3 class="block-title">Categorias</h3>
+            </div>
+            <div class="block-content">
+                <ul class="list-group">
+                                    </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="block block-themed">
+            <div class="block-header bg-success">
+                <ul class="block-options">
+                    <li>
+                        <button type="button" data-toggle="block-option" data-action="content_toggle"><i
+                                    class="si si-arrow-up"></i></button>
+                    </li>
+                </ul>
+                <h3 class="block-title">Impuestos</h3>
+            </div>
+            <div class="block-content">
+                <ul class="list-group">
+                                            <li class="list-group-item"><span
+                                    class="badge">2</span>Exento</li>
+                                            <li class="list-group-item"><span
+                                    class="badge">1</span>IVA 16%</li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+
+
+            </div>
+            <!-- End Content -->
+        </main>
+        <!-- Footer -->
+<footer id="page-footer" class="content-mini content-mini-full font-s12 bg-gray-lighter clearfix">
+    <div class="pull-right">
+        Creado con <i class="fa fa-heart text-city"></i> en <a class="font-w600" href="http://goo.gl/vNS3I" target="_blank">Colombia</a>
+    </div>
+    <div class="pull-left">
+        <a class="font-w600" href="http://goo.gl/6LF10W" target="_blank">Contapp</a> &copy; <span class="js-year-copy"></span>
+    </div>
+</footer>
+<!-- END Footer -->
+    </div>
+    <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+
+<script src="http://localhost/js/all.js"></script>
+
+<script src="http://localhost/assets/js/plugins/select2/select2.full.min.js"></script>
+
+<!-- Page JS Plugins + Page JS Code -->
+<script>
+    jQuery(document).ready(function(){
+        $( "#loading" ).fadeOut(100, function(){
+            $( "#main-container" ).fadeIn(100);
+        });
+    });
+
+</script>
+    <script>
+            </script>        <script src="http://localhost/assets/js/plugins/dropzonejs/dropzone.min.js"></script>
+
+    <script>
+        Dropzone.options.excel = {
+            init: function () {
+                this.on("addedfile", function (file) {
+                    alert("Added file.");
+                });
+            }
+        };
+    </script>
+    </body>
+
+</html>
+
+  
+
+   

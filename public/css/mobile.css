@@ -1,0 +1,342 @@
+@charset "utf-8";
+.vertnav-container {
+    margin: 0 0px 30px;
+}
+
+#vertnav li .vertnav-cat {
+    display: block;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 3px;
+    width: 180px;
+}
+
+#nav .header-nav-dropdown-wrapper li ul li {
+    list-style: disc;
+    padding: 2px 5px 0px 0px;
+    clear: both;
+    width: 64%;
+    line-height: 16px;
+    marging: 5px;
+}
+
+#nav .header-nav-dropdown-wrapper li ul li a {
+    display: block !important;
+}
+
+#nav .header-nav-dropdown-wrapper li ul {
+    margin-left: 20px !important
+}
+
+.facebook {
+    background: url(http://www.prozis.com/imgs/v2/header/navbar/facebook-icon.png) no-repeat right center;
+}
+
+.twitter {
+    background: url(http://www.prozis.com/imgs/v2/header/navbar/twitter-icon.png) no-repeat right center;
+}
+
+.google {
+    background: url(http://www.prozis.com/imgs/v2/header/navbar/twitter-icon.png) no-repeat right center;
+}
+
+.youtube {
+    background: url(http://www.prozis.com/imgs/v2/header/navbar/youtube-icon.png) no-repeat right center;
+}
+
+.price_range_div {
+}
+
+.price_range_div p {
+    color: #181818 !important;
+    padding: 5px 40px;
+}
+
+.ui-state-active, .ui-state-focus {
+    border: 1px solid #eee !important;
+    background: #ddd !important;
+    color: #fff !important;
+}
+
+.slider-range {
+}
+
+.ui-widget-header {
+    background: #d41d38 !important;
+}
+
+.ui-state-hover {
+    border: 1px solid #eee !important;
+    background: #ddd !important
+}
+
+#vertnav li a {
+    color: #444;
+    font-weight: 400 !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#vertnav .inactive .vertnav-cat {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+#vertnav .next .vertnav-cat {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+#vertnav .prev .vertnav-cat {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+#vertnav .first .vertnav-cat {
+}
+
+#vertnav .last .vertnav-cat {
+}
+
+#vertnav .only .vertnav-cat {
+}
+
+#vertnav li.parent .vertnav-cat {
+    background-color: #900000;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#vertnav li.active .vertnav-cat {
+    background-color: #FFFFFF;
+    font-weight: bold;
+}
+
+#vertnav li.inactive .vertnav-cat {
+    font-weight: normal;
+    color: black;
+}
+
+#vertnav li.inactive .vertnav-cat {
+    color: #555;
+}
+
+#vertnav .level0 .vertnav-cat {
+    padding: 10px 5px 10px 26px;
+    line-height: 15px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border-bottom: 0px !important;
+}
+
+#vertnav .level0 .vertnav-cat a {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #555 !important;
+    font-weight: 600 !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+pagpro {
+    padding: 20px;
+    border-top: 1px solid #EBEBEB;
+}
+
+pagpro ul {
+    list-style: disc;
+    padding: 15px;
+}
+
+pagpro ol {
+    list-style: disc;
+    padding: 15px;
+}
+
+pagpro li {
+    background: url(../images/check.png) top left no-repeat;
+    padding-left: 30px;
+    list-style-type: none;
+    padding-left: 20px;
+    padding-bottom: 10px !important;
+}
+
+.pagpro .burbuja {
+    color: #777;
+    background: #e2f2cb;
+    padding: 10px 15px;
+    border: 1px solid #cce5c2;
+    -moz-box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+    -webkit-box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+    box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+}
+
+.pagpro .redondo {
+    margin: 5px 15px;
+    -moz-box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+    -webkit-box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+    box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+}
+
+.paginainfo {
+    padding: 20px;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    -moz-box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+    -webkit-box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+    box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+}
+
+.paginainfo ul {
+    list-style: disc;
+    padding: 15px;
+}
+
+.paginainfo ol {
+    list-style: disc;
+    padding: 15px;
+}
+
+.paginainfo li {
+    background: url(../images/check.png) top left no-repeat;
+    padding-left: 30px;
+    list-style-type: none;
+    padding-left: 20px;
+    padding-bottom: 10px !important;
+}
+
+.paginainfo .imgsombra {
+    padding: 5px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    -moz-box-shadow: 2px 2px 3px #aaaaaa;
+    -webkit-box-shadow: 2px 2px 3px #aaaaaa;
+    box-shadow: 2px 2px 3px #aaaaaa;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#aaaaaa)';
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#aaaaaa');
+}
+
+.paginainfo table {
+}
+
+.paginainfo .table {
+    padding: 10px;
+    margin: 0 auto 0 auto;
+    text-align: center !important;
+}
+
+.paginainfo .table td {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    padding: 10px;
+    color: #333;
+}
+
+.paginainfo .table tbody {
+    display: table-row-group;
+    vertical-align: middle !important;
+    border-color: inherit;
+}
+
+.paginainfo .table tbody tr, .paginainfo .table tbody tr td {
+    text-align: center;
+}
+
+.paginainfo .burbuja {
+    color: #777;
+    background: #e2f2cb;
+    padding: 10px 15px;
+    border: 1px solid #cce5c2;
+    -moz-box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+    -webkit-box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+    box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+}
+
+.paginainfo .redondo {
+    margin: 5px 15px;
+    -moz-box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+    -webkit-box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+    box-shadow: 2px 2px 7px rgba(153, 153, 153, 0.6);
+}
+
+.paginainfo .conceptos {
+    position: relative;
+    width: 660px;
+    overflow: hidden;
+    height: 38px;
+    background: url(../images/tabs.png) no-repeat left top;
+    padding-top: 8px;
+    padding-left: 35px;
+    font-weight: bold;
+    font-size: 14px
+}
+
+.paginainfo .conceptos a {
+    font-size: 12px
+}
+
+.paginainfo .conceptosbox {
+    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #535353;
+}
+
+.paginainfo .conceptosbox ul {
+    font-size: 12px;
+    color: #535353;
+}
+
+#vertnav .level1 .vertnav-cat {
+    padding-left: 10px;
+    width: 182px;
+    color: #FFFFFF;
+}
+
+#vertnav .level2 .vertnav-cat:hover {
+    background-color: #f5f5f5 !important;
+}
+
+#vertnav .level2 .vertnav-cat a:hover {
+    color: #E80D33 !important;
+}
+
+#vertnav .level2 .vertnav-cat {
+    padding: 11px 0px 10px 15px;
+    margin-left: 15px;
+    line-height: 5px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border-bottom: 1px solid #ddd !important;
+    width: 160px;
+    color: #FFFFFF;
+}
+
+#vertnav .level2 .vertnav-cat a {
+    font-size: 12px;
+    color: #555 !important;
+    font-weight: 400 !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#vertnav .level3 .vertnav-cat {
+    padding: 11px 0px 10px 15px;
+    margin-left: 30px;
+    line-height: 5px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border-bottom: 1px solid #ddd !important;
+    width: 160px;
+    color: #FFFFFF;;
+    width: 162px;
+    background: url(http://miproteina.com.co/skin/frontend/fortis/default/images/img/ic-layered.png) 0 9px no-repeat #ffffff !important;
+}
+
+#vertnav .level3 .vertnav-cat:hover {
+    padding-left: 30px;
+    background: url(http://miproteina.com.co/skin/frontend/fortis/default/images/img/ic-layered.png) 0 -13px no-repeat #ffffff !important;
+}

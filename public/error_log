@@ -1,0 +1,507 @@
+[15-Apr-2015 17:20:56 UTC] PHP Fatal error:  Class 'App\bodega' not found in /home/elitepharma/public_html/miproteina/app/Http/Controllers/ventaController.php on line 42
+[15-Apr-2015 17:26:24 UTC] PHP Fatal error:  Class 'App\bodega' not found in /home/elitepharma/public_html/miproteina/app/Http/Controllers/ventaController.php on line 42
+[15-Apr-2015 19:29:22 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:22 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:22 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:23 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:23 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:23 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:23 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:24 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:24 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:24 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:25 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:25 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:25 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:25 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:26 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:26 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:26 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:27 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:27 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:27 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:28 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:28 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:28 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:28 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:29 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:29 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:29 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:30 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:30 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:30 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:31 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:31 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:31 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:31 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:32 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:32 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:32 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:33 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:33 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:33 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:34 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:34 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:34 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:35 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:35 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:35 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:35 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:36 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:36 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:36 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:37 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:37 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:37 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:38 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:38 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:38 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:38 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:39 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:39 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:39 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:40 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:40 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:40 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:41 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:41 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:41 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:41 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:42 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:42 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:42 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:43 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:43 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:43 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:44 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:44 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:44 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:44 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:45 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:45 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:45 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:47 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:47 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:47 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:48 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:48 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:48 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:48 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:49 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:49 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:49 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:50 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:50 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:50 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:50 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:51 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:51 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:51 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:52 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:52 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:52 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:53 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:53 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:53 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:53 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:54 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:54 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:54 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:55 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:55 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:55 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:56 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:56 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:56 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:56 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:57 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:57 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:57 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:58 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:58 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:58 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:59 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:59 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:29:59 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:00 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:00 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:00 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:00 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:01 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:01 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:01 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:02 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:02 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:02 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:03 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:03 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:03 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:03 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:04 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:04 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:04 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:05 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:05 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:05 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:06 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:06 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:06 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:06 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:07 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:07 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:07 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:08 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:30:08 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:09 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:09 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:09 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:09 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:09 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:10 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:10 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:10 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:11 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:11 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:11 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:12 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:12 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:12 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:12 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:13 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:13 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:13 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:14 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:14 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:14 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:15 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:15 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:15 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:16 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:35:19 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:42 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:42 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:42 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:42 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:42 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:42 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:43 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:43 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:43 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:44 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:44 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:44 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:45 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:45 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:45 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:47 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:47 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:47 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:48 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:48 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:48 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:49 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:49 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:49 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:49 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:50 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:50 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:50 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:51 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:51 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:51 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:52 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:52 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:52 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:52 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:53 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:53 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:53 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:54 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:54 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:54 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:55 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:55 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:55 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:56 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:56 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:56 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:56 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:57 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:57 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:57 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:58 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:58 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:58 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:58 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:59 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:59 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:43:59 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:00 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:00 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:00 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:01 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:01 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:01 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:01 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:02 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:02 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:02 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:03 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:03 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:03 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:04 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:04 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:04 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:05 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:05 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:06 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:06 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:06 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:06 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:06 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:07 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:07 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:08 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:08 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:08 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:08 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:08 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:09 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:09 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:09 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:10 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:10 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:10 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:11 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:11 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:11 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:11 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:12 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:12 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:12 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:13 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:13 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:13 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:14 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:14 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:14 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:14 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:15 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:15 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:15 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:16 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:16 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:16 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:17 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:17 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:17 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:17 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:18 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:18 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:19 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:19 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:19 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:20 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:20 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:20 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:20 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:21 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:21 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:23 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:23 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:23 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:23 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:23 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:23 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:23 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:23 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:24 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:24 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:25 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:25 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:25 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:25 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:26 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:26 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:26 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:26 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:27 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:27 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:28 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:28 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:28 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:28 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:29 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:29 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:29 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:30 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:30 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:30 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:30 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:31 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:31 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:31 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:32 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:32 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:32 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:33 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:33 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:33 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:34 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:34 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:34 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:34 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:35 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:35 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:35 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:36 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:36 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:36 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:36 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:37 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:37 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:37 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:38 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:38 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:38 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:38 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:39 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:39 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:39 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:40 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:40 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:40 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:41 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:41 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:41 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:42 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:42 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:42 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:42 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:43 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:43 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:43 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:44 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:44 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:44 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:45 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:45 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:45 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:45 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:47 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:47 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:47 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:48 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:48 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:48 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:48 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:49 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:49 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:49 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:50 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:50 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:50 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:51 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:51 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:51 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:51 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:52 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:52 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:52 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:53 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:53 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:53 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:54 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:54 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:54 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:55 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:55 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:55 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:55 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:56 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:56 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:56 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:57 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:57 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:57 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:57 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:58 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:58 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:44:58 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:45:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:45:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:45:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:45:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[15-Apr-2015 19:45:46 UTC] PHP Fatal error:  Class 'App\user' not found in /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 808
+[18-Jul-2015 05:21:00 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(/home/elitepharma/public_html/miproteina/app/Http/routes.php): failed to open stream: No such file or directory' in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php:40
+Stack trace:
+#0 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(40): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/e...', '/home/elitephar...', 40, Array)
+#1 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(40): App\Providers\RouteServiceProvider::App\Providers\{closure}()
+#2 [internal function]: App\Providers\RouteServiceProvider->App\Providers\{closure}(Object(Illuminate\Routing\Router))
+#3 /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Routing/Router.php(343): call_user_func(Object(Closure), Object(Illuminate\Routing\Router))
+#4 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(41): Illuminate\Ro in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php on line 40
+[18-Jul-2015 05:21:00 UTC] PHP Fatal error:  App\Providers\RouteServiceProvider::App\Providers\{closure}(): Failed opening required '/home/elitepharma/public_html/miproteina/app/Http/routes.php' (include_path='/home/elitepharma/public_html/miproteina/vendor/phpunit/php-text-template:/home/elitepharma/public_html/miproteina/vendor/phpunit/php-timer:.:/usr/lib/php:/usr/local/lib/php') in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php on line 40
+[18-Jul-2015 05:21:01 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(/home/elitepharma/public_html/miproteina/app/Http/routes.php): failed to open stream: No such file or directory' in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php:40
+Stack trace:
+#0 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(40): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/e...', '/home/elitephar...', 40, Array)
+#1 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(40): App\Providers\RouteServiceProvider::App\Providers\{closure}()
+#2 [internal function]: App\Providers\RouteServiceProvider->App\Providers\{closure}(Object(Illuminate\Routing\Router))
+#3 /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Routing/Router.php(343): call_user_func(Object(Closure), Object(Illuminate\Routing\Router))
+#4 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(41): Illuminate\Ro in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php on line 40
+[18-Jul-2015 05:21:01 UTC] PHP Fatal error:  App\Providers\RouteServiceProvider::App\Providers\{closure}(): Failed opening required '/home/elitepharma/public_html/miproteina/app/Http/routes.php' (include_path='/home/elitepharma/public_html/miproteina/vendor/phpunit/php-text-template:/home/elitepharma/public_html/miproteina/vendor/phpunit/php-timer:.:/usr/lib/php:/usr/local/lib/php') in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php on line 40
+[18-Jul-2015 22:27:09 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(/home/elitepharma/public_html/miproteina/app/Http/routes.php): failed to open stream: No such file or directory' in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php:40
+Stack trace:
+#0 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(40): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/e...', '/home/elitephar...', 40, Array)
+#1 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(40): App\Providers\RouteServiceProvider::App\Providers\{closure}()
+#2 [internal function]: App\Providers\RouteServiceProvider->App\Providers\{closure}(Object(Illuminate\Routing\Router))
+#3 /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Routing/Router.php(343): call_user_func(Object(Closure), Object(Illuminate\Routing\Router))
+#4 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(41): Illuminate\Ro in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php on line 40
+[18-Jul-2015 22:27:09 UTC] PHP Fatal error:  App\Providers\RouteServiceProvider::App\Providers\{closure}(): Failed opening required '/home/elitepharma/public_html/miproteina/app/Http/routes.php' (include_path='/home/elitepharma/public_html/miproteina/vendor/phpunit/php-text-template:/home/elitepharma/public_html/miproteina/vendor/phpunit/php-timer:.:/usr/lib/php:/usr/local/lib/php') in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php on line 40
+[18-Jul-2015 22:28:07 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(/home/elitepharma/public_html/miproteina/app/Http/routes.php): failed to open stream: No such file or directory' in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php:40
+Stack trace:
+#0 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(40): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/e...', '/home/elitephar...', 40, Array)
+#1 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(40): App\Providers\RouteServiceProvider::App\Providers\{closure}()
+#2 [internal function]: App\Providers\RouteServiceProvider->App\Providers\{closure}(Object(Illuminate\Routing\Router))
+#3 /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Routing/Router.php(343): call_user_func(Object(Closure), Object(Illuminate\Routing\Router))
+#4 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(41): Illuminate\Ro in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php on line 40
+[18-Jul-2015 22:28:07 UTC] PHP Fatal error:  App\Providers\RouteServiceProvider::App\Providers\{closure}(): Failed opening required '/home/elitepharma/public_html/miproteina/app/Http/routes.php' (include_path='/home/elitepharma/public_html/miproteina/vendor/phpunit/php-text-template:/home/elitepharma/public_html/miproteina/vendor/phpunit/php-timer:.:/usr/lib/php:/usr/local/lib/php') in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php on line 40
+[18-Jul-2015 22:28:33 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(/home/elitepharma/public_html/miproteina/app/Http/routes.php): failed to open stream: No such file or directory' in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php:40
+Stack trace:
+#0 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(40): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/e...', '/home/elitephar...', 40, Array)
+#1 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(40): App\Providers\RouteServiceProvider::App\Providers\{closure}()
+#2 [internal function]: App\Providers\RouteServiceProvider->App\Providers\{closure}(Object(Illuminate\Routing\Router))
+#3 /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Routing/Router.php(343): call_user_func(Object(Closure), Object(Illuminate\Routing\Router))
+#4 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(41): Illuminate\Ro in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php on line 40
+[18-Jul-2015 22:28:33 UTC] PHP Fatal error:  App\Providers\RouteServiceProvider::App\Providers\{closure}(): Failed opening required '/home/elitepharma/public_html/miproteina/app/Http/routes.php' (include_path='/home/elitepharma/public_html/miproteina/vendor/phpunit/php-text-template:/home/elitepharma/public_html/miproteina/vendor/phpunit/php-timer:.:/usr/lib/php:/usr/local/lib/php') in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php on line 40
+[18-Jul-2015 22:38:29 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(/home/elitepharma/public_html/miproteina/app/Http/routes.php): failed to open stream: No such file or directory' in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php:40
+Stack trace:
+#0 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(40): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/e...', '/home/elitephar...', 40, Array)
+#1 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(40): App\Providers\RouteServiceProvider::App\Providers\{closure}()
+#2 [internal function]: App\Providers\RouteServiceProvider->App\Providers\{closure}(Object(Illuminate\Routing\Router))
+#3 /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Routing/Router.php(343): call_user_func(Object(Closure), Object(Illuminate\Routing\Router))
+#4 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(41): Illuminate\Ro in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php on line 40
+[18-Jul-2015 22:38:29 UTC] PHP Fatal error:  App\Providers\RouteServiceProvider::App\Providers\{closure}(): Failed opening required '/home/elitepharma/public_html/miproteina/app/Http/routes.php' (include_path='/home/elitepharma/public_html/miproteina/vendor/phpunit/php-text-template:/home/elitepharma/public_html/miproteina/vendor/phpunit/php-timer:.:/usr/lib/php:/usr/local/lib/php') in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php on line 40
+[18-Jul-2015 22:40:08 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(/home/elitepharma/public_html/miproteina/app/Http/routes.php): failed to open stream: No such file or directory' in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php:40
+Stack trace:
+#0 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(40): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/e...', '/home/elitephar...', 40, Array)
+#1 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(40): App\Providers\RouteServiceProvider::App\Providers\{closure}()
+#2 [internal function]: App\Providers\RouteServiceProvider->App\Providers\{closure}(Object(Illuminate\Routing\Router))
+#3 /home/elitepharma/public_html/miproteina/vendor/laravel/framework/src/Illuminate/Routing/Router.php(343): call_user_func(Object(Closure), Object(Illuminate\Routing\Router))
+#4 /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php(41): Illuminate\Ro in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php on line 40
+[18-Jul-2015 22:40:08 UTC] PHP Fatal error:  App\Providers\RouteServiceProvider::App\Providers\{closure}(): Failed opening required '/home/elitepharma/public_html/miproteina/app/Http/routes.php' (include_path='/home/elitepharma/public_html/miproteina/vendor/phpunit/php-text-template:/home/elitepharma/public_html/miproteina/vendor/phpunit/php-timer:.:/usr/lib/php:/usr/local/lib/php') in /home/elitepharma/public_html/miproteina/app/Providers/RouteServiceProvider.php on line 40
+[22-Jul-2015 01:44:22 UTC] PHP Fatal error:  Call to undefined method Meli::initConnect() in /home/elitepharma/public_html/miproteina/storage/framework/views/5d2597432b34d577a16109fbf87bda95 on line 11
+[22-Jul-2015 01:48:29 UTC] PHP Fatal error:  Call to undefined method Meli::initConnect() in /home/elitepharma/public_html/miproteina/storage/framework/views/5d2597432b34d577a16109fbf87bda95 on line 11
+[22-Jul-2015 01:48:32 UTC] PHP Fatal error:  Call to undefined method Meli::initConnect() in /home/elitepharma/public_html/miproteina/storage/framework/views/5d2597432b34d577a16109fbf87bda95 on line 11
+[23-Jul-2015 00:57:39 UTC] PHP Fatal error:  Class 'App\caja' not found in /home/elitepharma/public_html/miproteina/app/Http/Controllers/cajaController.php on line 19
+[23-Jul-2015 00:59:30 UTC] PHP Fatal error:  Class 'App\ingresos' not found in /home/elitepharma/public_html/miproteina/app/Http/Controllers/ventaController.php on line 85
+[23-Jul-2015 04:45:45 UTC] PHP Fatal error:  Call to undefined method Symfony\Component\HttpFoundation\File\UploadedFile::update() in /home/elitepharma/public_html/miproteina/app/Http/Controllers/productosController.php on line 129
