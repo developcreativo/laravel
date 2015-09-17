@@ -55,6 +55,9 @@
                 display: block;
                 page-break-after: always;
             }
+            .block-content{
+                padding: 0 !important;
+            }
 
 
         }
