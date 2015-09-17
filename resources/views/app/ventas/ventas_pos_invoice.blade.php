@@ -77,7 +77,7 @@
         <div class="col-sm-5 page" >
             <div class="block center-block factura">
                 <div class="block-content text-center ">
-                    <img src="{{ $venta->tiendas->company->logo }}" class="center-block push-10" width="300"
+                    <img src="{{ $venta->tiendas->company->logo }}" class="center-block push-10" width="262"
                          height="100">
 
                     <h1 class="page">{{ $venta->tiendas->tienda }}</h1>
@@ -159,7 +159,7 @@
         <div class="col-sm-5">
             <div class="block center-block factura">
                 <div class="block-content text-center">
-                    <img src="{{ $venta->tiendas->company->logo }}" class="center-block push-10" width="300"
+                    <img src="{{ $venta->tiendas->company->logo }}" class="center-block push-10" width="262"
                          height="100">
 
                     <h1>{{ $venta->tiendas->tienda }}</h1>
