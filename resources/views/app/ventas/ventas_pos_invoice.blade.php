@@ -10,7 +10,7 @@
 @section('style')
     <style type="text/css">
         .factura {
-            width: 9cm;
+            width: 8cm;
         }
 
         .factura p, p + p {
