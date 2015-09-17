@@ -125,18 +125,18 @@ class ComprasController extends Controller
     public function pdf($id)
     {
         $pdf = compras::crear_pdf($id);
-        return $pdf->download('factura_compra' . $id.'.pdf');
+        return $pdf->download('factura_compra' . $id . '.pdf');
     }
 
     public function mail(Request $request, $id)
     {
-        
-        $pdf = compras::crear_pdf($id);
-        Mail::send('app.compras.compras_email', compact(['request']), function ($message) use ($pdf, $request) {
-            $message->to($request->email_address)->subject('Envio de factura de compra ');
+        $to = $request->email_address;
+        Mail::queue('app.compras.compras_email', compact(['request']), function ($message) use ($id, $to) {
+            $pdf = compras::crear_pdf($id);
+            $message->to($to)->subject('Envio de factura de compra ');
             $message->attachData($pdf->output(), "invoice.pdf");
         });
-        Session::flash('mensaje','factura enviada con exito');
+        Session::flash('mensaje', 'factura enviada con exito');
         return back();
     }
 }

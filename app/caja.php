@@ -37,10 +37,10 @@ class caja extends Model
         $caja = caja::CajaAbierta();
         foreach($ingresos as $ingreso){
             if(!$factura["venta"] == ""){
-                $concepto = 'la factura '.$factura["venta"];
+                $concepto = 'la factura '.$factura["venta"]['factura'];
             }elseif($factura["remision"] == ""){
-                $concepto = 'la remision '.$factura["remision"];
-            }else{$concepto = 'la factura '.$factura["venta"].' y la remision '.$factura["remision"];}
+                $concepto = 'la remision '.$factura["remision"]['factura'];
+            }else{$concepto = 'la factura '.$factura["venta"]['factura'].' y la remision '.$factura["remision"]['factura'];}
             $item = new caja_detalle();
             $item->caja_id = $caja->id;
             $item->formas_pago_id = $ingreso['id'];

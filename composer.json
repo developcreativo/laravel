@@ -16,7 +16,8 @@
         "maatwebsite/excel": "~2.0.0",
         "intervention/image": "^2.3",
         "barryvdh/laravel-httpcache": "0.2.x@dev",
-        "barryvdh/laravel-dompdf": "0.6.*"
+        "barryvdh/laravel-dompdf": "0.6.*",
+        "barryvdh/laravel-async-queue": "0.4.x"
 
 
     },

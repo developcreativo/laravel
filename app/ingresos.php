@@ -9,10 +9,10 @@ class ingresos extends Model
     //
     //busco la tabla ingresos
     public function getTable()
-        {
-            //return Session::get('tenant.id').'_ingresos';
-            return 'ingresos';
-        }
+    {
+        //return Session::get('tenant.id').'_ingresos';
+        return 'ingresos';
+    }
 
     protected $fillable = [
         'factura_id',
@@ -20,16 +20,25 @@ class ingresos extends Model
         'valor'
     ];
 
-    public static function AgregarIngreso($factura,$pagos){
-        foreach($pagos as $pago){
+    public static function AgregarIngreso($factura, $pagos)
+    {
+        foreach ($pagos as $pago) {
             $ingreso = new ingresos();
-            $ingreso->venta_id = $factura['venta'];
-            $ingreso->remision_id = $factura['remision'];
+            if (!$factura['venta'] == "") {
+                $ingreso->venta_id = $factura['venta']['id'];
+            } else {
+                $ingreso->venta_id = "";
+            }
+            if (!$factura['remision'] == "") {
+                $ingreso->remision_id = $factura['remision']['id'];
+            } else {
+                $ingreso->remision_id = "";
+            }
             $ingreso->formas_pago_id = $pago['id'];
             $ingreso->valor = $pago['valor'];
             $ingreso->save();
         }
-        caja::IngresoCaja($pagos,$factura);
+        caja::IngresoCaja($pagos, $factura);
 
     }
 }

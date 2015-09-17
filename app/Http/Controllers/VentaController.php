@@ -33,8 +33,8 @@ class VentaController extends Controller
     public function index()
     {
         //
-        $ventas = ventas::with('clientes','tiendas')->get();
-        return view('app.ventas.ventas_index',compact('ventas'));
+        $ventas = ventas::with('clientes', 'tiendas')->get();
+        return view('app.ventas.ventas_index', compact('ventas'));
     }
 
     /**
@@ -50,30 +50,35 @@ class VentaController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  Request  $request
+     * @param  Request $request
      * @return Response
      */
     public function store(Request $request)
     {
         //
         $lastid = ventas::separador_remision($request);
+        tiendas::numero_factura($lastid);
         Bodegas::Agregar_Venta($request->items);
-        ingresos::AgregarIngreso($lastid,$request->pagos);
-        return redirect('ventas/pos/' . $lastid['venta']);
+        ingresos::AgregarIngreso($lastid, $request->pagos);
+        $factura = facturacion::AgregarFacturacion($lastid);
+        return redirect('ventas/pos/' . $factura);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return Response
      */
     public function show($id)
     {
         //
-        //$tipo = facturacion::find($id);
-        $venta = ventas::with('venta_detalle.productos_configurables','clientes','tiendas.company','user')
-            ->find($id);
+        $tipo = facturacion::find($id);
+        if($tipo->remision_id == 0){
+            dd($tipo);
+        }
+        $venta = ventas::with('venta_detalle.productos_configurables', 'clientes', 'tiendas.company', 'user')
+            ->find($tipo->venta_id);
         return view('app/ventas/ventas_print', compact('venta'));
 
     }
@@ -81,7 +86,7 @@ class VentaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return Response
      */
     public function edit($id)
@@ -92,8 +97,8 @@ class VentaController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  Request  $request
-     * @param  int  $id
+     * @param  Request $request
+     * @param  int $id
      * @return Response
      */
     public function update(Request $request, $id)
@@ -104,7 +109,7 @@ class VentaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return Response
      */
     public function destroy($id)
@@ -112,28 +117,35 @@ class VentaController extends Controller
         //
     }
 
-    public function pos(){
+    public function pos()
+    {
         $productos = Bodegas::with('productos_configurables.productos')->get()->toJson();
         $clientes = clientes::all();
         $categorias = categorias::orderBy('level')->get();
         $tiendas = tiendas::lists('tienda', 'id');
-        return Response::view('app.ventas.ventas_pos',compact('tiendas','categorias','productos','clientes'));
+        return Response::view('app.ventas.ventas_pos', compact('tiendas', 'categorias', 'productos', 'clientes'));
     }
 
     public function pos_show($id)
     {
         //
-        //$tipo = facturacion::find($id);
-        $venta = ventas::with('venta_detalle.productos_configurables','clientes','tiendas.company','user')
-            ->find($id);
-        return view('app/ventas/ventas_pos_invoice', compact('venta'));
+        $tipo = facturacion::find($id);
+        if(!$tipo->venta_id == ""){
+            $venta = ventas::with('venta_detalle.productos_configurables', 'clientes', 'tiendas.company', 'user')
+                ->find($tipo->venta_id);
+        }
+        if(!$tipo->venta_id == "")   {
+            $remision = ventas::with('venta_detalle.productos_configurables', 'clientes', 'tiendas.company', 'user')
+                ->find($tipo->remision_id);
+        }
+        return view('app/ventas/ventas_pos_invoice', compact('venta','remision'));
 
     }
 
     public function pdf($id)
     {
         $pdf = ventas::crear_pdf($id);
-        return $pdf->download('venta_pos' . $id.'.pdf');
+        return $pdf->download('venta_pos' . $id . '.pdf');
     }
 
     public function mail(Request $request, $id)
@@ -144,7 +156,7 @@ class VentaController extends Controller
             $message->to($request->email_address)->subject('Envio de factura de compra ');
             $message->attachData($pdf->output(), "invoice.pdf");
         });
-        Session::flash('mensaje','factura enviada con exito');
+        Session::flash('mensaje', 'factura enviada con exito');
         return back();
     }
 }

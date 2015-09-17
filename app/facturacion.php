@@ -37,8 +37,16 @@ class facturacion extends Model
     public static function AgregarFacturacion($id)
     {
         $factura = new facturacion();
-        $factura->venta_id = $id['venta'];
-        $factura->remision_id = $id['remision'];
+        if (!$id['venta'] == "") {
+            $factura->venta_id = $id['venta']['id'];
+        } else {
+            $factura->venta_id = "";
+        }
+        if (!$id['remision'] == "") {
+            $factura->remision_id = $id['remision']['id'];
+        } else {
+            $factura->remision_id = "";
+        }
         $factura->save();
         $factura_id = $factura->id;
         return $factura_id;

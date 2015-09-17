@@ -100,7 +100,7 @@ class ventas extends Model
         }
         $factura = tiendas::find(Session::get('bodega'))->remision + 1;
         $venta = new ventas();
-        $venta->factura = 'R-' . $factura;
+        $venta->factura = $factura;
         $venta->remision = 1;
         $venta->cliente_id = $datos['cliente_id'];
         $venta->tienda_id = Session::get('bodega');
@@ -114,7 +114,8 @@ class ventas extends Model
         }
         $venta->save();
         venta_detalle::AgregarVentaDetalle($items_remision, $venta->id);
-        return $venta->id;
+
+        return ['id'=>$venta->id,'factura'=>$venta->factura];
     }
 
     public static function agregar_venta($datos, $items_venta)
@@ -149,7 +150,7 @@ class ventas extends Model
         $venta->save();
         venta_detalle::AgregarVentaDetalle($items_venta, $venta->id);
 
-        return $venta->id;
+        return ['id'=>$venta->id,'factura'=>$venta->factura];
     }
 
     public static function crear_pdf($id)

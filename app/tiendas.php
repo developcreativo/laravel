@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Session;
 
 class tiendas extends Model
 {
@@ -29,6 +30,18 @@ class tiendas extends Model
     public function company()
     {
         return $this->belongsTo('App\company', 'company_id');
+    }
+
+    static public function numero_factura($lastid)
+    {
+        $company = tiendas::find(Session::get('tenant.id'));
+        if (!$lastid['venta'] == "") {
+            $company->factura = $lastid['venta']['id'];
+        }
+        if (!$lastid['remision'] == "") {
+            $company->remision = $lastid['remision']['id'];
+        }
+        $company->save();
     }
 
 }
