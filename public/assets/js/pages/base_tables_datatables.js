@@ -217,6 +217,12 @@ $('#buscar_compra').keyup(function(){
 $('#buscar_cliente').keyup(function(){
     jQuery('#clientes').dataTable().fnFilter($(this).val());
 })
+$('#buscar_venta').keyup(function(){
+    jQuery('#ventas').dataTable().fnFilter($(this).val());
+})
+$('#buscar_remision').keyup(function(){
+    jQuery('#remisiones').dataTable().fnFilter($(this).val());
+})
 
 
 // Event listener to the two range filtering inputs to redraw on input

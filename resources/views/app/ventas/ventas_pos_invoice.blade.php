@@ -9,9 +9,6 @@
 
 @section('style')
     <style type="text/css">
-        .factura {
-            width: 8cm;
-        }
 
         .factura p, p + p {
             margin: 0px !important;
@@ -52,8 +49,9 @@
             }
             .factura
             {
-                display: block;
+            display: block;
                 page-break-after: always;
+                width: 7cm;
             }
             .block-content{
                 padding: 0 !important;
@@ -77,7 +75,7 @@
     </div>
     <div>
     @if(isset($venta))
-        <div class="col-sm-5 page" >
+        <div class="col-sm-4 page" >
             <div class="block center-block factura">
                 <div class="block-content text-center ">
                     <img src="{{ $venta->tiendas->company->logo }}" class="center-block push-10" width="262"
@@ -101,7 +99,7 @@
 
                     <div class="col-sm-12 push-10">
                         <h3 class="ticket">
-                            <p>Factura: <span>{{ $venta->tiendas->prefijo }} {{ $venta->id }}</span></p></h3>
+                            <p>Factura: <span>{{ $venta->tiendas->prefijo }} {{ $venta->factura }}</span></p></h3>
                     </div>
                     <table class="table remove-margin-b">
                         <thead>
@@ -159,31 +157,31 @@
         </div>
     @endif
     @if(isset($remision))
-        <div class="col-sm-5">
+        <div class="col-sm-4">
             <div class="block center-block factura">
                 <div class="block-content text-center">
-                    <img src="{{ $venta->tiendas->company->logo }}" class="center-block push-10" width="262"
+                    <img src="{{ $remision->tiendas->company->logo }}" class="center-block push-10" width="262"
                          height="100">
 
-                    <h1>{{ $venta->tiendas->tienda }}</h1>
+                    <h1>{{ $remision->tiendas->tienda }}</h1>
 
-                    <p><strong>Nit: <span>{{ $venta->tiendas->nit }}</span></strong></p>
+                    <p><strong>Nit: <span>{{ $remision->tiendas->nit }}</span></strong></p>
 
-                    <p><strong>Regimen: <span> {{ $venta->tiendas->regimen }}</span></strong></p>
+                    <p><strong>Regimen: <span> {{ $remision->tiendas->regimen }}</span></strong></p>
 
 
-                    <p class="font-s12 ">Dirección: <span> {{ $venta->tiendas->direccion }}</span></p>
+                    <p class="font-s12 ">Dirección: <span> {{ $remision->tiendas->direccion }}</span></p>
 
-                    <p class="font-s12">Fecha: <span>{{ $venta->created_at }}</span></p>
+                    <p class="font-s12">Fecha: <span>{{ $remision->created_at }}</span></p>
 
-                    <p class="font-s12">Telefono: <span> {{ $venta->tiendas->telefono }}</span></p>
+                    <p class="font-s12">Telefono: <span> {{ $remision->tiendas->telefono }}</span></p>
 
-                    <p class="font-s12">Cliente: <span>{{ $venta->clientes->cliente }}</span></p>
+                    <p class="font-s12">Cliente: <span>{{ $remision->clientes->cliente }}</span></p>
 
 
                     <div class="col-sm-12 push-10">
                         <h3 class="ticket">
-                            <p>Factura: <span>{{ $venta->tiendas->prefijo }} {{ $venta->id }}</span></p></h3>
+                            <p>Remision: <span>{{ $remision->factura }}</span></p></h3>
                     </div>
                     <table class="table remove-margin-b">
                         <thead>
@@ -195,7 +193,7 @@
                         </thead>
                         <tbody>
 
-                        @foreach($venta->venta_detalle as $venta_detalle)
+                        @foreach($remision->venta_detalle as $venta_detalle)
                             <tr>
                                 <td class="text-center">1</td>
                                 <td class="text-center">{{$venta_detalle->productos_configurables->producto}}</td>
@@ -210,28 +208,19 @@
                         <table class=" text-right totales font-s24" align="center">
                             <tr>
                                 <td width="60%"><strong>Sub-total:</strong></td>
-                                <td>$ {{ number_format($venta->venta - $venta->iva) }}</td>
+                                <td>$ {{ number_format($remision->venta - $remision->iva) }}</td>
                             </tr>
-                            <tr>
-                                <td width="60%"><strong>IVA:</strong></td>
-                                <td>$ {{ number_format($venta->iva) }}</td>
-                            </tr>
+
                             <tr>
                                 <td width="60%"><strong>TOTAL:</strong></td>
-                                <td>$ {{ number_format($venta->venta) }}</td>
+                                <td>$ {{ number_format($remision->venta) }}</td>
                             </tr>
 
                         </table>
 
                     </div>
                     <div class="panel-footer text-center push-10">
-                        <p>Vendedor: <span>{{ $venta->user->name }}</span></p>
-
-                        <p>Facturación según resolución DIAN</p>
-
-                        <p>Numero {{ $venta->tiendas->resolucion_dian }}</p>
-
-                        <p>del {{ $venta->tiendas->fecha_dian }} {{ $venta->tiendas->rango }}</p>
+                        <p>Vendedor: <span>{{ $remision->user->name }}</span></p>
 
                         <h4 class="text-center">Gracias por su compra</h4>
                     </div>

@@ -26,9 +26,13 @@ class ventas extends Model
         'plazo'
     ];
 
-    public function facturas()
+    public function factura_venta()
     {
-        return $this->hasMany('App\facturacion', 'venta_id');
+        return $this->hasOne('App\facturacion', 'venta_id');
+    }
+    public function factura_remision()
+    {
+        return $this->hasOne('App\facturacion', 'remision_id');
     }
 
     public function venta_detalle()

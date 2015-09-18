@@ -33,7 +33,7 @@ class VentaController extends Controller
     public function index()
     {
         //
-        $ventas = ventas::with('clientes', 'tiendas')->get();
+        $ventas = ventas::with('clientes', 'tiendas','factura_venta')->where('remision',0)->get();
         return view('app.ventas.ventas_index', compact('ventas'));
     }
 
