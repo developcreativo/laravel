@@ -18,9 +18,15 @@ class clientes extends Model
             'cliente',
             'email',
             'telefono',
+            'ciudad_id',
             'direccion',
             'deuda_maxima',
 
         ];
+
+    public function ciudad(){
+        return $this->belongsTo('App\ciudades','ciudad_id');
+    }
+
 
 }

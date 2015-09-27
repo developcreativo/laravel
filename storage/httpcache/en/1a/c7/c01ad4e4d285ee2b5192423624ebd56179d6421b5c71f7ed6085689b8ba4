@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9 no-focus"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus"> <!--<![endif]-->
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="csrf-token" content="pmIKkIvFc9ZV3eR0YGzJNeq5HHliUjkDad0acGEQ" />
+<title> </title>
+
+<meta name="description" content="OneUI - Admin Dashboard Template & UI Framework created by pixelcave and published on Themeforest">
+<meta name="author" content="pixelcave">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+<!-- Icons -->
+<!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+<link rel="shortcut icon" href="http://localhost/assets/img/favicons/favicon.png">
+
+<link rel="icon" type="image/png" href="http://localhost/assets/img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="http://localhost/assets/img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost/assets/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost/assets/img/favicons/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="http://localhost/assets/img/favicons/favicon-192x192.png" sizes="192x192">
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost/assets/img/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost/assets/img/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost/assets/img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost/assets/img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost/assets/img/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost/assets/img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost/assets/img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost/assets/img/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost/assets/img/favicons/apple-touch-icon-180x180.png">
+
+<!-- END Icons -->
+
+<!-- Stylesheets -->
+
+
+<!-- Web fonts -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+
+<!-- Page JS Plugins CSS go here -->
+<link media="all" type="text/css" rel="stylesheet" href="http://localhost/assets/js/plugins/datatables/jquery.dataTables.min.css">
+
+<!-- Bootstrap and OneUI CSS framework -->
+
+<link media="all" type="text/css" rel="stylesheet" href="http://localhost/css/all.css">
+
+<link media="all" type="text/css" rel="stylesheet" href="http://localhost/css/contapp.css">
+
+
+<!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+<!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
+<!-- END Stylesheets -->
+<link media="all" type="text/css" rel="stylesheet" href="http://localhost/assets/js/plugins/select2/select2.min.css">
+
+<link media="all" type="text/css" rel="stylesheet" href="http://localhost/assets/js/plugins/select2/select2-bootstrap.css">
+
+
+<!-- jquery -->
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- END jquery -->
+
+
+
+
+    </head>
+    <body>
+    <!-- Page Container -->
+    <!--
+        Available Classes:
+
+        'enable-cookies'             Remembers active color theme between pages (when set through color theme list)
+
+        'sidebar-l'                  Left Sidebar and right Side Overlay
+        'sidebar-r'                  Right Sidebar and left Side Overlay
+        'sidebar-mini'               Mini hoverable Sidebar (> 991px)
+        'sidebar-o'                  Visible Sidebar by default (> 991px)
+        'sidebar-o-xs'               Visible Sidebar by default (< 992px)
+
+        'side-overlay-hover'         Hoverable Side Overlay (> 991px)
+        'side-overlay-o'             Visible Side Overlay by default (> 991px)
+
+        'side-scroll'                Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (> 991px)
+
+        'header-navbar-fixed'        Enables fixed header
+    -->
+
+
+    <div id="page-container" class="enable-cookies sidebar-l sidebar-o side-scroll ">
+        <!--  aqui se inlcuye el sidebar static xenon -->
+        <!-- Side Overlay-->
+<aside id="side-overlay">
+    <!-- Side Overlay Scroll Container -->
+    <div id="side-overlay-scroll">
+        <!-- Side Header -->
+        <div class="side-header side-content">
+            <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+            <button class="btn btn-default pull-right" type="button" data-toggle="layout" data-action="side_overlay_close">
+                <i class="fa fa-times"></i>
+            </button>
+            <span class="font-w600 push-10-l">Admin</span>
+        </div>
+        <!-- END Side Header -->
+
+        <!-- Side Content -->
+        <div class="side-content remove-padding-t">
+            <!-- Block -->
+            <div class="block pull-r-l">
+                <div class="block-header bg-gray-lighter">
+                    <ul class="block-options">
+                        <li>
+                            <button type="button" data-toggle="block-option" data-action="refresh_toggle" data-action-mode="demo"><i class="si si-refresh"></i></button>
+                        </li>
+                        <li>
+                            <button type="button" data-toggle="block-option" data-action="content_toggle"></button>
+                        </li>
+                    </ul>
+                    <h3 class="block-title">Block</h3>
+                </div>
+                <div class="block-content">
+                    <p>...</p>
+                </div>
+            </div>
+            <!-- END Block -->
+        </div>
+        <!-- END Side Content -->
+    </div>
+    <!-- END Side Overlay Scroll Container -->
+</aside>
+<!-- END Side Overlay -->
+
+<!-- Sidebar -->
+<nav id="sidebar">
+    <!-- Sidebar Scroll Container -->
+    <div id="sidebar-scroll">
+        <!-- Sidebar Content -->
+        <!-- Adding .sidebar-mini-hide to an element will hide it when the sidebar is in mini mode -->
+        <div class="sidebar-content">
+            <!-- Side Header -->
+            <div class="side-header side-content bg-white-op">
+                <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                <button class="btn btn-link text-gray pull-right hidden-md hidden-lg" type="button" data-toggle="layout" data-action="sidebar_close">
+                    <i class="fa fa-times"></i>
+                </button>
+                <!-- Themes functionality initialized in App() -> uiHandleTheme() -->
+                <div class="btn-group pull-right">
+                    <button class="btn btn-link text-gray dropdown-toggle" data-toggle="dropdown" type="button">
+                        <i class="si si-drop"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right font-s13 sidebar-mini-hide">
+                        <li>
+                            <a data-toggle="theme" data-theme="default" tabindex="-1" href="javascript:void(0)">
+                                <i class="fa fa-circle text-default pull-right"></i> <span class="font-w600">Default</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="theme" data-theme="http://localhost/assets/css/themes/amethyst.min.css" tabindex="-1" href="javascript:void(0)">
+                                <i class="fa fa-circle text-amethyst pull-right"></i> <span class="font-w600">Amethyst</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="theme" data-theme="http://localhost/assets/css/themes/city.min.css" tabindex="-1" href="javascript:void(0)">
+                                <i class="fa fa-circle text-city pull-right"></i> <span class="font-w600">City</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="theme" data-theme="http://localhost/assets/css/themes/flat.min.css" tabindex="-1" href="javascript:void(0)">
+                                <i class="fa fa-circle text-flat pull-right"></i> <span class="font-w600">Flat</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="theme" data-theme="http://localhost/assets/css/themes/modern.min.css" tabindex="-1" href="javascript:void(0)">
+                                <i class="fa fa-circle text-modern pull-right"></i> <span class="font-w600">Modern</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="theme" data-theme="http://localhost/assets/css/themes/smooth.min.css" tabindex="-1" href="javascript:void(0)">
+                                <i class="fa fa-circle text-smooth pull-right"></i> <span class="font-w600">Smooth</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="h5 text-white" href="http://localhost">
+                    <i class="fa fa-circle-o-notch text-primary"></i> <span class="h4 font-w600 sidebar-mini-hide">Contapp</span>
+                </a>
+            </div>
+            <!-- END Side Header -->
+
+            <!-- Side Content -->
+            <div class="side-content">
+                <ul class="nav-main">
+                    <li>
+                        <a class="active" href="http://localhost"><i class="si si-speedometer"></i><span class="sidebar-mini-hide">Dashboard</span></a>
+                    </li>
+                    <li class="nav-main-heading"><span class="sidebar-mini-hide">Administrativo</span></li>
+                    <li>
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-grid"></i><span class="sidebar-mini-hide">Productos</span></a>
+                        <ul>
+                            <li>
+                                <a href="http://localhost/productos">Productos</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/atributos">Atributos</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/productos/informes">Informes</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/productos/carga_masiva">Carga Masiva</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-users"></i><span class="sidebar-mini-hide">Contactos</span></a>
+                        <ul>
+                            <li>
+                                <a href="http://localhost/proveedores">Proveedores</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/clientes">Clientes</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/usuarios">Usuarios</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-main-heading"><span class="sidebar-mini-hide">Facturación</span></li>
+                    <li>
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="http://localhost/productos"><i class="si si-basket"></i><span class="sidebar-mini-hide">Ventas</span></a>
+                        <ul>
+                            <li>
+                                <a href="http://localhost/ventas/pos">POS</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/ventas">Ventas</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/remision">Remisiones</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/ventas/informes">Informes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-handbag"></i><span class="sidebar-mini-hide">Compras</span></a>
+                        <ul>
+                            <li>
+                                <a href="http://localhost/compras">Compras</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/compras/informes">Informes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-wallet"></i><span class="sidebar-mini-hide">Caja</span></a>
+                        <ul>
+                            <li>
+                                <a href="http://localhost/caja">Caja</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/caja/movimientos">Movimientos</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/gastos">Gastos</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/caja/informes">Informes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-main-heading"><span class="sidebar-mini-hide">Configuraciones</span></li>
+                    <li>
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="http://localhost/productos"><i class="si si-home"></i><span class="sidebar-mini-hide">Tiendas</span></a>
+                        <ul>
+                            <li>
+                                <a href="start_backend.html">Link #1</a>
+                            </li>
+                            <li>
+                                <a href="start_backend.html">Link #2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="http://localhost/productos"><i class="si si-users"></i><span class="sidebar-mini-hide">Usuarios</span></a>
+                        <ul>
+                            <li>
+                                <a href="start_backend.html">Link #1</a>
+                            </li>
+                            <li>
+                                <a href="start_backend.html">Link #2</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- END Side Content -->
+        </div>
+        <!-- Sidebar Content -->
+    </div>
+    <!-- END Sidebar Scroll Container -->
+</nav>
+<!-- END Sidebar -->        <!-- fin del sidebar -->
+        <!-- Header -->
+<header id="header-navbar" class="content-mini content-mini-full">
+    <!-- Page Header -->
+            <!-- Header Navigation Left -->
+            <ul class="nav-header pull-left">
+                <li class="hidden-md hidden-lg">
+                    <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                    <button class="btn btn-default" data-toggle="layout" data-action="sidebar_toggle" type="button">
+                        <i class="fa fa-navicon"></i>
+                    </button>
+                </li>
+                <li class="hidden-xs hidden-sm">
+                    <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                    <button class="btn btn-default" data-toggle="layout" data-action="sidebar_mini_toggle" type="button">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </li>
+
+            </ul>
+            <!-- END Header Navigation Left -->
+            <div class="col-xs-4">
+                <h1 class="page-heading">Whey gold Standard 5lb
+</h1>
+            </div>
+            <div class="col-sm-6 text-right hidden-xs">
+                <ol class="breadcrumb push-10-t">
+                    <li><a class="link-effect" href="http://localhost">Inicio</a></li>
+                        <li><a href="http://localhost/productos">Productos</a></li>
+                    <li>Whey gold Standard 5lb
+</li>
+                </ol>
+            </div>
+            <!-- Header Navigation Right -->
+            <ul class="nav-header pull-right">
+                <li>
+                    <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                    <button class="btn btn-default" data-toggle="layout" data-action="side_overlay_toggle" type="button">
+                        <i class="fa fa-tasks"></i>
+                    </button>
+                </li>
+            </ul>
+            <!-- END Header Navigation Right -->
+
+</header>
+<!-- END Header -->        <div id="loading">
+            <i id="loading-image" class="fa fa-3x fa-cog fa-spin">
+            </i>
+        </div>
+        <main id="main-container">
+            <!-- Content -->
+            <div class="content">
+                
+    <div class="block">
+        <ul class="nav nav-tabs nav-tabs-alt nav-justified" data-toggle="tabs">
+            <li class="active">
+                <a href="#btabs-alt-static-justified-home"><i class="fa fa-barcode"></i> Producto</a>
+            </li>
+            <li>
+                <a href="#btabs-alt-static-justified-profile"><i class="fa fa-cubes"></i> Variables</a>
+            </li>
+            <li>
+                <a href="#btabs-alt-static-justified-settings"><i class="fa fa-bar-chart"></i> Estadisticas</a>
+            </li>
+        </ul>
+        <div class="block-content tab-content">
+            <div class="tab-pane active" id="btabs-alt-static-justified-home">
+                <div class='block block-themed'>
+    <div class="block-content">
+
+<form method="POST" action="http://localhost/productos/17" accept-charset="UTF-8"><input name="_token" type="hidden" value="pmIKkIvFc9ZV3eR0YGzJNeq5HHliUjkDad0acGEQ">
+<!--- Codigo Field --->
+<div class="row push-20">
+    <div class="col-sm-3">
+        <div class="thumbnail">
+            <img src="http://localhost/img/catalog/1/17-whey-gold-5lb.jpg" width="100%">
+        </div>
+
+    </div>
+    <div class="col-sm-9">
+        <!-- codigo y nombre del producto -->
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label>Codigo:</label>
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-barcode"></i></span>
+                        <input class="form-control" style="text-transform:
+                        uppercase;" disabled="disabled" name="SKU" type="text" value="ON01">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="form-group">
+                    <label>Nombre del Producto:</label>
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-shopping-cart"></i></span>
+                        <input class="form-control" style="text-transform:
+                        capitalize;" disabled="disabled" name="producto" type="text" value="Whey gold Standard 5lb">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- marcas y categorias -->
+        <div class="row">
+            <div class="form-group col-sm-4">
+                <label>Marca:</label>
+
+                <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-list" aria-hidden="true"></i>
+                </span>
+                    <input class="form-control" disabled="disabled" name="marca_id" type="text" value="ON">
+
+                </div>
+            </div>
+            <div class="form-group col-sm-5">
+                <label>Categoria:</label>
+
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-sitemap"></i></span>
+                    <input class="form-control" disabled="disabled" name="categoria_id" type="text" value="Proteinas">
+                </div>
+            </div>
+
+        </div>
+                <!-- atributos -->
+        <div class="row col-sm-12 form-group">
+
+            <div id="atributo1" class="row">
+                <div class=" col-sm-4">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-sitemap"></i></span>
+                        <select class="form-control" disabled="disabled" name="atributo_1"><option value="1" selected="selected">color</option><option value="2">tama&ntilde;o</option></select>
+                    </div>
+                </div>
+                <div class="col-sm-8 variables_1">
+
+                    <select id="variables_1" multiple="multiple" class="js-select2 form-control" name="variables_1[]"><option value="1">azul</option><option value="2">verde</option><option value="3">rojo</option></select>
+                </div>
+            </div>
+                    </div>
+                    <!-- precio de venta, compra y rentabilidad -->
+        <div class="row">
+            <div class="form-group col-sm-3">
+                <label>Precio de Venta:</label>
+
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-usd"></i></span>
+                    <input class="form-control" id="venta" onchange="renta();" disabled="disabled" name="venta" type="text" value="200000">
+
+
+                </div>
+            </div>
+            <div class="form-group col-sm-3">
+                <label>Precio de Compra:</label>
+
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-usd"></i></span>
+                    <input class="form-control" id="compra" onchange="renta();" disabled="disabled" name="compra" type="text" value="155000">
+
+                </div>
+            </div>
+            <div class="form-group col-sm-3">
+                <label>Rentabilidad:</label>
+
+                <div class="input-group">
+
+                    <input class="form-control" id="rentabilidad" disabled="disabled" name="rentabilidad" type="text" value="22.50">
+
+                    <span class="input-group-addon">%</span>
+                </div>
+            </div>
+            <div class="form-group col-sm-3">
+                <label>Impuestos:</label>
+
+                <div class="input-group">
+                    <input class="form-control" disabled="disabled" name="impuestos" type="text" value="Exento">
+                    <span class="input-group-addon">%</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- description -->
+<div class="form-group row"><label for="Nombre" class="col-sm-2 text-right">Descripci&oacute;n:</label>
+
+    <div class="col-sm-10"><textarea class="form-control" rows="3" disabled="disabled" name="descripcion" cols="50">la mejor proteina del mercado</textarea>
+    </div>
+</div>
+<div class="form-group row text-center">
+    <a href="17/edit" class="btn btn-minw btn-primary btn-lg" type="button"> Editar</a>
+    <a href="17/destroy" class="btn btn-minw btn-danger btn-lg" type="button"> Eliminar</a>
+</div>
+</form>
+    </div>
+</div>
+<script>
+    $(function () {
+        App.initHelper('select2');
+    });
+    $('.js-select2').attr('disabled', 'disabled');
+</script>            </div>
+            <div class="tab-pane" id="btabs-alt-static-justified-profile">
+                <div class='block block-themed'>
+
+    <div class="block-content table-responsive">
+        <table class="table table-striped table-vcenter">
+            <thead>
+            <tr>
+                <th hidden>id</th>
+                <th>Producto</th>
+                <th>atributos</th>
+                <th>action</th>
+            </tr>
+            </thead>
+
+            <tbody id="tabla-todos">
+            
+                <tr>
+                    <td hidden>46</td>
+                    <td><strong>Whey gold Standard 5lb</strong></td>
+                    <td>                            <span class="label label-default">No tiene</span>
+                                                
+
+                    </td>
+                    <td>
+                        <a class='btn btn-warning btn-xs' href='productos/variables/46/edit'
+                           role='button'>
+                            <span class='glyphicon glyphicon-pencil' aria-hidden='true'></span>
+                        </a>
+                        <button class='btn btn-danger btn-xs' data-toggle="modal" data-target="#modal-delete"
+                                onclick="borrar(46)">
+                            <span class='glyphicon glyphicon-trash' aria-hidden='true'></span>
+                        </button>
+                    </td>
+                </tr>
+
+                        </tbody>
+
+        </table>
+    </div>
+</div>
+<!-- modal delete -->
+<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-popout modal-sm">
+        <div class="modal-content">
+            <div class="block block-themed block-transparent remove-margin-b">
+                <div class="block-header bg-danger">
+                    <ul class="block-options">
+                        <li>
+                            <button data-dismiss="modal" type="button"><i class="si si-close"></i></button>
+                        </li>
+                    </ul>
+                    <h3 class="block-title">Advertencia</h3>
+                </div>
+                <div class="block-content">
+                    <p>¿Está seguro de querer eliminar este producto? perderá toda la informacion relacionada con el así
+                        como sus ventas, reportes y estadisticas</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <form method="POST" action="http://localhost/productos/variables/:PRODUCTO_ID" accept-charset="UTF-8" id="formulario_delete"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="pmIKkIvFc9ZV3eR0YGzJNeq5HHliUjkDad0acGEQ">
+                <button class="btn btn-sm btn-default" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-sm btn-success" type="submit"><i class="fa fa-check"></i> Entiendo</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end modal delete -->
+<!-- modal edit -->
+<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-popout modal-sm">
+        <div class="modal-content">
+            <div class="block block-themed block-transparent remove-margin-b">
+                <div class="block-header bg-danger">
+                    <ul class="block-options">
+                        <li>
+                            <button data-dismiss="modal" type="button"><i class="si si-close"></i></button>
+                        </li>
+                    </ul>
+                    <h3 class="block-title">Advertencia</h3>
+                </div>
+                <div class="block-content">
+                    <p>¿Está seguro de querer eliminar este producto? perderá toda la informacion relacionada con el así
+                        como sus ventas, reportes y estadisticas</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <form method="POST" action="http://localhost/productos/variables/:PRODUCTO_ID" accept-charset="UTF-8" id="formulario_delete"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="pmIKkIvFc9ZV3eR0YGzJNeq5HHliUjkDad0acGEQ">
+                <button class="btn btn-sm btn-default" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-sm btn-success" type="submit"><i class="fa fa-check"></i> Entiendo</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end modal edit -->
+<script>
+    function borrar(id) {
+        var form = $('#formulario_delete');
+        var action = form.attr('action').replace(':PRODUCTO_ID',id);
+        form.attr('action',action);
+    }
+</script>            </div>
+            <div class="tab-pane" id="btabs-alt-static-justified-settings">
+                <div id="graficas" data-codigo="17">
+    <div class="col-sm-6">
+        <!-- Lines Chart -->
+        <div class="block block-themed block-rounded block-bordered">
+            <div class="block-header bg-amethyst">
+                <ul class="block-options">
+                    <li>
+                        <button type="button" data-toggle="block-option" data-action="refresh_toggle"
+                                data-action-mode="demo" onclick="chart()"><i class="si si-refresh"></i></button>
+                    </li>
+                </ul>
+                <h3 class="block-title">Historico Precios de compra</h3>
+            </div>
+            <div class="block-content block-content-full text-center" >
+                    <canvas id="historico_compras" class="js-chartjs-lines" height="250" ></canvas>
+            </div>
+        </div>
+        <!-- END Lines Chart -->
+    </div>
+    <div class="col-sm-6">
+        <!-- Lines Chart -->
+        <div class="block block-themed block-rounded block-bordered">
+            <div class="block-header bg-amethyst">
+                <ul class="block-options">
+                    <li>
+                        <button type="button" data-toggle="block-option" data-action="refresh_toggle"
+                                data-action-mode="demo"><i class="si si-refresh"></i></button>
+                    </li>
+                </ul>
+                <h3 class="block-title">Historico Precios de compra</h3>
+            </div>
+            <div class="block-content block-content-full text-center" >
+                <canvas id="historico_ventas" class="js-chartjs-lines" height="250" ></canvas>
+            </div>
+        </div>
+        <!-- END Lines Chart -->
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(chart());
+    function chart() {
+        setTimeout(function () {
+            var codigo = $('#graficas').data('codigo');
+            $.getJSON("chart?id=" + codigo, function (result) {
+                console.log(result.label)
+                console.log(result.data)
+
+                var buyerData = {
+                    labels: result.label,
+                    datasets: [
+                        {
+                            fillColor: "rgba(220,220,220,0.2)",
+                            strokeColor: "rgba(220,220,220,1)",
+                            pointColor: "rgba(220,220,220,1)",
+                            pointStrokeColor: "#fff",
+                            pointHighlightFill: "#fff",
+                            pointHighlightStroke: "rgba(220,220,220,1)",
+                            data: result.data
+                        }
+                    ]
+                };
+                var compras = document.getElementById('historico_compras').getContext('2d');
+                var ventas = document.getElementById('historico_ventas').getContext('2d');
+                new Chart(compras).Line(buyerData, {bezierCurve: true});
+                new Chart(ventas).Line(buyerData, {bezierCurve: true});
+
+            });
+        },3000)
+    }
+
+
+</script>            </div>
+        </div>
+    </div>
+
+            </div>
+            <!-- End Content -->
+        </main>
+        <!-- Footer -->
+<footer id="page-footer" class="content-mini content-mini-full font-s12 bg-gray-lighter clearfix">
+    <div class="pull-right">
+        Creado con <i class="fa fa-heart text-city"></i> en <a class="font-w600 text-primary" >Colombia</a>
+    </div>
+    <div class="pull-left">
+        <a class="font-w600 text-primary" >Contapp</a> &copy; <span class="js-year-copy"></span>
+    </div>
+</footer>
+<!-- END Footer -->
+    </div>
+    <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+
+<script src="http://localhost/js/all.js"></script>
+
+<script src="http://localhost/assets/js/plugins/select2/select2.full.min.js"></script>
+
+<!-- Page JS Plugins + Page JS Code -->
+<script>
+    jQuery(document).ready(function(){
+        $( "#loading" ).fadeOut(100, function(){
+            $( "#main-container" ).fadeIn(100);
+        });
+    });
+
+</script>
+    <script>
+            </script>        <script src="http://localhost/assets/js/plugins/chartjs/Chart.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://localhost/_debugbar/assets/stylesheets?1442373944">
+<script type="text/javascript" src="http://localhost/_debugbar/assets/javascript?1439268972"></script>
+<script type="text/javascript">jQuery.noConflict(true);</script>
+<script type="text/javascript">
+var phpdebugbar = new PhpDebugBar.DebugBar();
+phpdebugbar.addTab("messages", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Messages", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addIndicator("time", new PhpDebugBar.DebugBar.Indicator({"icon":"clock-o","tooltip":"Request Duration"}), "right");
+phpdebugbar.addTab("timeline", new PhpDebugBar.DebugBar.Tab({"icon":"tasks","title":"Timeline", "widget": new PhpDebugBar.Widgets.TimelineWidget()}));
+phpdebugbar.addIndicator("memory", new PhpDebugBar.DebugBar.Indicator({"icon":"cogs","tooltip":"Memory Usage"}), "right");
+phpdebugbar.addTab("exceptions", new PhpDebugBar.DebugBar.Tab({"icon":"bug","title":"Exceptions", "widget": new PhpDebugBar.Widgets.ExceptionsWidget()}));
+phpdebugbar.addTab("views", new PhpDebugBar.DebugBar.Tab({"icon":"leaf","title":"Views", "widget": new PhpDebugBar.Widgets.TemplatesWidget()}));
+phpdebugbar.addTab("route", new PhpDebugBar.DebugBar.Tab({"icon":"share","title":"Route", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.addIndicator("currentroute", new PhpDebugBar.DebugBar.Indicator({"icon":"share","tooltip":"Route"}), "right");
+phpdebugbar.addTab("queries", new PhpDebugBar.DebugBar.Tab({"icon":"inbox","title":"Queries", "widget": new PhpDebugBar.Widgets.SQLQueriesWidget()}));
+phpdebugbar.addTab("session", new PhpDebugBar.DebugBar.Tab({"icon":"archive","title":"Session", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.addTab("request", new PhpDebugBar.DebugBar.Tab({"icon":"tags","title":"Request", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.setDataMap({
+"messages": ["messages.messages", []],
+"messages:badge": ["messages.count", null],
+"time": ["time.duration_str", '0ms'],
+"timeline": ["time", {}],
+"memory": ["memory.peak_usage_str", '0B'],
+"exceptions": ["exceptions.exceptions", []],
+"exceptions:badge": ["exceptions.count", null],
+"views": ["views", []],
+"views:badge": ["views.nb_templates", 0],
+"route": ["route", {}],
+"currentroute": ["route.uri", ],
+"queries": ["queries", []],
+"queries:badge": ["queries.nb_statements", 0],
+"session": ["session", {}],
+"request": ["request", {}]
+});
+phpdebugbar.restoreState();
+phpdebugbar.ajaxHandler = new PhpDebugBar.AjaxHandler(phpdebugbar);
+phpdebugbar.ajaxHandler.bindToXHR();
+phpdebugbar.setOpenHandler(new PhpDebugBar.OpenHandler({"url":"http:\/\/localhost\/_debugbar\/open"}));
+phpdebugbar.addDataSet({"__meta":{"id":"c794362dcd08f1ad960daa904bca2167","datetime":"2015-09-22 19:17:01","utime":1442949421.2424,"method":"GET","uri":"\/productos\/17","ip":"::1"},"php":{"version":"5.6.3"},"messages":{"count":0,"messages":[]},"time":{"start":1442949416.72,"end":1442949421.2426,"duration":4.5225758552551,"duration_str":"4.52s","measures":[{"label":"Booting","start":1442949416.72,"relative_start":0,"end":1442949418.3856,"relative_end":1442949418.3856,"duration":1.6655600070953,"duration_str":"1.67s","params":[],"collector":null},{"label":"Application","start":1442949418.4707,"relative_start":1.7507140636444,"end":1442949421.2221,"relative_end":1442949421.2221,"duration":2.7514128684998,"duration_str":"2.75s","params":[],"collector":null},{"label":"After application","start":1442949421.2222,"relative_start":4.5021619796753,"end":1442949421.2426,"relative_end":8.1062316894531e-6,"duration":0.020421981811523,"duration_str":"20.42ms","params":[],"collector":null}]},"memory":{"peak_usage":10747904,"peak_usage_str":"10.25MB"},"exceptions":{"count":2,"exceptions":[{"type":"Exception","message":"Cannot add MailCollector to Laravel Debugbar: No connector for [async]","code":0,"file":"C:\\xampp\\htdocs\\mauricio\\laravel\\vendor\\barryvdh\\laravel-debugbar\\src\\LaravelDebugbar.php","line":338,"surrounding_lines":["                }\n","            } catch (\\Exception $e) {\n","                $this->addException(\n","                    new Exception(\n","                        'Cannot add MailCollector to Laravel Debugbar: ' . $e->getMessage(), $e->getCode(), $e\n","                    )\n","                );\n"]},{"type":"InvalidArgumentException","message":"No connector for [async]","code":0,"file":"C:\\xampp\\htdocs\\mauricio\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\QueueManager.php","line":139,"surrounding_lines":["            return call_user_func($this->connectors[$driver]);\n","        }\n","\n","        throw new InvalidArgumentException(\"No connector for [$driver]\");\n","    }\n","\n","    \/**\n"]}]},"views":{"nb_templates":11,"templates":[{"name":"app.productos.producto_show (\\resources\\views\\app\\productos\\producto_show.blade.php)","param_count":5,"params":["producto","block","variables","atributos","productos"],"type":"blade"},{"name":"app.productos.producto_show_producto (\\resources\\views\\app\\productos\\producto_show_producto.blade.php)","param_count":9,"params":["obLevel","__env","app","errors","producto","block","variables","atributos","productos"],"type":"blade"},{"name":"app.productos.producto_show_variables (\\resources\\views\\app\\productos\\producto_show_variables.blade.php)","param_count":9,"params":["obLevel","__env","app","errors","producto","block","variables","atributos","productos"],"type":"blade"},{"name":"app.productos.producto_show_estadisticas (\\resources\\views\\app\\productos\\producto_show_estadisticas.blade.php)","param_count":9,"params":["obLevel","__env","app","errors","producto","block","variables","atributos","productos"],"type":"blade"},{"name":"layouts.master (\\resources\\views\\layouts\\master.blade.php)","param_count":9,"params":["obLevel","__env","app","errors","producto","block","variables","atributos","productos"],"type":"blade"},{"name":"layouts.head (\\resources\\views\\layouts\\head.blade.php)","param_count":9,"params":["obLevel","__env","app","errors","producto","block","variables","atributos","productos"],"type":"blade"},{"name":"layouts.sidebar (\\resources\\views\\layouts\\sidebar.blade.php)","param_count":9,"params":["obLevel","__env","app","errors","producto","block","variables","atributos","productos"],"type":"blade"},{"name":"layouts.header (\\resources\\views\\layouts\\header.blade.php)","param_count":9,"params":["obLevel","__env","app","errors","producto","block","variables","atributos","productos"],"type":"blade"},{"name":"layouts.footer (\\resources\\views\\layouts\\footer.blade.php)","param_count":9,"params":["obLevel","__env","app","errors","producto","block","variables","atributos","productos"],"type":"blade"},{"name":"layouts.scripts (\\resources\\views\\layouts\\scripts.blade.php)","param_count":9,"params":["obLevel","__env","app","errors","producto","block","variables","atributos","productos"],"type":"blade"},{"name":"layouts.notificaciones (\\resources\\views\\layouts\\notificaciones.blade.php)","param_count":9,"params":["obLevel","__env","app","errors","producto","block","variables","atributos","productos"],"type":"blade"}]},"route":{"uri":"GET productos\/{productos}","as":"productos.show","controller":"App\\Http\\Controllers\\ProductosController@show","namespace":"App\\Http\\Controllers","prefix":null,"where":[],"file":"\\app\\Http\\Controllers\\ProductosController.php:106-117"},"queries":{"nb_statements":8,"nb_failed_statements":0,"accumulated_duration":2.57499,"accumulated_duration_str":"2.57s","statements":[{"sql":"select * from `users` where `users`.`id` = '1' limit 1","params":{"0":"1","hints":"Use <code>SELECT *<\/code> only if you need all columns from table<br \/><code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"},"duration":0.3609,"duration_str":"360.9ms","stmt_id":null,"connection":"contapp"},{"sql":"select * from `productos` where `productos`.`id` = '17' limit 1","params":{"0":"17","hints":"Use <code>SELECT *<\/code> only if you need all columns from table<br \/><code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"},"duration":0.3487,"duration_str":"348.7ms","stmt_id":null,"connection":"contapp"},{"sql":"select * from `productos_configurables` where `producto_id` = '17'","params":{"0":"17","hints":"Use <code>SELECT *<\/code> only if you need all columns from table"},"duration":0.35386,"duration_str":"353.86ms","stmt_id":null,"connection":"contapp"},{"sql":"select * from `atributos`","params":{"hints":"Use <code>SELECT *<\/code> only if you need all columns from table<br \/>The <code>SELECT<\/code> statement has no <code>WHERE<\/code> clause and could examine many more rows than intended"},"duration":0.35333,"duration_str":"353.33ms","stmt_id":null,"connection":"contapp"},{"sql":"select `variable`, `id` from `atributos_sub` where `atributo_id` = '1'","params":{"0":"1"},"duration":0.37252,"duration_str":"372.52ms","stmt_id":null,"connection":"contapp"},{"sql":"select * from `marcas` where `marcas`.`id` = '32' limit 1","params":{"0":"32","hints":"Use <code>SELECT *<\/code> only if you need all columns from table<br \/><code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"},"duration":0.26389,"duration_str":"263.89ms","stmt_id":null,"connection":"contapp"},{"sql":"select * from `categorias` where `categorias`.`id` = '27' limit 1","params":{"0":"27","hints":"Use <code>SELECT *<\/code> only if you need all columns from table<br \/><code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"},"duration":0.2628,"duration_str":"262.8ms","stmt_id":null,"connection":"contapp"},{"sql":"select * from `impuestos` where `impuestos`.`id` = '2' limit 1","params":{"0":"2","hints":"Use <code>SELECT *<\/code> only if you need all columns from table<br \/><code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"},"duration":0.25899,"duration_str":"258.99ms","stmt_id":null,"connection":"contapp"}]},"session":{"flash":"array:2 [\n  \"old\" => []\n  \"new\" => []\n]","_token":"pmIKkIvFc9ZV3eR0YGzJNeq5HHliUjkDad0acGEQ","url":"[]","login_82e5d2c56bdd0811318f0cf078b78bfc":"1","bodega":"1","tenant":"array:1 [\n  \"id\" => 1\n]","PHPDEBUGBAR_STACK_DATA":"[]"},"request":{"format":"html","content_type":"text\/html; charset=UTF-8","status_text":"OK","status_code":"200","request_query":"[]","request_request":"[]","request_headers":"array:11 [\n  \"host\" => array:1 [\n    0 => \"localhost\"\n  ]\n  \"connection\" => array:1 [\n    0 => \"keep-alive\"\n  ]\n  \"accept\" => array:1 [\n    0 => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8\"\n  ]\n  \"upgrade-insecure-requests\" => array:1 [\n    0 => \"1\"\n  ]\n  \"user-agent\" => array:1 [\n    0 => \"Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/45.0.2454.93 Safari\/537.36\"\n  ]\n  \"referer\" => array:1 [\n    0 => \"http:\/\/localhost\/productos\"\n  ]\n  \"accept-encoding\" => array:1 [\n    0 => \"gzip, deflate, sdch\"\n  ]\n  \"accept-language\" => array:1 [\n    0 => \"es-419,es;q=0.8,en;q=0.6\"\n  ]\n  \"cookie\" => array:1 [\n    0 => \"_ga=GA1.1.816014512.1426559982; popup_architect_open=block; XSRF-TOKEN=eyJpdiI6IkJ4dlp3Z0FhK0JhUzVOcnkxNWtvY3c9PSIsInZhbHVlIjoicndCQzFBVVgxUXN1ZitZUm5vdHZqQUx3Q3BIczRzbUp3bXo1NEtPT2FWQTkzTVBybnlKWm9xVjc5SW9RYUxFUmY5XC95V21jVERGTW83ZHcySEFPQ0pRPT0iLCJtYWMiOiI4NGZiMmZhODJlZTk4OTgzMzVjNTBiZTdmYWZmYTdjYzIxZTU1Y2QzM2M5NDUxNzc4YWRiOTRmNjQ2OWVlMzAzIn0%3D; laravel_session=eyJpdiI6ImZyVlVzRzBUZUV5bFVOV0RXZDZkaWc9PSIsInZhbHVlIjoiOWtUXC9ua0E5YlR3UXNVN293OHR4VytoOFlJZFZEbkJkVE1rXC9tSmViUmFJWmpcL1hGdExzazhQMXd0K1JFVDl3aDNOXC9PbnhhdkNQVlV6aVlRTzVnZnZRPT0iLCJtYWMiOiI2ZThlNjUzNDcwOTU2ZDAwMjljYjFmNTA2M2E5YWY3MTEyNjVhZWIzMTg3Y2JmNjczZmRhN2Y3NThjNTIyODU5In0%3D\"\n  ]\n  \"if-modified-since\" => []\n  \"x-forwarded-for\" => array:1 [\n    0 => \"::1\"\n  ]\n]","request_server":"array:50 [\n  \"REDIRECT_MIBDIRS\" => \"C:\/xampp\/php\/extras\/mibs\"\n  \"REDIRECT_MYSQL_HOME\" => \"\\xampp\\mysql\\bin\"\n  \"REDIRECT_OPENSSL_CONF\" => \"C:\/xampp\/apache\/bin\/openssl.cnf\"\n  \"REDIRECT_PHP_PEAR_SYSCONF_DIR\" => \"\\xampp\\php\"\n  \"REDIRECT_PHPRC\" => \"\\xampp\\php\"\n  \"REDIRECT_TMP\" => \"\\xampp\\tmp\"\n  \"REDIRECT_STATUS\" => \"200\"\n  \"MIBDIRS\" => \"C:\/xampp\/php\/extras\/mibs\"\n  \"MYSQL_HOME\" => \"\\xampp\\mysql\\bin\"\n  \"OPENSSL_CONF\" => \"C:\/xampp\/apache\/bin\/openssl.cnf\"\n  \"PHP_PEAR_SYSCONF_DIR\" => \"\\xampp\\php\"\n  \"PHPRC\" => \"\\xampp\\php\"\n  \"TMP\" => \"\\xampp\\tmp\"\n  \"HTTP_HOST\" => \"localhost\"\n  \"HTTP_CONNECTION\" => \"keep-alive\"\n  \"HTTP_ACCEPT\" => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8\"\n  \"HTTP_UPGRADE_INSECURE_REQUESTS\" => \"1\"\n  \"HTTP_USER_AGENT\" => \"Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/45.0.2454.93 Safari\/537.36\"\n  \"HTTP_REFERER\" => \"http:\/\/localhost\/productos\"\n  \"HTTP_ACCEPT_ENCODING\" => \"gzip, deflate, sdch\"\n  \"HTTP_ACCEPT_LANGUAGE\" => \"es-419,es;q=0.8,en;q=0.6\"\n  \"HTTP_COOKIE\" => \"_ga=GA1.1.816014512.1426559982; popup_architect_open=block; XSRF-TOKEN=eyJpdiI6IkJ4dlp3Z0FhK0JhUzVOcnkxNWtvY3c9PSIsInZhbHVlIjoicndCQzFBVVgxUXN1ZitZUm5vdHZqQUx3Q3BIczRzbUp3bXo1NEtPT2FWQTkzTVBybnlKWm9xVjc5SW9RYUxFUmY5XC95V21jVERGTW83ZHcySEFPQ0pRPT0iLCJtYWMiOiI4NGZiMmZhODJlZTk4OTgzMzVjNTBiZTdmYWZmYTdjYzIxZTU1Y2QzM2M5NDUxNzc4YWRiOTRmNjQ2OWVlMzAzIn0%3D; laravel_session=eyJpdiI6ImZyVlVzRzBUZUV5bFVOV0RXZDZkaWc9PSIsInZhbHVlIjoiOWtUXC9ua0E5YlR3UXNVN293OHR4VytoOFlJZFZEbkJkVE1rXC9tSmViUmFJWmpcL1hGdExzazhQMXd0K1JFVDl3aDNOXC9PbnhhdkNQVlV6aVlRTzVnZnZRPT0iLCJtYWMiOiI2ZThlNjUzNDcwOTU2ZDAwMjljYjFmNTA2M2E5YWY3MTEyNjVhZWIzMTg3Y2JmNjczZmRhN2Y3NThjNTIyODU5In0%3D\"\n  \"PATH\" => \"C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\nodejs\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\userpc\\AppData\\Roaming\\npm\"\n  \"SystemRoot\" => \"C:\\WINDOWS\"\n  \"COMSPEC\" => \"C:\\WINDOWS\\system32\\cmd.exe\"\n  \"PATHEXT\" => \".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC\"\n  \"WINDIR\" => \"C:\\WINDOWS\"\n  \"SERVER_SIGNATURE\" => \"<address>Apache\/2.4.10 (Win32) OpenSSL\/1.0.1i PHP\/5.6.3 Server at localhost Port 80<\/address>\\n\"\n  \"SERVER_SOFTWARE\" => \"Apache\/2.4.10 (Win32) OpenSSL\/1.0.1i PHP\/5.6.3\"\n  \"SERVER_NAME\" => \"localhost\"\n  \"SERVER_ADDR\" => \"::1\"\n  \"SERVER_PORT\" => \"80\"\n  \"REMOTE_ADDR\" => \"127.0.0.1\"\n  \"DOCUMENT_ROOT\" => \"C:\/xampp\/htdocs\/mauricio\/laravel\/public\"\n  \"REQUEST_SCHEME\" => \"http\"\n  \"CONTEXT_PREFIX\" => \"\"\n  \"CONTEXT_DOCUMENT_ROOT\" => \"C:\/xampp\/htdocs\/mauricio\/laravel\/public\"\n  \"SERVER_ADMIN\" => \"postmaster@localhost\"\n  \"SCRIPT_FILENAME\" => \"C:\/xampp\/htdocs\/mauricio\/laravel\/public\/index.php\"\n  \"REMOTE_PORT\" => \"62516\"\n  \"REDIRECT_URL\" => \"\/productos\/17\"\n  \"GATEWAY_INTERFACE\" => \"CGI\/1.1\"\n  \"SERVER_PROTOCOL\" => \"HTTP\/1.1\"\n  \"REQUEST_METHOD\" => \"GET\"\n  \"QUERY_STRING\" => \"\"\n  \"REQUEST_URI\" => \"\/productos\/17\"\n  \"SCRIPT_NAME\" => \"\/index.php\"\n  \"PHP_SELF\" => \"\/index.php\"\n  \"REQUEST_TIME_FLOAT\" => 1442949416.714\n  \"REQUEST_TIME\" => 1442949416\n]","request_cookies":"array:4 [\n  \"_ga\" => null\n  \"popup_architect_open\" => null\n  \"XSRF-TOKEN\" => \"pmIKkIvFc9ZV3eR0YGzJNeq5HHliUjkDad0acGEQ\"\n  \"laravel_session\" => \"fb4518ea716d6ecddf6b8e509bdded464c657a91\"\n]","response_headers":"array:3 [\n  \"cache-control\" => array:1 [\n    0 => \"public, s-maxage=60\"\n  ]\n  \"date\" => array:1 [\n    0 => \"Tue, 22 Sep 2015 19:17:01 GMT\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"text\/html; charset=UTF-8\"\n  ]\n]","path_info":"\/productos\/17","session_attributes":"array:7 [\n  \"flash\" => array:2 [\n    \"old\" => []\n    \"new\" => []\n  ]\n  \"_token\" => \"pmIKkIvFc9ZV3eR0YGzJNeq5HHliUjkDad0acGEQ\"\n  \"url\" => []\n  \"login_82e5d2c56bdd0811318f0cf078b78bfc\" => 1\n  \"bodega\" => \"1\"\n  \"tenant\" => array:1 [\n    \"id\" => 1\n  ]\n  \"PHPDEBUGBAR_STACK_DATA\" => []\n]"}}, "c794362dcd08f1ad960daa904bca2167");
+
+</script>
+</body>
+
+</html>
+
+  
+
+   

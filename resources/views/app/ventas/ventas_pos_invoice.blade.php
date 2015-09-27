@@ -69,7 +69,7 @@
 
 @section('content')
     <div class="col-sm-2 hidden-print">
-        <button class="btn btn-danger btn-lg btn-block" onclick="">
+        <button class="btn btn-danger btn-lg btn-block" onclick="App.initHelper('print-page');">
             <i class="si si-printer"></i> imprimir
         </button>
     </div>
@@ -126,12 +126,20 @@
                         <table class=" text-right totales font-s24" align="center">
                             <tr>
                                 <td width="60%"><strong>Sub-total:</strong></td>
-                                <td>$ {{ number_format($venta->venta - $venta->iva) }}</td>
+                                <td>$ {{ number_format($venta->subtotal) }}</td>
                             </tr>
+                            @if($venta->descuento > 0)
+                            <tr>
+                                <td width="60%"><strong>Descuento:</strong></td>
+                                <td>$ -{{ number_format($venta->descuento) }}</td>
+                            </tr>
+                            @endif
+                            @if($venta->iva > 0)
                             <tr>
                                 <td width="60%"><strong>IVA:</strong></td>
-                                <td>$ {{ number_format($venta->iva) }}</td>
+                                <td>$ +{{ number_format($venta->iva) }}</td>
                             </tr>
+                            @endif
                             <tr>
                                 <td width="60%"><strong>TOTAL:</strong></td>
                                 <td>$ {{ number_format($venta->venta) }}</td>
@@ -208,9 +216,20 @@
                         <table class=" text-right totales font-s24" align="center">
                             <tr>
                                 <td width="60%"><strong>Sub-total:</strong></td>
-                                <td>$ {{ number_format($remision->venta - $remision->iva) }}</td>
+                                <td>$ {{ number_format($remision->subtotal) }}</td>
                             </tr>
-
+                            @if($remision->descuento > 0)
+                                <tr>
+                                    <td width="60%"><strong>Descuento:</strong></td>
+                                    <td>$ -{{ number_format($remision->descuento) }}</td>
+                                </tr>
+                            @endif
+                            @if($remision->iva > 0)
+                                <tr>
+                                    <td width="60%"><strong>IVA:</strong></td>
+                                    <td>$ +{{ number_format($remision->iva) }}</td>
+                                </tr>
+                            @endif
                             <tr>
                                 <td width="60%"><strong>TOTAL:</strong></td>
                                 <td>$ {{ number_format($remision->venta) }}</td>

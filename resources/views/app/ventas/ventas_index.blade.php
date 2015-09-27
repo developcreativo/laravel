@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="col-sm-3 col-xs-12">
-        <a href="{{ URL::to('compras/create')}}" class="btn btn-lg btn-primary btn-block">
+        <a href="{{ URL::to('ventas/create')}}" class="btn btn-lg btn-primary btn-block">
             <i class="fa fa-plus"></i><span>  Nueva venta</span>
         </a>
     </div>
@@ -47,7 +47,7 @@
             @foreach($ventas as $venta)
 
                 <tr>
-                    <td class="text-center">{{$venta->factura}}</td>
+                    <td class="font-w600 text-center"><a href='ventas/{{$venta->id}}'>{{$venta->factura}}</a></td>
                     <td class="font-w600 text-center">{{$venta->clientes->cliente}} </td>
                     <td class="text-center">{{$venta->tiendas->tienda}} </td>
                     <td class="text-center">{{str_limit($venta->created_at, $limit = 10, $end = '')}} </td>

@@ -18,9 +18,12 @@ class venta_detalle extends Model
     protected $fillable = [
         'venta_id',
         'producto_configurable_id',
+        'cantidad',
         'venta',
         'compra',
-        'iva'
+        'subtotal',
+        'iva',
+        'dto'
     ];
 
     public function productos_configurables()
@@ -39,9 +42,12 @@ class venta_detalle extends Model
             $producto = new venta_detalle();
             $producto->venta_id = $id;
             $producto->producto_configurable_id = $item['id'];
-            $producto->venta = $item['valor'];
+            $producto->cantidad = $item['cantidad'];
+            $producto->venta = ($item['valor']);
             $producto->compra = ($item['compra']);
+            $producto->subtotal = $item['sub_total'];
             $producto->iva = $item['iva'];
+            $producto->dto = $item['dto'];
             $producto->save();
         }
     }

@@ -69,24 +69,24 @@
       <index name="categorias_categoria_index" unique="false" columns="categoria"/>
     </table>
     <table name="ciudades" schema="" catalog="contapp" type="TABLE">
-      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="ciudad" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="departamento_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="created_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <index name="ciudades_ciudad_unique" unique="true" columns="ciudad"/>
     </table>
     <table name="clientes" schema="" catalog="contapp" type="TABLE">
       <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="documento" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="cliente" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="email" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="telefono" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="telefono" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
       <column name="direccion" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
       <column name="deuda_maxima" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="created_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="ciudad_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="company" schema="" catalog="contapp" type="TABLE">
@@ -129,13 +129,12 @@
       <index name="compras_factura_index" unique="false" columns="factura"/>
     </table>
     <table name="departamentos" schema="" catalog="contapp" type="TABLE">
-      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="departamento" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
-      <column name="pais_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="pais_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="created_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <index name="departamentos_departamento_unique" unique="true" columns="departamento"/>
     </table>
     <table name="facturacion_1" schema="" catalog="contapp" type="TABLE">
       <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
@@ -254,7 +253,7 @@
       <column name="nit" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="contacto" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="email" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
-      <column name="telefono" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="telefono" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
       <column name="created_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="web" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12"/>
@@ -299,11 +298,14 @@
       <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="venta_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="producto_configurable_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="venta" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="compra" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="venta" sqlType="DECIMAL" precision="10" scale="2" nullable="true" jdbcType="3"/>
+      <column name="compra" sqlType="DECIMAL" precision="10" scale="2" nullable="true" jdbcType="3"/>
       <column name="iva" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="created_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="dto" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="cantidad" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="subtotal" sqlType="DECIMAL" precision="10" scale="2" nullable="true" jdbcType="3"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="ventas_1" schema="" catalog="contapp" type="TABLE">
@@ -313,13 +315,17 @@
       <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="ingreso_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="pagado" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
-      <column name="plazo" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="vencimiento" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
       <column name="created_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="venta" sqlType="DECIMAL" precision="10" scale="2" nullable="false" jdbcType="3"/>
-      <column name="iva" sqlType="DECIMAL" precision="10" scale="2" nullable="false" jdbcType="3"/>
+      <column name="iva" sqlType="DECIMAL" precision="10" scale="2" nullable="true" jdbcType="3"/>
       <column name="factura" sqlType="VARCHAR" precision="200" scale="0" nullable="false" jdbcType="12"/>
       <column name="remision" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="compra" sqlType="DECIMAL" precision="10" scale="2" nullable="true" jdbcType="3"/>
+      <column name="descuento" sqlType="DECIMAL" precision="10" scale="2" nullable="true" jdbcType="3"/>
+      <column name="retefuente" sqlType="DECIMAL" precision="10" scale="2" nullable="true" jdbcType="3"/>
+      <column name="subtotal" sqlType="DECIMAL" precision="10" scale="2" nullable="true" jdbcType="3"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
   </data-source>

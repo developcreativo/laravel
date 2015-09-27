@@ -145,6 +145,9 @@
                                 <a href="{{Url('ventas')}}">Ventas</a>
                             </li>
                             <li>
+                                <a href="{{Url('remision')}}">Remisiones</a>
+                            </li>
+                            <li>
                                 <a href="{{Url('ventas/informes')}}">Informes</a>
                             </li>
                         </ul>
@@ -153,7 +156,7 @@
                         <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-handbag"></i><span class="sidebar-mini-hide">Compras</span></a>
                         <ul>
                             <li>
-                                <a href="{{Url('compras')}}">Comprar</a>
+                                <a href="{{Url('compras')}}">Compras</a>
                             </li>
                             <li>
                                 <a href="{{Url('compras/informes')}}">Informes</a>
@@ -164,10 +167,16 @@
                         <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-wallet"></i><span class="sidebar-mini-hide">Caja</span></a>
                         <ul>
                             <li>
-                                <a href="start_backend.html">Link #1</a>
+                                <a href="{{Url('caja')}}">Caja</a>
                             </li>
                             <li>
-                                <a href="start_backend.html">Link #2</a>
+                                <a href="{{Url('caja/movimientos')}}">Movimientos</a>
+                            </li>
+                            <li>
+                                <a href="{{Url('gastos')}}">Gastos</a>
+                            </li>
+                            <li>
+                                <a href="{{Url('caja/informes')}}">Informes</a>
                             </li>
                         </ul>
                     </li>

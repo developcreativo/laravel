@@ -18,9 +18,12 @@ class VentaDetalle extends Migration
         			$table->increments('id');
         			$table->integer('venta_id');
         			$table->integer('producto_configurable_id');
-        			$table->integer('venta');
-        			$table->integer('compra');
+        			$table->integer('cantidad');
+        			$table->decimal('venta',10,2);
+        			$table->decimal('compra',10,2);
         			$table->integer('iva')->nullable();
+        			$table->integer('dto')->nullable();
+					$table->decimal('subtotal',10,2)->nullable();
         			$table->timestamps();
         		});
     }

@@ -22,14 +22,19 @@ class ventas extends Model
         'user_id',
         'pagado',
         'venta',
+        'compra',
+        'subtotal',
+        'retefuente',
         'iva',
-        'plazo'
+        'descuento',
+        'vencimiento'
     ];
 
     public function factura_venta()
     {
         return $this->hasOne('App\facturacion', 'venta_id');
     }
+
     public function factura_remision()
     {
         return $this->hasOne('App\facturacion', 'remision_id');
@@ -55,8 +60,22 @@ class ventas extends Model
         return $this->belongsTo('App\tiendas', 'tienda_id');
     }
 
+    public function ingreso_venta()
+    {
+        return $this->hasMany('App\ingresos', 'venta_id');
+    }
+    public function ingreso_remision()
+    {
+        return $this->hasMany('App\ingresos', 'remision_id');
+    }
+
     public static function separador_remision($datos)
     {
+        //crear cliente
+        if ($datos['cliente_id'] == "") {
+            clientes::create($datos->all());
+        }
+
         $items = $datos['items']; //obtengo los datos de los productos
         $j = 0;
         $i = 0;
@@ -92,13 +111,18 @@ class ventas extends Model
         $total = 0;
         $iva = 0;
         $valor = 0;
+        $compra = 0;
+        $descuento = 0;
+        $subtotal = 0;
         foreach ($items_remision as $item) {
-            $total += $item['valor'];
-            $iva += $item['iva'];
+            $dto = ($item['dto'] / 100) * $item['valor'] * $item['cantidad'] || 0;
+            $iva += ($item['iva'] / 100) * (($item['valor'] * $item['cantidad']) - $dto) || 0;
+            $subtotal += ($item['valor'] * $item['cantidad']);
+            $compra += $item['compra'] * $item['cantidad'];
         }
         foreach ($datos['pagos'] as $pago) {
             $valor += $pago['valor'];
-            if($pago['id'] == 6){
+            if ($pago['id'] == 6) {
                 $valor = 0;
             }
         }
@@ -109,8 +133,12 @@ class ventas extends Model
         $venta->cliente_id = $datos['cliente_id'];
         $venta->tienda_id = Session::get('bodega');
         $venta->user_id = $datos['user_id'];
-        $venta->venta = $total;
+        $venta->venta = $subtotal - $descuento + $iva;
+        $venta->subtotal = $subtotal;
+        $venta->retefuente = $datos['retefuente'];
         $venta->iva = $iva;
+        $venta->descuento = $descuento;
+        $venta->compra = $compra;
         if ($total == $valor) {
             $venta->pagado = 1;
         } else {
@@ -119,7 +147,7 @@ class ventas extends Model
         $venta->save();
         venta_detalle::AgregarVentaDetalle($items_remision, $venta->id);
 
-        return ['id'=>$venta->id,'factura'=>$venta->factura];
+        return ['id' => $venta->id, 'factura' => $venta->factura];
     }
 
     public static function agregar_venta($datos, $items_venta)
@@ -127,13 +155,19 @@ class ventas extends Model
         $total = 0;
         $iva = 0;
         $valor = 0;
+        $compra = 0;
+        $descuento = 0;
+        $subtotal = 0;
         foreach ($items_venta as $item) {
-            $total += $item['valor'];
-            $iva += $item['iva'];
+            $dto = ($item['dto'] / 100) * $item['valor'] * $item['cantidad'];
+            $iva += ($item['iva'] / 100) * (($item['valor'] * $item['cantidad']) - $dto);
+            $subtotal += ($item['valor'] * $item['cantidad']);
+            $compra += $item['compra'] * $item['cantidad'];
+            $descuento += $dto;
         }
         foreach ($datos['pagos'] as $pago) {
             $valor += $pago['valor'];
-            if($pago['id'] == 6){
+            if ($pago['id'] == 6) {
                 $valor = 0;
             }
         }
@@ -144,8 +178,12 @@ class ventas extends Model
         $venta->cliente_id = $datos['cliente_id'];
         $venta->tienda_id = Session::get('bodega');
         $venta->user_id = $datos['user_id'];
-        $venta->venta = $total;
+        $venta->venta = $subtotal - $descuento + $iva;
+        $venta->subtotal = $subtotal;
+        $venta->retefuente = $datos['retefuente'];
         $venta->iva = $iva;
+        $venta->descuento = $descuento;
+        $venta->compra = $compra;
         if ($total == $valor) {
             $venta->pagado = 1;
         } else {
@@ -154,7 +192,7 @@ class ventas extends Model
         $venta->save();
         venta_detalle::AgregarVentaDetalle($items_venta, $venta->id);
 
-        return ['id'=>$venta->id,'factura'=>$venta->factura];
+        return ['id' => $venta->id, 'factura' => $venta->factura];
     }
 
     public static function crear_pdf($id)

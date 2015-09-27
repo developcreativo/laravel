@@ -19,7 +19,8 @@ class Clientes extends Migration
                     $table->integer('documento')->nullable();
                     $table->string('cliente');
                     $table->string('email')->nullable();
-        			$table->integer('telefono')->nullable();
+        			$table->string('telefono')->nullable();
+        			$table->integer('ciudad_id')->nullable();
         			$table->longText('direccion')->nullable();
                     $table->integer('deuda_maxima')->nullable();
         			$table->timestamps();

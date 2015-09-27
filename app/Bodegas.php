@@ -29,7 +29,11 @@ class Bodegas extends Model
             //si encuentro un producto edito la informacion si no creo uno//
             if (isset($producto)) {
                 $cantidad = $producto->cantidad + $item['cantidad'];
-                $producto->compra = (($producto->cantidad * $producto->compra) + $item['sub_total']) / $cantidad;
+                if ($cantidad > 0) {
+                    $producto->compra = (($producto->cantidad * $producto->compra) + $item['sub_total']) / $cantidad;
+                } else {
+                    $producto->compra = $item['sub_total'] / $cantidad;
+                }
                 $producto->cantidad = $producto->cantidad + $item['cantidad'];
                 $producto->update();
 
@@ -66,15 +70,18 @@ class Bodegas extends Model
             $id = $item['id'];
             $remision = $item['remision'];
             $producto = Bodegas::where('codigo', $id)->where('compra', $compra)->where('remision', $remision)->first();
-            $cantidad = $producto->cantidad - 1;
-            if ($cantidad == 0) {
+            $cantidad = $producto->cantidad - $item['cantidad'];
+            //adicion para que se pueda facturar cantidades negativas
+            $producto->cantidad = $cantidad;
+            $producto->save();
+            /*if ($cantidad == 0) {
                 $producto->delete();
             } else {
                 $producto->cantidad = $cantidad;
                 $producto->save();
-            }
+            }*/
         }
-        Session::flash('mensaje','descuento de bodega exitoso');
+
     }
 
     //crear funcion para cuando se elimine un sabor o producto para eliminarlo en cada uno de las bodegas

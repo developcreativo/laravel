@@ -53,12 +53,13 @@ Route::resource('proveedores', 'ProveedoresController',['except' => ['chart']]);
 /******* impuestos ********/
 Route::resource('impuestos', 'ImpuestosController',['except' => []]);
 
+/******* POS ********/
+Route::resource('ventas/pos', 'PosController',['except' => []]);
+
 /******* ventas ********/
 Route::get('ventas/pdf/{id}', 'VentaController@pdf');
 Route::get('ventas/mail/{id}', 'VentaController@mail');
-Route::get('ventas/pos/{id}', 'VentaController@pos_show');
-Route::get('ventas/pos', 'VentaController@pos');
-Route::resource('ventas', 'VentaController',['except' => ['pos','pos_show','mail','pdf']]);
+Route::resource('ventas', 'VentaController',['except' => ['mail','pdf']]);
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

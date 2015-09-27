@@ -20,6 +20,10 @@ class ingresos extends Model
         'valor'
     ];
 
+    public function formas_pago(){
+        return $this->belongsTo('App\formas_pago', 'formas_pago_id');
+    }
+
     public static function AgregarIngreso($factura, $pagos)
     {
         foreach ($pagos as $pago) {

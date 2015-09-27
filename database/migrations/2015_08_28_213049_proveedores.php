@@ -21,7 +21,7 @@ class Proveedores extends Migration
             $table->string('contacto');
             $table->string('email')->nullable();
             $table->string('web')->nullable();
-            $table->biginteger('telefono');
+            $table->string('telefono');
             $table->timestamps();
         });
     }

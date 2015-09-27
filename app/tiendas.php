@@ -36,10 +36,10 @@ class tiendas extends Model
     {
         $company = tiendas::find(Session::get('tenant.id'));
         if (!$lastid['venta'] == "") {
-            $company->factura = $lastid['venta']['id'];
+            $company->factura = $lastid['venta']['factura'];
         }
         if (!$lastid['remision'] == "") {
-            $company->remision = $lastid['remision']['id'];
+            $company->remision = $lastid['remision']['factura'];
         }
         $company->save();
     }

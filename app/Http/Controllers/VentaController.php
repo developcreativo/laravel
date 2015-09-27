@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Bodegas;
 use App\categorias;
+use App\ciudades;
 use App\clientes;
+use App\departamentos;
 use App\facturacion;
 use App\ingresos;
 use App\productos;
@@ -33,7 +35,7 @@ class VentaController extends Controller
     public function index()
     {
         //
-        $ventas = ventas::with('clientes', 'tiendas','factura_venta')->where('remision',0)->get();
+        $ventas = ventas::with('clientes', 'tiendas', 'factura_venta')->where('remision', 0)->get();
         return view('app.ventas.ventas_index', compact('ventas'));
     }
 
@@ -45,6 +47,12 @@ class VentaController extends Controller
     public function create()
     {
         //
+        $tiendas = tiendas::lists('tienda','id');
+        $clientes = clientes::all();
+        $productos = Bodegas::with('productos_configurables.productos.marcas')->get()->toJson();
+        $ciudades = ciudades::all()->toJson();
+        $departamentos = departamentos::lists('departamento','id');
+        return view('app.ventas.ventas_create', compact('tiendas','clientes','productos','ciudades','departamentos'));
     }
 
     /**
@@ -56,12 +64,15 @@ class VentaController extends Controller
     public function store(Request $request)
     {
         //
+        //dd($request->all());
         $lastid = ventas::separador_remision($request);
         tiendas::numero_factura($lastid);
         Bodegas::Agregar_Venta($request->items);
         ingresos::AgregarIngreso($lastid, $request->pagos);
+        //crear modulo de despacho
         $factura = facturacion::AgregarFacturacion($lastid);
-        return redirect('ventas/pos/' . $factura);
+
+        return redirect('ventas/' . $lastid['venta']['id']);
     }
 
     /**
@@ -73,13 +84,10 @@ class VentaController extends Controller
     public function show($id)
     {
         //
-        $tipo = facturacion::find($id);
-        if($tipo->remision_id == 0){
-            dd($tipo);
-        }
-        $venta = ventas::with('venta_detalle.productos_configurables', 'clientes', 'tiendas.company', 'user')
-            ->find($tipo->venta_id);
-        return view('app/ventas/ventas_print', compact('venta'));
+        $venta = ventas::with('venta_detalle.productos_configurables', 'clientes',
+            'tiendas.company', 'user', 'ingreso_venta.formas_pago')->find($id);
+        //dd($venta);
+        return view('app/ventas/ventas_show', compact('venta'));
 
     }
 
@@ -117,30 +125,6 @@ class VentaController extends Controller
         //
     }
 
-    public function pos()
-    {
-        $productos = Bodegas::with('productos_configurables.productos')->get()->toJson();
-        $clientes = clientes::all();
-        $categorias = categorias::orderBy('level')->get();
-        $tiendas = tiendas::lists('tienda', 'id');
-        return Response::view('app.ventas.ventas_pos', compact('tiendas', 'categorias', 'productos', 'clientes'));
-    }
-
-    public function pos_show($id)
-    {
-        //
-        $tipo = facturacion::find($id);
-        if(!$tipo->venta_id == ""){
-            $venta = ventas::with('venta_detalle.productos_configurables', 'clientes', 'tiendas.company', 'user')
-                ->find($tipo->venta_id);
-        }
-        if(!$tipo->venta_id == "")   {
-            $remision = ventas::with('venta_detalle.productos_configurables', 'clientes', 'tiendas.company', 'user')
-                ->find($tipo->remision_id);
-        }
-        return view('app/ventas/ventas_pos_invoice', compact('venta','remision'));
-
-    }
 
     public function pdf($id)
     {

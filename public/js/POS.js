@@ -32,13 +32,24 @@ function AgClienteNuevo() {
         data: data,//indicamos que es de tipo texto plano
         async: true,
         success: function (data) {
-            toastr.success('Cliente agregado exitosamente}')
+            $.notify({
+                title: "<strong>Respuesta:</strong> ",
+                message: 'Cliente agregado exitosamente',
+                icon: 'fa fa-check'},{
+                type: 'success'
+            });
             $('#AGCLIENTE').modal('hide')
             $('#nombre_cliente').val(data.nombre)
             $('#cliente_id').val(data.lastid)
         },
         error: function () {
-            toastr.error('Cliente duplicado o vacio');
+            $.notify({
+                title: "<strong>Respuesta:</strong> ",
+                message: 'Cliente duplicado o vacio',
+                icon: 'fa fa-times'},{
+                type: 'danger'
+            });
+
         }
     })
 }
@@ -70,10 +81,20 @@ function abrir_pagos() {
         if ($('#total').val() > 0) {
             $('#pagos').modal('show')
         } else {
-            toastr.error('Agregue minimo un producto');
+            $.notify({
+                title: "<strong>Respuesta:</strong> ",
+                message: 'Agregue minimo un producto',
+                icon: 'fa fa-times'},{
+                type: 'danger'
+            });
         }
     } else {
-        toastr.error('Falta agregar un cliente');
+        $.notify({
+            title: "<strong>Respuesta:</strong> ",
+            message: 'Falta agregar un cliente',
+            icon: 'fa fa-times'},{
+            type: 'danger'
+        });
     }
 
 }
@@ -181,18 +202,21 @@ $('#buscar_producto').keyup(function () {
     var successContent = '';
     console.log(data)
     for (datos in data) {
-        if (data[datos].productos_configurables.producto.match(term)) {
+        if (data[datos].productos_configurables.producto.toLowerCase().indexOf(term) != -1) {
             remision = ''
             if (data[datos].remision > 0) {
-                remision = '<span class="badge badge-red badge-left">R</span>';
+                remision = '<span class="badge badge-danger badge-left">R</span>';
             }
-            successContent += '<div class="unidad text-center"><a href="#"  onclick="return AgItem(\'' + data[datos].codigo +
-                '\',\'' + data[datos].productos_configurables.productos.venta + '\',\'' +
-                data[datos].productos_configurables.productos.imagen + '\',\'' + data[datos].productos_configurables.producto +
-                '\',\'' + data[datos].iva + '\',\'' + data[datos].remision + '\',\'' + data[datos].compra +
-                '\')"><img src="/' + data[datos].productos_configurables.productos.imagen + '" class="img-responsive" alt="'
-                + data[datos].nombre + '"><span class="label label-primary texto"><small>' + data[datos].productos_configurables.producto + '</small></span></img>' +
-                '<span class="badge badge-secondary badge-right">' + data[datos].cantidad + '</span>' + remision + '</a></div>';
+            successContent += '<div class="unidad text-center"><a href="#"  onclick="return AgItem(\'' +
+                data[datos].codigo + '\',\'' + data[datos].productos_configurables.productos.venta + '\',\'' +
+                data[datos].productos_configurables.productos.imagen + '\',\'' +
+                data[datos].productos_configurables.producto + '\',\'' + data[datos].iva + '\',\'' +
+                data[datos].remision + '\',\'' + data[datos].compra + '\')"><img src="/' +
+                data[datos].productos_configurables.productos.imagen + '" class="img-responsive" alt="' +
+                data[datos].nombre + '"><span class="label label-primary texto"><small>' +
+                data[datos].productos_configurables.producto + '</small></span></img>' +
+                '<span class="badge badge-secondary badge-right">' + data[datos].cantidad + '</span>' +
+                remision + '</a></div>';
         }
 
     }

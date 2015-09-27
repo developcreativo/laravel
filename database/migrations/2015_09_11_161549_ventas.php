@@ -21,7 +21,11 @@ class Ventas extends Migration
         			$table->integer('tienda_id');
         			$table->integer('user_id');
         			$table->decimal('venta',10,2);
-        			$table->decimal('iva',10,2);
+        			$table->decimal('compra',10,2);
+        			$table->decimal('iva',10,2)->nullable();
+        			$table->decimal('descuento',10,2)->nullable();
+        			$table->decimal('retefuente',10,2)->nullable();
+        			$table->decimal('subtotal',10,2)->nullable();
         			$table->boolean('pagado');
         			$table->boolean('remision');
                     $table->integer('plazo');
