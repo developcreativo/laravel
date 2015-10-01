@@ -58,8 +58,9 @@ Route::resource('ventas/pos', 'PosController',['except' => []]);
 
 /******* ventas ********/
 Route::get('ventas/pdf/{id}', 'VentaController@pdf');
+Route::get('ventas/print/{id}', 'VentaController@imprimir');
 Route::get('ventas/mail/{id}', 'VentaController@mail');
-Route::resource('ventas', 'VentaController',['except' => ['mail','pdf']]);
+Route::resource('ventas', 'VentaController',['except' => ['mail','pdf','imprimir']]);
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

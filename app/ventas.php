@@ -166,9 +166,10 @@ class ventas extends Model
             $descuento += $dto;
         }
         foreach ($datos['pagos'] as $pago) {
-            $valor += $pago['valor'];
             if ($pago['id'] == 6) {
-                $valor = 0;
+                $valor += 0;
+            }else{
+                $valor += $pago['valor'];
             }
         }
         $factura = tiendas::find(Session::get('bodega'))->factura + 1;
@@ -184,7 +185,7 @@ class ventas extends Model
         $venta->iva = $iva;
         $venta->descuento = $descuento;
         $venta->compra = $compra;
-        if ($total == $valor) {
+        if ($venta->venta == $valor) {
             $venta->pagado = 1;
         } else {
             $venta->pagado = 0;
@@ -197,10 +198,9 @@ class ventas extends Model
 
     public static function crear_pdf($id)
     {
-        $tipo = facturacion::find($id);
-        $venta = ventas::with('venta_detalle.productos_configurables', 'clientes', 'tiendas.company', 'user')
-            ->find($tipo->venta_id);
-        $view = view('app/ventas/ventas_pos_invoice', compact('venta'))->render();
+        $venta = ventas::with('venta_detalle.productos_configurables', 'clientes',
+            'tiendas.company', 'user', 'ingreso_venta.formas_pago')->find($id);
+        $view = view('app/ventas/ventas_pdf', compact('venta'))->render();
         $pdf = App::make('dompdf.wrapper');
         $pdf->loadHTML($view);
         return $pdf;

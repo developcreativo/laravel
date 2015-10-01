@@ -125,11 +125,19 @@ class VentaController extends Controller
         //
     }
 
+    public function imprimir($id)
+    {
+        $venta = ventas::with('venta_detalle.productos_configurables', 'clientes',
+            'tiendas.company', 'user', 'ingreso_venta.formas_pago')->find($id);
+        //dd($venta);
+        return view('app/ventas/ventas_print', compact('venta'));
+    }
+
 
     public function pdf($id)
     {
         $pdf = ventas::crear_pdf($id);
-        return $pdf->download('venta_pos' . $id . '.pdf');
+        return $pdf->download('venta_' . $id . '.pdf');
     }
 
     public function mail(Request $request, $id)

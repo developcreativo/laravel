@@ -5,171 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18d86ef8-f780-4f5f-a1fe-df88b14ebf4b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/public/assets/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-114x114.png" afterPath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-114x114.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-120x120.png" afterPath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-120x120.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-144x144.png" afterPath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-144x144.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-152x152.png" afterPath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-152x152.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-180x180.png" afterPath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-180x180.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-57x57.png" afterPath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-57x57.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-60x60.png" afterPath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-60x60.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-72x72.png" afterPath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-72x72.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-76x76.png" afterPath="$PROJECT_DIR$/public/assets/img/favicons/apple-touch-icon-76x76.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/app/ventas/ventas_invoice.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/app/ventas/ventas_pdf.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/app/ventas/ventas_print.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/favicons/favicon-16x16.png" afterPath="$PROJECT_DIR$/public/assets/img/favicons/favicon-16x16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/favicons/favicon-32x32.png" afterPath="$PROJECT_DIR$/public/assets/img/favicons/favicon-32x32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/favicons/favicon-96x96.png" afterPath="$PROJECT_DIR$/public/assets/img/favicons/favicon-96x96.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/favicons/favicon.png" afterPath="$PROJECT_DIR$/public/assets/img/favicons/favicon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/images/hiddenfield.gif" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/images/hiddenfield.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/icons.png" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/skins/bootstrapck/icons.png" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/skins/bootstrapck/icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/image/images/noimage.png" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/image/images/noimage.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/pagebreak/images/pagebreak.gif" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/pagebreak/images/pagebreak.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_28_213049_proveedores.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_28_213049_proveedores.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_09_11_161549_ventas.php" afterPath="$PROJECT_DIR$/database/migrations/2015_09_11_161549_ventas.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_09_11_231926_clientes.php" afterPath="$PROJECT_DIR$/database/migrations/2015_09_11_231926_clientes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_09_12_032400_venta_detalle.php" afterPath="$PROJECT_DIR$/database/migrations/2015_09_12_032400_venta_detalle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/httpcache/md/f5/d5/7fbcf972338d3d15cc12f11b3b101383b9bbc8d8567b1a743b05edf5182f" afterPath="$PROJECT_DIR$/storage/httpcache/md/f5/d5/7fbcf972338d3d15cc12f11b3b101383b9bbc8d8567b1a743b05edf5182f" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/httpcache/md/1d/13/98517decadd092121eb435f65761d31a42c97e4e4eda2f6063baf5313679" afterPath="$PROJECT_DIR$/storage/httpcache/md/1d/13/98517decadd092121eb435f65761d31a42c97e4e4eda2f6063baf5313679" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Bodegas.php" afterPath="$PROJECT_DIR$/app/Bodegas.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/CHANGES.md" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/CHANGES.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/LICENSE.md" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/POS.js" afterPath="$PROJECT_DIR$/public/js/POS.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/VentaController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/VentaController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/httpcache/md/74/fa/ab79e9797fb804970d2b9397a102c7dea8f43aebe3d169753e11c3c26422" afterPath="$PROJECT_DIR$/storage/httpcache/md/74/fa/ab79e9797fb804970d2b9397a102c7dea8f43aebe3d169753e11c3c26422" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/themes/amethyst.min.css" afterPath="$PROJECT_DIR$/public/assets/css/themes/amethyst.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" afterPath="$PROJECT_DIR$/public/assets/js/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/build-config.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/build-config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/button.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/button.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/checkbox.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/checkbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/themes/city.min.css" afterPath="$PROJECT_DIR$/public/assets/css/themes/city.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/ckeditor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/clientes.php" afterPath="$PROJECT_DIR$/app/clientes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/colordialog/dialogs/colordialog.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/colordialog/dialogs/colordialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/contapp.css" afterPath="$PROJECT_DIR$/public/css/contapp.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/contents.css" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/contents.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/specialchar/dialogs/lang/da.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/specialchar/dialogs/lang/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/specialchar/dialogs/lang/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/pastefromword/filter/default.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/pastefromword/filter/default.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/dropzonejs/dropzone.min.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/dropzonejs/dropzone.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/httpcache/md/19/64/e3ce85220a90f9424325f70209ac2614e3faf2d07bb70c142d461e40aaca" afterPath="$PROJECT_DIR$/storage/httpcache/md/19/64/e3ce85220a90f9424325f70209ac2614e3faf2d07bb70c142d461e40aaca" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/specialchar/dialogs/lang/el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/lang/en.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/lang/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/themes/flat.min.css" afterPath="$PROJECT_DIR$/public/assets/css/themes/flat.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/form.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/fullcalendar/fullcalendar.min.css" afterPath="$PROJECT_DIR$/public/assets/js/plugins/fullcalendar/fullcalendar.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/fullcalendar/fullcalendar.min.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/fullcalendar/fullcalendar.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/fullcalendar/gcal.min.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/fullcalendar/gcal.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/highlightjs/github-gist.min.css" afterPath="$PROJECT_DIR$/public/assets/js/plugins/highlightjs/github-gist.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/gmapsjs/gmaps.min.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/gmapsjs/gmaps.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/hiddenfield.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/hiddenfield.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/highlightjs/highlight.pack.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/highlightjs/highlight.pack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/image/dialogs/image.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/image/dialogs/image.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/samples/index.html" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/samples/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ingresos.php" afterPath="$PROJECT_DIR$/app/ingresos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/jquery-countdown/jquery.countdown.min.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/jquery-countdown/jquery.countdown.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/datatables/jquery.dataTables.min.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/datatables/jquery.dataTables.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/adapters/jquery.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/adapters/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/masked-inputs/jquery.maskedinput.min.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/masked-inputs/jquery.maskedinput.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/jquery-validation/jquery.validate.min.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/jquery-validation/jquery.validate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/themes/modern.min.css" afterPath="$PROJECT_DIR$/public/assets/css/themes/modern.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/oneui.min.css" afterPath="$PROJECT_DIR$/public/assets/css/oneui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/oneui.min.js" afterPath="$PROJECT_DIR$/public/assets/js/oneui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/clipboard/dialogs/paste.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/clipboard/dialogs/paste.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/radio.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/radio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/select.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/select.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/select2/select2-bootstrap.css" afterPath="$PROJECT_DIR$/public/assets/js/plugins/select2/select2-bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/select2/select2-bootstrap.min.css" afterPath="$PROJECT_DIR$/public/assets/js/plugins/select2/select2-bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/select2/select2.min.css" afterPath="$PROJECT_DIR$/public/assets/js/plugins/select2/select2.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/themes/smooth.min.css" afterPath="$PROJECT_DIR$/public/assets/css/themes/smooth.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/summernote/summernote-bs3.min.css" afterPath="$PROJECT_DIR$/public/assets/js/plugins/summernote/summernote-bs3.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/summernote/summernote.min.css" afterPath="$PROJECT_DIR$/public/assets/js/plugins/summernote/summernote.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/summernote/summernote.min.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/summernote/summernote.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/table/dialogs/table.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/table/dialogs/table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/textarea.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/textarea.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/textfield.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/forms/dialogs/textfield.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tiendas.php" afterPath="$PROJECT_DIR$/app/tiendas.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/venta_detalle.php" afterPath="$PROJECT_DIR$/app/venta_detalle.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ventas.php" afterPath="$PROJECT_DIR$/app/ventas.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app/ventas/ventas_index.blade.php" afterPath="$PROJECT_DIR$/resources/views/app/ventas/ventas_index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app/ventas/ventas_pos.blade.php" afterPath="$PROJECT_DIR$/resources/views/app/ventas/ventas_pos.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app/ventas/ventas_pos_invoice.blade.php" afterPath="$PROJECT_DIR$/resources/views/app/ventas/ventas_pos_invoice.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app/ventas/ventas_show.blade.php" afterPath="$PROJECT_DIR$/resources/views/app/ventas/ventas_show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/wsc/dialogs/wsc.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/wsc/dialogs/wsc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/wsc/dialogs/wsc_ie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterPath="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh.js" />
     </list>
     <ignored path="laravel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -204,6 +52,24 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - contapp@app.contapp.com.co" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="contapp" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="cuentas_bancarias" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -213,18 +79,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="contapp.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/contapp.css">
+      <file leaf-file-name="2015_10_01_170336_cuentas_bancarias.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_01_170336_cuentas_bancarias.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.461538">
+              <caret line="23" column="49" selection-start-line="18" selection-start-column="20" selection-end-line="23" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contapp.ingresos" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..ingresos">
+      <file leaf-file-name="contapp.formas_pago" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..formas_pago">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -238,21 +104,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facturacion.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/facturacion.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.73077">
-              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+      <file leaf-file-name="contapp.ventas_1" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..ventas_1">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formas_pago.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/formas_pago.php">
+      <file leaf-file-name="cuentas_bancarias.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/cuentas_bancarias.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.038462">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cuentas_BancariasController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Cuentas_BancariasController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6352313">
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -261,18 +142,8 @@
       <file leaf-file-name="ingresos.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/ingresos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.807693">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tiendas.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/tiendas.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.230769">
-              <caret line="31" column="61" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="61" />
+            <state vertical-scroll-proportion="-30.076923">
+              <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -281,8 +152,8 @@
       <file leaf-file-name="VentaController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VentaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.038462">
-              <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+            <state vertical-scroll-proportion="-9.307693">
+              <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -291,8 +162,8 @@
       <file leaf-file-name="ventas.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/ventas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.5">
-              <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
+            <state vertical-scroll-proportion="-14.769231">
+              <caret line="30" column="6" selection-start-line="18" selection-start-column="4" selection-end-line="30" selection-end-column="6" />
               <folding>
                 <element signature="e#742#852#0#PHP" expanded="false" />
                 <element signature="e#858#965#0#PHP" expanded="false" />
@@ -304,35 +175,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ventas_index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_index.blade.php">
+      <file leaf-file-name="ventas_invoice.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_invoice.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.653846">
-              <caret line="62" column="100" selection-start-line="61" selection-start-column="24" selection-end-line="62" selection-end-column="100" />
-              <folding />
+            <state vertical-scroll-proportion="-18.423077">
+              <caret line="35" column="82" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="82" />
+              <folding>
+                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#2;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#td#2;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#td#2;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#td#2;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#table#0;n#div#1;n#div#2;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#2;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#2;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#2;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ventas_show.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ventas_show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5160142">
-              <caret line="130" column="39" selection-start-line="130" selection-start-column="39" selection-end-line="130" selection-end-column="39" />
+            <state vertical-scroll-proportion="-8.846154">
+              <caret line="72" column="49" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
               <folding>
-                <element signature="e#9296#9723#0#HTML" expanded="false" />
-                <marker date="1443390790157" expanded="true" signature="1367:1530" placeholder="..." />
-                <marker date="1443390790157" expanded="true" signature="1379:1529" placeholder="..." />
-                <marker date="1443390790157" expanded="true" signature="1423:1528" placeholder="..." />
-                <marker date="1443390790157" expanded="true" signature="1812:1979" placeholder="..." />
-                <marker date="1443390790157" expanded="true" signature="1824:1978" placeholder="..." />
-                <marker date="1443390790157" expanded="true" signature="1856:1977" placeholder="..." />
-                <marker date="1443390790157" expanded="true" signature="2376:2534" placeholder="..." />
-                <marker date="1443390790157" expanded="true" signature="2389:2533" placeholder="..." />
-                <marker date="1443390790157" expanded="true" signature="2425:2532" placeholder="..." />
-                <marker date="1443390790157" expanded="true" signature="2813:2976" placeholder="..." />
-                <marker date="1443390790157" expanded="true" signature="2825:2975" placeholder="..." />
-                <marker date="1443390790157" expanded="true" signature="2867:2974" placeholder="..." />
+                <element signature="e#578#3111#0#HTML" expanded="false" />
+                <element signature="e#5995#6383#0#HTML" expanded="false" />
+                <element signature="e#6388#6793#0#HTML" expanded="false" />
+                <element signature="e#9277#9704#0#HTML" expanded="false" />
+                <marker date="1443716652048" expanded="true" signature="1398:1561" placeholder="..." />
+                <marker date="1443716652048" expanded="true" signature="1410:1560" placeholder="..." />
+                <marker date="1443716652048" expanded="true" signature="1454:1559" placeholder="..." />
+                <marker date="1443716652048" expanded="true" signature="1843:2010" placeholder="..." />
+                <marker date="1443716652048" expanded="true" signature="1855:2009" placeholder="..." />
+                <marker date="1443716652048" expanded="true" signature="1887:2008" placeholder="..." />
+                <marker date="1443716652048" expanded="true" signature="2407:2565" placeholder="..." />
+                <marker date="1443716652048" expanded="true" signature="2420:2564" placeholder="..." />
+                <marker date="1443716652048" expanded="true" signature="2456:2563" placeholder="..." />
+                <marker date="1443716652048" expanded="true" signature="2844:3007" placeholder="..." />
+                <marker date="1443716652048" expanded="true" signature="2856:3006" placeholder="..." />
+                <marker date="1443716652048" expanded="true" signature="2898:3005" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -343,8 +232,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="blade" />
         <option value="JavaScript File" />
+        <option value="blade" />
       </list>
     </option>
   </component>
@@ -364,11 +253,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2015_09_12_191503_company.php" />
-        <option value="$PROJECT_DIR$/resources/views/app/ventas/ventas_print.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2015_09_12_194740_tiendas.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2015_09_12_033918_ingresos.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/.env.example" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/resources/views/app/compras/compras_invoice.blade.php" />
@@ -394,7 +278,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/database/migrations/2015_09_11_231926_clientes.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_08_28_213049_proveedores.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_09_20_230904_despachos.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PosController.php" />
         <option value="$PROJECT_DIR$/resources/views/app/ventas/ventas_pos.blade.php" />
@@ -402,19 +285,25 @@
         <option value="$PROJECT_DIR$/app/clientes.php" />
         <option value="$PROJECT_DIR$/public/js/POS.js" />
         <option value="$PROJECT_DIR$/app/tiendas.php" />
-        <option value="$PROJECT_DIR$/resources/views/app/ventas/ventas_index.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_09_12_032400_venta_detalle.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_09_11_161549_ventas.php" />
         <option value="$PROJECT_DIR$/public/js/ventas.js" />
         <option value="$PROJECT_DIR$/app/venta_detalle.php" />
         <option value="$PROJECT_DIR$/app/Bodegas.php" />
         <option value="$PROJECT_DIR$/resources/views/app/ventas/ventas_create.blade.php" />
-        <option value="$PROJECT_DIR$/app/ingresos.php" />
         <option value="$PROJECT_DIR$/public/css/contapp.css" />
         <option value="$PROJECT_DIR$/resources/views/app/ventas/ventas_pos_invoice.blade.php" />
-        <option value="$PROJECT_DIR$/app/ventas.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/app/ventas/ventas_index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/VentaController.php" />
+        <option value="$PROJECT_DIR$/resources/views/app/ventas/ventas_pdf.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/app/ventas/ventas_print.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/app/ventas/ventas_invoice.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/app/ventas/ventas_show.blade.php" />
+        <option value="$PROJECT_DIR$/app/ventas.php" />
+        <option value="$PROJECT_DIR$/app/ingresos.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_10_01_170336_cuentas_bancarias.php" />
+        <option value="$PROJECT_DIR$/app/cuentas_bancarias.php" />
       </list>
     </option>
   </component>
@@ -486,7 +375,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -993,26 +882,6 @@
     </task>
     <servers />
   </component>
-  <component name="TodoView" selected-index="0">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
@@ -1021,11 +890,11 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290469" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25416037" sideWeight="0.4992126" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16111952" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49918962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489019" sideWeight="0.4992126" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.3198052" sideWeight="0.5" order="11" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2753304" sideWeight="0.5007874" order="2" side_tool="true" content_ui="tabs" />
@@ -1095,87 +964,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7083333">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/departamentos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37777779">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="141" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="141" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/ciudades.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3024911">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_19_003549_departamentos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fb83f2d0-12de-453b-b2c9-5b18868b4114/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1111" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_19_003024_ciudades.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66548043">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_05_232118_users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/productos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.45373666">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1343536">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..compras">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1209,13 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.461538">
-          <caret line="59" column="53" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_20_230904_despachos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.423077">
@@ -1227,6 +1008,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4733096">
           <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1264,13 +1048,6 @@
         <state vertical-scroll-proportion="-16.384615">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_pos.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="58.807693">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1386,19 +1163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..ventas_1">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Bodegas.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.846154">
@@ -1459,22 +1223,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_pos_invoice.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1797153">
-          <caret line="234" column="74" selection-start-line="234" selection-start-column="74" selection-end-line="234" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/ingresos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.807693">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/facturacion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-25.73077">
@@ -1496,10 +1244,204 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/compras/compras_invoice.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.9590747">
+          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6192171">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.115385">
+          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.307693">
+          <caret line="63" column="77" selection-start-line="63" selection-start-column="77" selection-end-line="63" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_pos_invoice.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.730769">
+          <caret line="66" column="51" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/compras/compras_pdf.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_pdf.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#1;n#div#2;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#2;n#div#2;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#2;n#div#2;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/proveedores/proveedores_index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="35.923077">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_pos.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.076923">
+          <caret line="123" column="36" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="36" />
+          <folding>
+            <marker date="1442855917491" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442855917491" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442855917491" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442855917491" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442855917491" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442855917491" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442855917491" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442855917491" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_print.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_invoice.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.423077">
+          <caret line="35" column="82" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#2;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#td#2;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#td#2;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#td#2;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#1;n#div#2;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#2;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#2;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.846154">
+          <caret line="72" column="49" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
+          <folding>
+            <element signature="e#578#3111#0#HTML" expanded="false" />
+            <element signature="e#5995#6383#0#HTML" expanded="false" />
+            <element signature="e#6388#6793#0#HTML" expanded="false" />
+            <element signature="e#9277#9704#0#HTML" expanded="false" />
+            <marker date="1443716652048" expanded="true" signature="1398:1561" placeholder="..." />
+            <marker date="1443716652048" expanded="true" signature="1410:1560" placeholder="..." />
+            <marker date="1443716652048" expanded="true" signature="1454:1559" placeholder="..." />
+            <marker date="1443716652048" expanded="true" signature="1843:2010" placeholder="..." />
+            <marker date="1443716652048" expanded="true" signature="1855:2009" placeholder="..." />
+            <marker date="1443716652048" expanded="true" signature="1887:2008" placeholder="..." />
+            <marker date="1443716652048" expanded="true" signature="2407:2565" placeholder="..." />
+            <marker date="1443716652048" expanded="true" signature="2420:2564" placeholder="..." />
+            <marker date="1443716652048" expanded="true" signature="2456:2563" placeholder="..." />
+            <marker date="1443716652048" expanded="true" signature="2844:3007" placeholder="..." />
+            <marker date="1443716652048" expanded="true" signature="2856:3006" placeholder="..." />
+            <marker date="1443716652048" expanded="true" signature="2898:3005" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..ventas_1">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VentaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.307693">
+          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..formas_pago">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_01_170336_cuentas_bancarias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="23" column="49" selection-start-line="18" selection-start-column="20" selection-end-line="23" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/ventas.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.5">
-          <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
+        <state vertical-scroll-proportion="-14.769231">
+          <caret line="30" column="6" selection-start-line="18" selection-start-column="4" selection-end-line="30" selection-end-column="6" />
           <folding>
             <element signature="e#742#852#0#PHP" expanded="false" />
             <element signature="e#858#965#0#PHP" expanded="false" />
@@ -1510,41 +1452,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VentaController.php">
+    <entry file="file://$PROJECT_DIR$/app/ingresos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-30.076923">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/cuentas_bancarias.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.038462">
-          <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_index.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Cuentas_BancariasController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.653846">
-          <caret line="62" column="100" selection-start-line="61" selection-start-column="24" selection-end-line="62" selection-end-column="100" />
+        <state vertical-scroll-proportion="0.6352313">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5160142">
-          <caret line="130" column="39" selection-start-line="130" selection-start-column="39" selection-end-line="130" selection-end-column="39" />
-          <folding>
-            <element signature="e#9296#9723#0#HTML" expanded="false" />
-            <marker date="1443390790157" expanded="true" signature="1367:1530" placeholder="..." />
-            <marker date="1443390790157" expanded="true" signature="1379:1529" placeholder="..." />
-            <marker date="1443390790157" expanded="true" signature="1423:1528" placeholder="..." />
-            <marker date="1443390790157" expanded="true" signature="1812:1979" placeholder="..." />
-            <marker date="1443390790157" expanded="true" signature="1824:1978" placeholder="..." />
-            <marker date="1443390790157" expanded="true" signature="1856:1977" placeholder="..." />
-            <marker date="1443390790157" expanded="true" signature="2376:2534" placeholder="..." />
-            <marker date="1443390790157" expanded="true" signature="2389:2533" placeholder="..." />
-            <marker date="1443390790157" expanded="true" signature="2425:2532" placeholder="..." />
-            <marker date="1443390790157" expanded="true" signature="2813:2976" placeholder="..." />
-            <marker date="1443390790157" expanded="true" signature="2825:2975" placeholder="..." />
-            <marker date="1443390790157" expanded="true" signature="2867:2974" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>

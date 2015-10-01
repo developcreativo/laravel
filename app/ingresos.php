@@ -26,6 +26,7 @@ class ingresos extends Model
 
     public static function AgregarIngreso($factura, $pagos)
     {
+
         foreach ($pagos as $pago) {
             $ingreso = new ingresos();
             if (!$factura['venta'] == "") {
@@ -40,6 +41,7 @@ class ingresos extends Model
             }
             $ingreso->formas_pago_id = $pago['id'];
             $ingreso->valor = $pago['valor'];
+
             $ingreso->save();
         }
         caja::IngresoCaja($pagos, $factura);

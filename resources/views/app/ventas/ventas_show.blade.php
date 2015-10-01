@@ -17,7 +17,7 @@
     <div class="col-sm-8">
         <div class="block">
             <div class="block-header bg-gray-lighter">
-                <h3 class="block-title"><i class="fa fa-newspaper-o"></i> Factura: {{ $venta->factura }}
+                <h3 class="block-title"><i class="fa fa-newspaper-o"></i> Factura: {{ $venta->tiendas->prefijo }} {{ $venta->factura }}
                     <span class="pull-right">Fecha: {{ $venta->created_at }}</span></h3>
 
             </div>
@@ -70,8 +70,8 @@
         </div>
 
         <div class="block">
-            <div class="block-header bg-gray-lighter">
-                <h3 class="block-title"><i class="si si-list"></i> Detalle: </h3>
+            <div class="block-header bg-primary">
+                <h3 class="block-title">Detalle: </h3>
             </div>
             <div class="block-content">
                 <table class="table table-bordered table-condensed table-hover">
@@ -126,7 +126,7 @@
         </div>
     </div>
     <div class="col-xs-6 col-sm-2">
-        <a class="block block-link-hover2 text-center" href="http://localhost/productos/carga_masiva/download/marcas">
+        <a class="block block-link-hover2 text-center" href="{{ url('ventas/print/'.$venta->id) }}">
             <div class="block-content block-content-full bg-amethyst">
                 <i class="si si-printer fa-4x text-white"></i>
 
