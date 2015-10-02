@@ -53,6 +53,9 @@ Route::resource('proveedores', 'ProveedoresController',['except' => ['chart']]);
 /******* impuestos ********/
 Route::resource('impuestos', 'ImpuestosController',['except' => []]);
 
+/******* despachos ********/
+Route::resource('despachos', 'DespachosController',['except' => []]);
+
 /******* POS ********/
 Route::resource('ventas/pos', 'PosController',['except' => []]);
 

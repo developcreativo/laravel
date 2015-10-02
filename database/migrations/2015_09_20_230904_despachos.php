@@ -16,9 +16,14 @@ class Despachos extends Migration
         Schema::create('despachos', function(Blueprint $table)
         		{
         			$table->increments('id');
-        			$table->integer('cliente_id');
-        			$table->string('direccion');
+        			$table->integer('factura_id');
+        			$table->text('direccion');
                     $table->integer('ciudad_id');
+                    $table->integer('transportadora_id')->nullable();
+                    $table->string('estado')->nullable();
+                    $table->string('guia')->nullable();
+                    $table->integer('flete')->nullable();
+                    $table->integer('tienda_id')->nullable();
         			$table->timestamps();
         		});
     }

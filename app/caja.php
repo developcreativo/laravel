@@ -38,9 +38,13 @@ class caja extends Model
         foreach($ingresos as $ingreso){
             if(!$factura["venta"] == ""){
                 $concepto = 'la factura '.$factura["venta"]['factura'];
-            }elseif($factura["remision"] == ""){
+            }else{
                 $concepto = 'la remision '.$factura["remision"]['factura'];
-            }else{$concepto = 'la factura '.$factura["venta"]['factura'].' y la remision '.$factura["remision"]['factura'];}
+            }
+            if(!$factura["venta"] == "" and !$factura["remision"] == ""){
+                $concepto = 'la factura '.$factura["venta"]['factura'].' y la remision '.$factura["remision"]['factura'];
+            }
+
             $item = new caja_detalle();
             $item->caja_id = $caja->id;
             $item->formas_pago_id = $ingreso['id'];

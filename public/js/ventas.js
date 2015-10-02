@@ -235,3 +235,10 @@ function totalpago() {
     }
 
 }
+$('#despacho').change(function () {
+    $('#content_despacho').show();
+})
+$(document).ready(function () {
+    $('#content_despacho').hide();
+})
+

@@ -17,7 +17,8 @@
     <div class="col-sm-8">
         <div class="block">
             <div class="block-header bg-gray-lighter">
-                <h3 class="block-title"><i class="fa fa-newspaper-o"></i> Factura: {{ $venta->tiendas->prefijo }} {{ $venta->factura }}
+                <h3 class="block-title"><i class="fa fa-newspaper-o"></i>
+                    Factura: {{ $venta->tiendas->prefijo }} {{ $venta->factura }}
                     <span class="pull-right">Fecha: {{ $venta->created_at }}</span></h3>
 
             </div>
@@ -42,7 +43,7 @@
                     <div class="col-sm-3">
                         <div class="input-group">
                             <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                            {!! form::text('fecha', $venta->vencimiento , ['class' => 'form-control',
+                            {!! form::text('vencimiento', $venta->vencimiento , ['class' => 'form-control',
                             'data-date-format'=>'yyyy-mm-dd','placeholder'=>'Vence','readonly'])!!}
                         </div>
                     </div>
@@ -135,7 +136,8 @@
         </a>
     </div>
     <div class="col-xs-6 col-sm-2">
-        <a class="block block-link-hover2 text-center" href="http://localhost/productos/carga_masiva/download/categorias">
+        <a class="block block-link-hover2 text-center" type="buttom" href="#" data-toggle="modal"
+           data-target="#modal-email">
             <div class="block-content block-content-full bg-city">
                 <i class="si si-envelope fa-4x text-white"></i>
 
@@ -177,6 +179,12 @@
 
                     </tbody>
                 </table>
+                @if($venta->pagado == 0)
+                    <div align="center">
+                        <button class="btn btn-success push-15"><i class="fa fa-plus"></i> Agregar pago</button>
+
+                    </div>
+                 @endif
             </div>
         </div>
     </div>
@@ -190,9 +198,9 @@
         </a>
     </div>
     @if($venta->remision <> 1)
-        @if($venta->factura_venta->remision_id > 0)
+        @if($factura->remision_id > 0)
             <div class="col-sm-4">
-                <a class="block block-link-hover2" href="{{ $venta->factura_venta->remision_id }}">
+                <a class="block block-link-hover2" href="{{ $factura->remision_id }}">
                     <div class="block-content block-content-full bg-danger clearfix">
                         <span class="h4 font-w700 text-white"> Remision :</span>
                         <span class="h4 text-white-op">Si tiene</span>
@@ -201,6 +209,18 @@
             </div>
         @endif
     @endif
+    @if(!$factura->despachos == null)
+        <div class="col-sm-4">
+            <a class="block block-link-hover2" href="{{ url('despachos/'.$factura->despachos->id) }}">
+                <div class="block-content block-content-full bg-city clearfix">
+                    <span class="h4 font-w700 text-white"> Despacho :</span>
+                    <span class="h4 text-white-op">{{ $factura->despachos->id }}</span>
+                </div>
+            </a>
+        </div>
+    @endif
+
+    @include('app.ventas.ventas_modal_email')
 
 @stop
 

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CuentasBancarias extends Migration
+class Transportadoras extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,13 @@ class CuentasBancarias extends Migration
     public function up()
     {
         //
-        Schema::create('cuentas_bancarias', function(Blueprint $table)
+        Schema::create('transportadoras', function(Blueprint $table)
         		{
         			$table->increments('id');
-        			$table->string('banco');
-        			$table->string('cuenta');
-        			$table->string('tipo');
-        			$table->string('titular');
-        			$table->string('documento');
-        			$table->string('correo');
-                    $table->boolean('principal');
+        			$table->string('transportadora');
+        			$table->string('telefono');
+        			$table->string('contacto');
+        			$table->string('email');
         			$table->timestamps();
         		});
     }
@@ -35,6 +32,6 @@ class CuentasBancarias extends Migration
     public function down()
     {
         //
-        Schema::drop('cuentas_bancarias');
+        Schema::drop('transportadoras');
     }
 }

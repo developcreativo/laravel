@@ -6,7 +6,9 @@ use App\Bodegas;
 use App\categorias;
 use App\ciudades;
 use App\clientes;
+use App\cuentas_bancarias;
 use App\departamentos;
+use App\despachos;
 use App\facturacion;
 use App\ingresos;
 use App\productos;
@@ -47,12 +49,12 @@ class VentaController extends Controller
     public function create()
     {
         //
-        $tiendas = tiendas::lists('tienda','id');
+        $tiendas = tiendas::lists('tienda', 'id');
         $clientes = clientes::all();
         $productos = Bodegas::with('productos_configurables.productos.marcas')->get()->toJson();
         $ciudades = ciudades::all()->toJson();
-        $departamentos = departamentos::lists('departamento','id');
-        return view('app.ventas.ventas_create', compact('tiendas','clientes','productos','ciudades','departamentos'));
+        $departamentos = departamentos::lists('departamento', 'id');
+        return view('app.ventas.ventas_create', compact('tiendas', 'clientes', 'productos', 'ciudades', 'departamentos'));
     }
 
     /**
@@ -69,10 +71,14 @@ class VentaController extends Controller
         tiendas::numero_factura($lastid);
         Bodegas::Agregar_Venta($request->items);
         ingresos::AgregarIngreso($lastid, $request->pagos);
-        //crear modulo de despacho
         $factura = facturacion::AgregarFacturacion($lastid);
+        despachos::crear_despacho($request, $factura);
+        if (!$lastid['venta'] == "") {
+            return redirect('ventas/' . $lastid['venta']['id']);
+        } else {
+            return redirect('ventas/' . $lastid['remision']['id']);
+        }
 
-        return redirect('ventas/' . $lastid['venta']['id']);
     }
 
     /**
@@ -86,8 +92,10 @@ class VentaController extends Controller
         //
         $venta = ventas::with('venta_detalle.productos_configurables', 'clientes',
             'tiendas.company', 'user', 'ingreso_venta.formas_pago')->find($id);
-        //dd($venta);
-        return view('app/ventas/ventas_show', compact('venta'));
+        $factura = facturacion::with('despachos')->where('venta_id', $id)->orwhere('remision_id', $id)->first();
+        //dd($despacho);
+        //dd($cuenta);
+        return view('app/ventas/ventas_show', compact('venta', 'factura'));
 
     }
 
@@ -129,8 +137,9 @@ class VentaController extends Controller
     {
         $venta = ventas::with('venta_detalle.productos_configurables', 'clientes',
             'tiendas.company', 'user', 'ingreso_venta.formas_pago')->find($id);
-        //dd($venta);
-        return view('app/ventas/ventas_print', compact('venta'));
+        $cuenta = cuentas_bancarias::where('principal', 1)->first();
+        //dd($cuenta);
+        return view('app/ventas/ventas_print', compact('venta', 'cuenta'));
     }
 
 
@@ -144,8 +153,8 @@ class VentaController extends Controller
     {
 
         $pdf = ventas::crear_pdf($id);
-        Mail::send('app.compras.compras_email', compact(['request']), function ($message) use ($pdf, $request) {
-            $message->to($request->email_address)->subject('Envio de factura de compra ');
+        Mail::send('app.ventas.ventas_email', compact(['request']), function ($message) use ($pdf, $request) {
+            $message->to($request->email_address)->subject('Envio de factura de venta ');
             $message->attachData($pdf->output(), "invoice.pdf");
         });
         Session::flash('mensaje', 'factura enviada con exito');

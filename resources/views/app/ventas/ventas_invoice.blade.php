@@ -25,7 +25,7 @@
                     <p class="text-center remove-margin">NIT: {{ $venta->tiendas->nit }}</p>
                     <p class="text-center remove-margin"> Dirección: {{ $venta->tiendas->direccion }}</p>
                     <p class="text-center remove-margin"> REGIMEN {{ $venta->tiendas->regimen }}</p>
-                    <p class="text-center remove-margin">
+                    <p class="text-center remove-margin comercio">
                         <small>Resolución DIAN # {{ $venta->tiendas->resolucion_dian }} del {{ $venta->tiendas->fecha_dian }} rango {{ $venta->tiendas->rango }}</small>
                     </p>
 
@@ -90,7 +90,7 @@
 
 
         <div class="table-responsive">
-            <table class="table table-bordered table-condensed table-hover" style="min-height: 350px;">
+            <table class="table table-bordered table-condensed table-hover" style="min-height: 400px;">
                 <thead>
                 <tr>
                     <th class="text-center">Codigo</th>
@@ -104,7 +104,7 @@
                 </thead>
                 <tfoot>
                 <tr>
-                    <td colspan="7">Favor consignar en BANCOLOMBIA cuenta AHORROS 06946451396 a nombre de MIPROTEINA y enviar copia de consiganción a </td>
+                    <td colspan="7"><p class="remove-margin bancos">Favor consignar en {{ $cuenta->banco }} cuenta {{ $cuenta->tipo }} {{ $cuenta->cuenta }} a nombre de {{ $cuenta->titular }} documento {{ $cuenta->documento }} y enviar copia de consiganción a {{ $cuenta->correo }}</p></td>
                 </tr>
                 </tfoot>
                 <tbody>
@@ -130,7 +130,7 @@
             <div style="width: 60%; display: inline-block" class="pull-left">
                 <div class="block block-bordered">
                     <div class="block-content">
-                        <p class="text-justify">Esta factura de venta es un titulo valor según el articulo 772 código de comercio modificado por la ley 1231 de 2008.
+                        <p class="text-justify comercio">Esta factura de venta es un titulo valor según el articulo 772 código de comercio modificado por la ley 1231 de 2008.
                         En caso de mora en el pago se cobrará la máxima tasa autorizada por la ley. Art 621-774 y 779 C. de C.
                         La firma puesta por terceros en representacion del comprador implica su obligación de acuerdo al Art. 640 del C. de C.</p>
                     </div>
@@ -166,9 +166,7 @@
                 <table width="100%">
                     <tr>
                         <td width="40%" style="border-top: #ccc solid 1px ">Firma del cliente</td>
-                        <td width="20%"></td>
-                        <td width="40%" style="border-top: #ccc solid 1px ">Vendedor</td>
-
+                        <td width="60%"></td>
                     </tr>
                 </table>
             </div>
@@ -177,31 +175,6 @@
     </div>
 
 </div>
-<div class="modal fade" id="modal-email" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog modal-dialog-popout modal-sm">
-        <div class="modal-content">
-            {!! Form::open(['method'=>'get','action' => ['ComprasController@mail', $venta->id]]) !!}
-            <div class="block block-themed block-transparent remove-margin-b">
-                <div class="block-header bg-success">
-                    <ul class="block-options">
-                        <li>
-                            <button data-dismiss="modal" type="button"><i class="si si-close"></i></button>
-                        </li>
-                    </ul>
-                    <h3 class="block-title">Enviar Factura</h3>
-                </div>
-                <div class="block-content">
-                    {!!Form::label('email', 'E-Mail:') !!}
-                    {!!Form::email('email_address', null, ['class' => 'form-control field','placeholder'=>'email destinatario']) !!}
-                </div>
-            </div>
-            <div class="modal-footer push-20-t">
-                <button class="btn btn-sm btn-default" type="button" data-dismiss="modal">Close</button>
-                {!! Form::submit('Enviar!',['class'=>'btn btn-sm btn-primary'])!!}
-            </div>
-            {!! Form::close() !!}
-        </div>
-    </div>
-</div>
+@include('app.ventas.ventas_modal_email')
 
 

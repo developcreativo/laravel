@@ -34,6 +34,11 @@ class facturacion extends Model
         return $this->hasmany('App\ingresos','factura_id');
     }
 
+    public function despachos()
+    {
+        return $this->hasOne('App\despachos','factura_id');
+    }
+
     public static function AgregarFacturacion($id)
     {
         $factura = new facturacion();

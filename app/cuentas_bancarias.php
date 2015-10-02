@@ -19,6 +19,7 @@ class cuentas_bancarias extends Model
         'tipo',
         'titular',
         'documento',
+        'correo',
         'principal'
     ];
 }

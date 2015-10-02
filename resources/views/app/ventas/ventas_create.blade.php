@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title')Nueva compra
+@section('title')Nueva venta
 @stop
 
 @section('description')
@@ -11,7 +11,7 @@
 @stop
 
 @section('breadcrumb')
-    <li><a href="{{url('compras')}}">Compras</a></li>
+    <li><a href="{{url('ventas')}}">Ventas</a></li>
 @stop
 
 @section('content')
@@ -23,7 +23,8 @@
         </div>
         <div class="block-content form-horizontal" style="overflow: auto;">
             <div class="col-sm-2">
-                <buttom class="btn btn-block btn-lg btn-default" data-toggle="modal" data-target="#clientes-modal"><i class="si si-users fa-3x"></i></buttom>
+                <buttom class="btn btn-block btn-lg btn-default" data-toggle="modal" data-target="#clientes-modal"><i
+                            class="si si-users fa-3x"></i></buttom>
             </div>
             <div class="col-sm-10">
                 <div class="col-sm-12">
@@ -65,19 +66,8 @@
                                 'data-date-format'=>'yyyy-mm-dd','placeholder'=>'Vence'])!!}
                             </div>
                         </div>
-                        <!--<div class="col-sm-3">
-                            <label class="css-input switch switch-primary">
-                                Credito:
-                                {!! Form::checkbox('credito', '1', null, ['class'=>''])!!}
-                                <span></span>
-                            </label>
-                        </div>-->
-
-
                     </div>
                 </div>
-
-
             </div>
         </div>
         <div class="block-content bg-gray-lighter">
@@ -164,10 +154,15 @@
                 </div>
             </div>
         </div>
-        <div class="block-header bg-gray">
-            <h3 class="block-title">Despacho:</h3>
+        <div class="block-header bg-primary">
+            <h3 class="block-title pull-left push-10-r">Despacho: </h3>
+
+            <div class="pull-left"><label class="css-input switch switch-sm switch-success remove-margin">
+                    <input type="checkbox" name="despacho" id="despacho" value="1"><span></span>
+                </label>
+            </div>
         </div>
-        <div class="block-content form-horizontal" style="overflow: auto;">
+        <div class="block-content form-horizontal" id="content_despacho" style="overflow: auto;">
             <div class="col-sm-12">
                 <div class="form-group">
                     <div class="col-sm-12">
@@ -272,6 +267,7 @@
         $(function () {
             App.initHelper('datepicker');
         });
+
     </script>
 
 @stop

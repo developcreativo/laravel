@@ -75,7 +75,6 @@ class ventas extends Model
         if ($datos['cliente_id'] == "") {
             clientes::create($datos->all());
         }
-
         $items = $datos['items']; //obtengo los datos de los productos
         $j = 0;
         $i = 0;
@@ -103,6 +102,7 @@ class ventas extends Model
         if (!isset($lastid['remision'])) {
             $lastid['remision'] = "";
         }
+
         return $lastid;
     }
 
@@ -139,7 +139,7 @@ class ventas extends Model
         $venta->iva = $iva;
         $venta->descuento = $descuento;
         $venta->compra = $compra;
-        if ($total == $valor) {
+        if ($venta->venta == $valor) {
             $venta->pagado = 1;
         } else {
             $venta->pagado = 0;
@@ -200,7 +200,8 @@ class ventas extends Model
     {
         $venta = ventas::with('venta_detalle.productos_configurables', 'clientes',
             'tiendas.company', 'user', 'ingreso_venta.formas_pago')->find($id);
-        $view = view('app/ventas/ventas_pdf', compact('venta'))->render();
+        $cuenta = cuentas_bancarias::where('principal',1)->first();
+        $view = view('app/ventas/ventas_pdf', compact('venta','cuenta'))->render();
         $pdf = App::make('dompdf.wrapper');
         $pdf->loadHTML($view);
         return $pdf;
