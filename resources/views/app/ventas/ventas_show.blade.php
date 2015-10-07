@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title')
+@section('title')Factura #{{ $venta->tiendas->prefijo }} {{ $venta->factura }}
 @stop
 
 @section('description')

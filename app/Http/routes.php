@@ -59,6 +59,9 @@ Route::resource('despachos', 'DespachosController',['except' => []]);
 /******* POS ********/
 Route::resource('ventas/pos', 'PosController',['except' => []]);
 
+/******* remision ********/
+Route::resource('remision', 'RemisionController',['except' => []]);
+
 /******* ventas ********/
 Route::get('ventas/pdf/{id}', 'VentaController@pdf');
 Route::get('ventas/print/{id}', 'VentaController@imprimir');

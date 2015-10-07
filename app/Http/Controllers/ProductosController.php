@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\atributos;
 use App\atributos_sub;
+use App\Bodegas;
 use App\categorias;
 use App\Historico_Compras;
 use App\impuestos;
@@ -11,6 +12,7 @@ use App\marcas;
 use App\productos;
 use App\productos_configurables;
 use App\Remember;
+use App\tiendas;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -181,7 +183,11 @@ class ProductosController extends Controller
      */
     public function destroy($id)
     {
-        //
+        //se elima el producto y lo que hay en las bodegas, los productos configurables quedaran ahi
+        //ya que es necesario para las ventas
+        productos::eliminar($id);
+        return redirect('productos');
+
     }
 
     public function carga_masiva()
@@ -221,12 +227,12 @@ class ProductosController extends Controller
     {
         //cargar graficos de estadisticas
         $id = $request->id;
-        $compras = Historico_Compras::where('codigo',$id)->get();
-        foreach($compras as $compra){
+        $compras = Historico_Compras::where('codigo', $id)->get();
+        foreach ($compras as $compra) {
             $label[] = date_format($compra->created_at, 'd/m/y');
             $data[] = $compra->precio;
         }
-        $compras = (['label'=>$label,'data'=>$data]);
+        $compras = (['label' => $label, 'data' => $data]);
         return response()->json($compras);
     }
 }

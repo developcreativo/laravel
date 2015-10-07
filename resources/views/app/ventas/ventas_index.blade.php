@@ -63,7 +63,7 @@
                                     class='glyphicon glyphicon-trash' aria-hidden='true'></span></a>
                         <a class='btn btn-default btn-xs' href='ventas/print/{{$venta->id}}' data-toggle="tooltip" data-original-title="Imprimir"><span
                                     class='glyphicon glyphicon-print' aria-hidden='true'></span></a>
-                        <a class='btn btn-info btn-xs' href='ventas/pos/{{$venta->factura_venta->id}}' data-toggle="tooltip" data-original-title="Imprimir POS"><span
+                        <a class='btn btn-info btn-xs' href='ventas/pos/@if(isset($venta->factura_venta)){{$venta->factura_venta->id }}@else{{ $venta->factura_remision->id}}@endif' data-toggle="tooltip" data-original-title="Imprimir POS"><span
                                     class='si si-energy' aria-hidden='true'></span></a>
                     </td>
                 </tr>

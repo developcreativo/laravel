@@ -9,6 +9,7 @@
  */
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Session;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -164,5 +165,19 @@ class productos extends Model
         foreach ($results as $result) {
             $hola[] = $result->sku;
         }
+    }
+
+    public static function eliminar($id){
+        $configurables = productos_configurables::where('producto_id',$id)->get();
+        $tiendas = tiendas::all();
+        foreach($tiendas as $tienda){
+            Session::put('bodega',$tienda->id);
+            foreach($configurables as $item){
+                Bodegas::where('codigo',$item->id)->delete();
+            }
+        }
+        productos::find($id)->delete();
+        Session::flash('mensaje', 'Producto eliminado exitosamente');
+        Cache::forget('productos');
     }
 }

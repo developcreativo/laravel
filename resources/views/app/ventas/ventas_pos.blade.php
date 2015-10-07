@@ -91,7 +91,13 @@
 
             </div>
             <div class="totales">
-                <table class="table table-striped remove-margin-b">
+                <table class="table table-striped table-condensed remove-margin-b">
+                    <tr>
+                        <td align="right" width="50%">Descuento:</td>
+                        <td align="right"><!--- descuento Field --->
+                            {!! Form::text('descuento', null, ['class' => 'form-control','id'=>'descuento'])!!}
+                        </td>
+                    </tr>
                     <tr>
                         <td align="right" width="50%">Sub-Total:</td>
                         <td align="right"><!--- iva Field --->

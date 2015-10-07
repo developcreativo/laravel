@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                {!! Form::open(['id'=>'formulario_delete','method'=>'delete','action'=>['ProductosVariablesController@destroy',':PRODUCTO_ID']]) !!}
+                {!! Form::open(['id'=>'formulario_delete_variable','method'=>'delete','action'=>['ProductosVariablesController@destroy',':PRODUCTO_ID']]) !!}
                 <button class="btn btn-sm btn-default" type="button" data-dismiss="modal">Cerrar</button>
                 <button class="btn btn-sm btn-success" type="submit"><i class="fa fa-check"></i> Entiendo</button>
                 {!! Form::close() !!}
@@ -106,7 +106,7 @@
 <!-- end modal edit -->
 <script>
     function borrar(id) {
-        var form = $('#formulario_delete');
+        var form = $('#formulario_delete_variable');
         var action = form.attr('action').replace(':PRODUCTO_ID',id);
         form.attr('action',action);
     }

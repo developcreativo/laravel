@@ -7,6 +7,7 @@ $(document).ready(function () {
     $('.categoria').hide();
     $('.buscador').hide();
     ClienteRapido();
+    $('#descuento').onkeyup(subtotal);
 });
 $('#buscar').keyup(buscar);
 var i = 0
@@ -35,7 +36,8 @@ function AgClienteNuevo() {
             $.notify({
                 title: "<strong>Respuesta:</strong> ",
                 message: 'Cliente agregado exitosamente',
-                icon: 'fa fa-check'},{
+                icon: 'fa fa-check'
+            }, {
                 type: 'success'
             });
             $('#AGCLIENTE').modal('hide')
@@ -46,7 +48,8 @@ function AgClienteNuevo() {
             $.notify({
                 title: "<strong>Respuesta:</strong> ",
                 message: 'Cliente duplicado o vacio',
-                icon: 'fa fa-times'},{
+                icon: 'fa fa-times'
+            }, {
                 type: 'danger'
             });
 
@@ -84,7 +87,8 @@ function abrir_pagos() {
             $.notify({
                 title: "<strong>Respuesta:</strong> ",
                 message: 'Agregue minimo un producto',
-                icon: 'fa fa-times'},{
+                icon: 'fa fa-times'
+            }, {
                 type: 'danger'
             });
         }
@@ -92,7 +96,8 @@ function abrir_pagos() {
         $.notify({
             title: "<strong>Respuesta:</strong> ",
             message: 'Falta agregar un cliente',
-            icon: 'fa fa-times'},{
+            icon: 'fa fa-times'
+        }, {
             type: 'danger'
         });
     }
@@ -145,9 +150,10 @@ function subtotal() {
         suma += parseInt($(this).find('.precio').val() || 0, 10) //numero de la celda 3
         subIVA += parseInt($(this).find('.iva').val() || 0, 10)
     })
+    descuento = $('#descuento').val();
 
     Subtotal = suma - subIVA
-
+    suma = suma - descuento
     //alert(suma)
     $('#subtotal').val(Subtotal);
     $('#IVA').val(subIVA);
