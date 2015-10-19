@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Bodegas;
 use App\categorias;
+use App\ciudades;
 use App\clientes;
+use App\departamentos;
 use App\facturacion;
 use App\ingresos;
 use App\tiendas;
@@ -29,7 +31,10 @@ class PosController extends Controller
         $clientes = clientes::all();
         $categorias = categorias::orderBy('level')->get();
         $tiendas = tiendas::lists('tienda', 'id');
-        return Response::view('app.ventas.ventas_pos', compact('tiendas', 'categorias', 'productos', 'clientes'));
+        $ciudades = ciudades::all()->toJson();
+        $departamentos = departamentos::lists('departamento', 'id');
+        return Response::view('app.ventas.ventas_pos', compact('tiendas', 'categorias',
+            'productos', 'clientes','ciudades','departamentos'));
 
     }
 
@@ -52,7 +57,7 @@ class PosController extends Controller
     public function store(Request $request)
     {
         //
-        dd($request->all());
+        //dd($request->all());
         $lastid = ventas::separador_remision($request);
         tiendas::numero_factura($lastid);
         Bodegas::Agregar_Venta($request->items);
@@ -72,14 +77,16 @@ class PosController extends Controller
     {
         //
         $tipo = facturacion::find($id);
-        if (!$tipo->venta_id == "") {
+        
+        if (!$tipo->venta_id == 0) {
             $venta = ventas::with('venta_detalle.productos_configurables', 'clientes', 'tiendas.company', 'user')
                 ->find($tipo->venta_id);
         }
-        if (!$tipo->venta_id == "") {
+        if (!$tipo->remision_id == 0) {
             $remision = ventas::with('venta_detalle.productos_configurables', 'clientes', 'tiendas.company', 'user')
                 ->find($tipo->remision_id);
         }
+        //dd($remision);
         return view('app/ventas/ventas_pos_invoice', compact('venta', 'remision'));
     }
 

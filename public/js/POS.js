@@ -7,7 +7,8 @@ $(document).ready(function () {
     $('.categoria').hide();
     $('.buscador').hide();
     ClienteRapido();
-    $('#descuento').onkeyup(subtotal);
+    $('#descuento').keyup(subtotal);
+
 });
 $('#buscar').keyup(buscar);
 var i = 0
@@ -25,36 +26,31 @@ function ClienteRapido() {
 }
 
 function AgClienteNuevo() {
-    var $form = $('#AgClienteForm'),
-        data = $form.serialize();
-    $.ajax({
-        type: 'GET',
-        url: 'cliente', //indicamos la ruta donde se genera la hora
-        data: data,//indicamos que es de tipo texto plano
-        async: true,
-        success: function (data) {
-            $.notify({
-                title: "<strong>Respuesta:</strong> ",
-                message: 'Cliente agregado exitosamente',
-                icon: 'fa fa-check'
-            }, {
-                type: 'success'
-            });
-            $('#AGCLIENTE').modal('hide')
-            $('#nombre_cliente').val(data.nombre)
-            $('#cliente_id').val(data.lastid)
-        },
-        error: function () {
-            $.notify({
-                title: "<strong>Respuesta:</strong> ",
-                message: 'Cliente duplicado o vacio',
-                icon: 'fa fa-times'
-            }, {
-                type: 'danger'
-            });
+    $('#loading').show()
+    var form = $('#AgClienteForm');
+    var url = form.attr('action');
+    var data = form.serialize();
+    $.post(url, data, function (response) {
+        $('#loading').fadeOut(800);
+        $.notify({
+            title: "<strong>Respuesta:</strong> ",
+            message: 'Cliente agregado exitosamente',
+            icon: 'fa fa-check'
+        }, {
+            type: 'success'
+        });
+        AgCliente(response.cliente.id, response.cliente.cliente)
+    }).fail(function (response) {
+        $('#loading').fadeOut(800);
+        $.notify({
+            title: "<strong>Respuesta:</strong> ",
+            message: 'Cliente duplicado o vacio',
+            icon: 'fa fa-times'
+        }, {
+            type: 'danger'
+        });
 
-        }
-    })
+    });
 }
 
 function totalpago() {
@@ -75,7 +71,7 @@ function totalpago() {
 
 }
 function AgCliente(idcliente, nombre) {
-    $('#nombre_cliente').val(nombre)
+    $('#nombre_cliente').html(nombre)
     $('#cliente_id').val(idcliente)
 }
 
@@ -128,14 +124,20 @@ function vaciar() {
     $('.productos').html('')
     subtotal()
 }
+function cantidad(){
+    subtotal()
+}
 function AgItem(id, valor, img, nombre, iva, remision, compra) {
     var Content = '';
     iva = iva * compra;
     Content = '<div class="producto" ><div class="col-sm-3 col-xs-6 hidden-sm hidden-md"><img src="/' + img +
-        '" class="img-circle img-corona" width="60px"></div><div class="info col-sm-9 col-xs-6">' +
+        '" class="img-circle img-corona" width="60px"></div><div class="info col-sm-12 col-md-9 col-xs-6">' +
         '<input type="text" name="items[' + i + '][nombre]" value="' + nombre + '" class="nombre font-w600" readonly>' +
-        '<input type="text" name="items[' + i + '][valor]" value="' + valor + '" class="precio" onchange="subtotal()">' +
+        '<input type="text" name="items[' + i + '][valor]" value="' + valor + '" class="precio" readonly>' +
         '<input type="hidden" name="items[' + i + '][iva]" value="' + iva + '" class="iva">' +
+        '<input type="number" name="items[' + i + '][cantidad]" value="1" class="cantidad" onclick="javascript:cantidad();" onchange="javascript:cantidad();">' +
+        '<input type="hidden" name="items[' + i + '][sub_total]" value="' + valor + '" class="sub_total">' +
+        '<input type="hidden" name="items[' + i + '][dto]" value="0" class="dto">' +
         '<input type="hidden" name="items[' + i + '][id]" value="' + id + '" class="id">' +
         '<input type="hidden" name="items[' + i + '][compra]" value="' + compra + '" class="compra">' +
         '<input type="hidden" name="items[' + i + '][remision]" value="' + remision + '" class="remision"></div></div>';
@@ -146,8 +148,7 @@ function AgItem(id, valor, img, nombre, iva, remision, compra) {
 function subtotal() {
     var suma = 0, iva = 0, subDTO = 0, Subtotal = 0, subIVA = 0, rete = 0;
     $('.producto').each(function () { //filas con clase 'dato', especifica una clase, asi no tomas el nombre de las columnas
-
-        suma += parseInt($(this).find('.precio').val() || 0, 10) //numero de la celda 3
+        suma += parseInt($(this).find('.precio').val() || 0, 10) * parseInt($(this).find('.cantidad').val() || 0, 10)//numero de la celda 3
         subIVA += parseInt($(this).find('.iva').val() || 0, 10)
     })
     descuento = $('#descuento').val();

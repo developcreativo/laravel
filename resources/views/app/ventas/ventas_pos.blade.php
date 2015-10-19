@@ -61,14 +61,14 @@
     {!! Form::open(['action'=>'PosController@store']) !!}
     <div class="col-sm-3 ticket">
         <div class="block block-themed">
-            <div class="block-content">
+            <div class="btn-group" data-toggle="buttons" style="width: 100%;">
 
-                <a data-toggle="modal" data-target="#clientes-modal" class=" btn btn-lg btn-default">
-                    <i class="fa fa-user"></i><span class="hidden-sm hidden-md">  Cliente</span>
+                <a data-toggle="modal" data-target="#clientes-modal" class="btn btn-default" style="width: 20%;">
+                    <i class="fa fa-user"></i>
                 </a>
-
-                <a href="#" class="btn btn-lg btn-danger pull-right" data-toggle="tooltip"
-                   data-original-title="Vaciar canasta"
+                <button class="btn btn-defauly" id="nombre_cliente" style="width: 60%;"></button>
+                <a href="#" class="btn btn-danger pull-right" data-toggle="tooltip"
+                   data-original-title="Vaciar canasta" style="width: 20%;"
                    onclick="vaciar()">
                     <span class="glyphicon glyphicon-trash"></span>
                 </a>
@@ -80,10 +80,7 @@
                     <!--- cliente_id Field --->
                     {!! Form::hidden('cliente_id', null, ['class' => 'form-control','id'=>'cliente_id']) !!}
                             <!--- Nombre Field --->
-                    <div class="form-group has-info">
-                        {!! Form::text('cliente', null, ['class' => 'form-control
-                        text-center','id'=>'nombre_cliente','placeholder'=>'Nombre de Cliente','readonly']) !!}
-                    </div>
+
                 </div>
                 <div class="productos">
                 </div>

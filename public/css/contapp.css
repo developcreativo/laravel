@@ -154,8 +154,15 @@ input[placeholder] { width: 100% !important; }
     border: 0px;
 }
 
-.producto .cantidad {
 
+.producto .cantidad {
+    float: right;
+    position: relative;
+    text-align: right;
+    font-size: 1.3em;
+    text-decoration: wavy;
+    width: 40px;
+    border: 0px;
 }
 
 .texto {

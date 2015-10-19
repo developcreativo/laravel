@@ -1,7 +1,8 @@
 @extends('layouts.master')
 
 @section('title')
-    Factura: {{ $venta->id }}
+    @if(isset($venta))Factura: {{ $venta->id }}@endif
+    @if(isset($remision))Remisión: {{ $remision->id }}@endif
 @stop
 
 @section('description')

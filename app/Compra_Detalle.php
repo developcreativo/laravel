@@ -13,7 +13,6 @@ class Compra_Detalle extends Model
             //return Session::get('tenant.id').'_compra_detalle';
             return 'compra_detalle';
         }
-
     protected $fillable = [
         'compra_id',
         'producto_configurable_id',
@@ -27,7 +26,6 @@ class Compra_Detalle extends Model
     {
         return $this->belongsTo('App\productos_configurables','producto_configurable_id');
     }
-
     public static function AgregarCompraDetalle($items,$id)
     {
         foreach($items as $item) {

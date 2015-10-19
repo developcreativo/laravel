@@ -66,7 +66,7 @@ class VentaController extends Controller
     public function store(Request $request)
     {
         //
-        dd($request->all());
+        //dd($request->all());
         $lastid = ventas::separador_remision($request);
         tiendas::numero_factura($lastid);
         Bodegas::Agregar_Venta($request->items);

@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\ciudades;
+use App\clientes;
+use App\departamentos;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -17,6 +20,10 @@ class ClientesController extends Controller
     public function index()
     {
         //
+        $clientes = clientes::all();
+        $ciudades = ciudades::all()->toJson();
+        $departamentos = departamentos::lists('departamento', 'id');
+        return view('app.clientes.clientes_index', compact('clientes','ciudades','departamentos'));
     }
 
     /**
@@ -38,6 +45,9 @@ class ClientesController extends Controller
     public function store(Request $request)
     {
         //
+        $cliente = clientes::create($request->all());
+        return response()->json(['cliente'=>$cliente,'mensaje'=>'Cliente creado con exito']);
+
     }
 
     /**
@@ -49,6 +59,8 @@ class ClientesController extends Controller
     public function show($id)
     {
         //
+        $cliente = clientes::find($id);
+        return view('app.clientes.clientes_show', compact('cliente'));
     }
 
     /**
@@ -83,5 +95,7 @@ class ClientesController extends Controller
     public function destroy($id)
     {
         //
+        clientes::destroy($id);
+        return response(['id'=>$id,'mensaje'=>'Cliente eliminado con exito']);
     }
 }

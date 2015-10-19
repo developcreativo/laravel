@@ -50,6 +50,10 @@ Route::resource('atributos', 'AtributoController',['except' => ['variables']]);
 Route::get('proveedores/chart', 'ProveedoresController@chart');
 Route::resource('proveedores', 'ProveedoresController',['except' => ['chart']]);
 
+/******* clientes ********/
+Route::get('clientes/chart', 'ProveedoresController@chart');
+Route::resource('clientes', 'ClientesController',['except' => ['chart']]);
+
 /******* impuestos ********/
 Route::resource('impuestos', 'ImpuestosController',['except' => []]);
 

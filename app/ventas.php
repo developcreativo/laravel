@@ -64,6 +64,7 @@ class ventas extends Model
     {
         return $this->hasMany('App\ingresos', 'venta_id');
     }
+
     public function ingreso_remision()
     {
         return $this->hasMany('App\ingresos', 'remision_id');
@@ -139,7 +140,7 @@ class ventas extends Model
         $venta->iva = $iva;
         $venta->descuento = $descuento;
         $venta->compra = $compra;
-        if ($venta->venta == $valor) {
+        if ($valor > 0) {
             $venta->pagado = 1;
         } else {
             $venta->pagado = 0;
@@ -168,9 +169,12 @@ class ventas extends Model
         foreach ($datos['pagos'] as $pago) {
             if ($pago['id'] == 6) {
                 $valor += 0;
-            }else{
+            } else {
                 $valor += $pago['valor'];
             }
+        }
+        if ($descuento == 0) {
+            $descuento = $datos['descuento'];
         }
         $factura = tiendas::find(Session::get('bodega'))->factura + 1;
         $venta = new ventas();
@@ -185,7 +189,7 @@ class ventas extends Model
         $venta->iva = $iva;
         $venta->descuento = $descuento;
         $venta->compra = $compra;
-        if ($venta->venta == $valor) {
+        if ($valor > 0) {
             $venta->pagado = 1;
         } else {
             $venta->pagado = 0;
@@ -200,8 +204,8 @@ class ventas extends Model
     {
         $venta = ventas::with('venta_detalle.productos_configurables', 'clientes',
             'tiendas.company', 'user', 'ingreso_venta.formas_pago')->find($id);
-        $cuenta = cuentas_bancarias::where('principal',1)->first();
-        $view = view('app/ventas/ventas_pdf', compact('venta','cuenta'))->render();
+        $cuenta = cuentas_bancarias::where('principal', 1)->first();
+        $view = view('app/ventas/ventas_pdf', compact('venta', 'cuenta'))->render();
         $pdf = App::make('dompdf.wrapper');
         $pdf->loadHTML($view);
         return $pdf;

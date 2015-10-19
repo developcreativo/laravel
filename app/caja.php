@@ -108,7 +108,6 @@ class caja extends Model
         }
 
     }
-
     public static function CajaAbierta()
     {
         $tienda = Auth::user()->tienda_id;
