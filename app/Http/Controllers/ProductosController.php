@@ -200,7 +200,6 @@ class ProductosController extends Controller
 
     }
 
-
     public function download($bajar)
     {
 

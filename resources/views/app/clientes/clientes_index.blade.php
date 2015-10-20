@@ -80,8 +80,7 @@
 @stop
 
 @section('scripts')
-    {!! HTML::script('assets/js/plugins/datatables/jquery.dataTables.min.js')!!}
-    {!! HTML::script('assets/js/pages/base_tables_datatables.js')!!}
+
     <script>
         function AgClienteNuevo() {
             $('#loading').show()

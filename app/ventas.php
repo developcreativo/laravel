@@ -200,6 +200,24 @@ class ventas extends Model
         return ['id' => $venta->id, 'factura' => $venta->factura];
     }
 
+    public static function datos($ventas)
+    {
+        $pagado = 0;
+        $vencida = 0;
+        $pendiente = 0;
+        foreach ($ventas as $venta) {
+            if ($venta->pagado > 0) {
+                $pagado += $venta->venta;
+            }
+            if (strtotime($venta->vencimiento) < time()) {
+                $vencida += ($venta->venta);
+            } else {
+                $pendiente += ($venta->venta);
+            }
+        }
+        return ['pagado' => $pagado, 'vencido' => $vencida, 'pendiente' => $pendiente];
+    }
+
     public static function crear_pdf($id)
     {
         $venta = ventas::with('venta_detalle.productos_configurables', 'clientes',
@@ -209,5 +227,13 @@ class ventas extends Model
         $pdf = App::make('dompdf.wrapper');
         $pdf->loadHTML($view);
         return $pdf;
+    }
+
+    public static function top_ventas($id)
+    {
+    //pendiente para realizar
+        $ventas = ventas::with('ventas_detalle.productos_configurables.productos')->where('cliente_id', $id)->get();
+        
+        return $ventas;
     }
 }

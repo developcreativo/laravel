@@ -50,7 +50,6 @@ class productos extends Model
         return $this->belongsTo('App\impuestos', 'impuestos');
     }
 
-
     public function productos_configurables()
     {
         return $this->hasMany('App\productos_configurables', 'producto_id');
