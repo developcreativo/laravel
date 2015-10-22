@@ -147,6 +147,7 @@ return [
         Barryvdh\HttpCache\ServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
         Barryvdh\Queue\AsyncServiceProvider::class,
+        Fx3costa\Laravelchartjs\Providers\ChartjsServiceProvider::class,
 
 
         /*

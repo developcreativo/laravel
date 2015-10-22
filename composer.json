@@ -17,7 +17,8 @@
         "intervention/image": "^2.3",
         "barryvdh/laravel-httpcache": "0.2.x@dev",
         "barryvdh/laravel-dompdf": "0.6.*",
-        "barryvdh/laravel-async-queue": "0.4.x"
+        "barryvdh/laravel-async-queue": "0.4.x",
+        "fx3costa/laravelchartjs": "^1.2"
 
 
     },

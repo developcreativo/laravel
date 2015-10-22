@@ -231,9 +231,18 @@ class ventas extends Model
 
     public static function top_ventas($id)
     {
-    //pendiente para realizar
-        $ventas = ventas::with('ventas_detalle.productos_configurables.productos')->where('cliente_id', $id)->get();
-        
-        return $ventas;
+        //pendiente para realizar
+        $ventas = ventas::where('cliente_id', $id)->select('id')->get();
+        $ventas = $ventas->toArray();
+        $productos = venta_detalle::with('productos_configurables.productos')->wherein('venta_id',$ventas)
+            ->groupby('producto_configurable_id')->selectraw('*, sum(cantidad) as SumCantidad')
+            ->orderby('SumCantidad','desc')->take(10)->get();
+        foreach($productos as $producto){
+            $label[] = $producto->producto;
+            $data[] = $producto->SumCantidad;
+        }
+        $top = (['label' => $label, 'data' => $data]);
+
+        return $top;
     }
 }

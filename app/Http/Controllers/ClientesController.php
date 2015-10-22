@@ -62,13 +62,12 @@ class ClientesController extends Controller
     public function show($id)
     {
         //
-        dd(ventas::top_ventas($id));
+        //dd(ventas::top_ventas($id));
         $cliente = clientes::find($id);
         $ciudadesJSON = ciudades::all()->toJson();
         $departamentos = departamentos::lists('departamento', 'id');
         $ciudades = ciudades::lists('ciudad', 'id');
         $ventas = ventas::with('clientes', 'tiendas', 'factura_venta')->where('cliente_id', $id)->get();
-
         $datos = ventas::datos($ventas);
         return view('app.clientes.clientes_show', compact('cliente','ciudades','ciudadesJSON',
             'departamentos','ventas','datos'));
@@ -117,13 +116,7 @@ class ClientesController extends Controller
     public function chart(Request $request)
     {
         //cargar graficos de estadisticas
-        $id = $request->id;
-        $top_ventas = ventas::top_ventas($id);
-        foreach ($top_ventas as $compra) {
-            $label[] = date_format($compra->created_at, 'd/m/y');
-            $data[] = $compra->precio;
-        }
-        $compras = (['label' => $label, 'data' => $data]);
-        return response()->json($compras);
+        $top_ventas = ventas::top_ventas($request->id);
+        return response()->json($top_ventas);
     }
 }

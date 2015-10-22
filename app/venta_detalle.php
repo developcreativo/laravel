@@ -42,6 +42,7 @@ class venta_detalle extends Model
             $producto = new venta_detalle();
             $producto->venta_id = $id;
             $producto->producto_configurable_id = $item['id'];
+            $producto->producto = $item['nombre'];
             $producto->cantidad = $item['cantidad'];
             $producto->venta = ($item['valor']);
             $producto->compra = ($item['compra']);

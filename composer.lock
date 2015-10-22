@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "daaf889d3623bcdf52039c6be5b86cf1",
-    "content-hash": "0672cd5e58e2544387d125fcc76c4c50",
+    "hash": "1c2b1466866b34cc4aeafc0c7572af9b",
+    "content-hash": "c0f9c3341bb5c99c732fcf1a23508b01",
     "packages": [
         {
             "name": "barryvdh/laravel-async-queue",
@@ -512,6 +512,51 @@
             "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
             "homepage": "https://github.com/dompdf/dompdf",
             "time": "2014-03-11 01:59:52"
+        },
+        {
+            "name": "fx3costa/laravelchartjs",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fxcosta/laravel-chartjs.git",
+                "reference": "5c5a49c5f29e8ecae7efd6009781991fd015d894"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fxcosta/laravel-chartjs/zipball/5c5a49c5f29e8ecae7efd6009781991fd015d894",
+                "reference": "5c5a49c5f29e8ecae7efd6009781991fd015d894",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.1.*|5.0.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Fx3costa\\Laravelchartjs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Felix",
+                    "email": "fx3costa@gmail.com"
+                }
+            ],
+            "description": "Simples package para facilitar e automatizar o uso de graficos no Laravel 5.x usando a lib Chartjs",
+            "keywords": [
+                "chart",
+                "chartjs",
+                "fx3costa",
+                "graphics",
+                "laravel5",
+                "reports"
+            ],
+            "time": "2015-07-30 04:52:38"
         },
         {
             "name": "guzzlehttp/guzzle",

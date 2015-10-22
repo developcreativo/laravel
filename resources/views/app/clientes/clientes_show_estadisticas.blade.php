@@ -12,7 +12,7 @@
                 <h3 class="block-title">Historico Precios de compra</h3>
             </div>
             <div class="block-content block-content-full text-center" >
-                <canvas id="historico_compras" class="js-chartjs-lines" height="250" ></canvas>
+                <canvas id="top_ventass"  ></canvas>
             </div>
         </div>
         <!-- END Lines Chart -->
@@ -30,7 +30,7 @@
                 <h3 class="block-title">Historico Precios de compra</h3>
             </div>
             <div class="block-content block-content-full text-center" >
-                <canvas id="historico_ventas" class="js-chartjs-lines" height="250" ></canvas>
+                <canvas id="top_ventas" class="js-chartjs-lines" style="width:100%; height: 300px" ></canvas>
             </div>
         </div>
         <!-- END Lines Chart -->
@@ -44,6 +44,10 @@
             $.getJSON("chart?id=" + codigo, function (result) {
                 console.log(result.label)
                 console.log(result.data)
+                var options = {
+                    responsive: true,
+                    showScale: false
+                };
 
                 var buyerData = {
                     labels: result.label,
@@ -51,18 +55,16 @@
                         {
                             fillColor: "rgba(220,220,220,0.2)",
                             strokeColor: "rgba(220,220,220,1)",
-                            pointColor: "rgba(220,220,220,1)",
-                            pointStrokeColor: "#fff",
-                            pointHighlightFill: "#fff",
-                            pointHighlightStroke: "rgba(220,220,220,1)",
+                            highlightFill: "rgba(220,220,220,0.75)",
+                            highlightStroke: "rgba(220,220,220,1)",
                             data: result.data
                         }
                     ]
                 };
-                var compras = document.getElementById('historico_compras').getContext('2d');
-                var ventas = document.getElementById('historico_ventas').getContext('2d');
-                new Chart(compras).Line(buyerData, {bezierCurve: true});
-                new Chart(ventas).Line(buyerData, {bezierCurve: true});
+
+                var ventas = document.getElementById('top_ventas').getContext('2d');
+                new Chart(ventas).Bar(buyerData, options);
+
 
             });
         },3000)

@@ -51,7 +51,7 @@ Route::get('proveedores/chart', 'ProveedoresController@chart');
 Route::resource('proveedores', 'ProveedoresController',['except' => ['chart']]);
 
 /******* clientes ********/
-Route::get('clientes/chart', 'ProveedoresController@chart');
+Route::get('clientes/chart', 'ClientesController@chart');
 Route::resource('clientes', 'ClientesController',['except' => ['chart']]);
 
 /******* impuestos ********/

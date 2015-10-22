@@ -352,6 +352,7 @@
       <column name="dto" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="cantidad" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="subtotal" sqlType="DECIMAL" precision="10" scale="2" nullable="true" jdbcType="3"/>
+      <column name="producto" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="ventas_1" schema="" catalog="contapp" type="TABLE">
