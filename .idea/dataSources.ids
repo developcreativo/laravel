@@ -39,7 +39,7 @@
       <column name="cantidad" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="venta" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="compra" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="iva" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="iva" sqlType="DECIMAL" precision="4" scale="2" nullable="true" jdbcType="3"/>
       <column name="remision" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
       <column name="created_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
@@ -346,7 +346,7 @@
       <column name="producto_configurable_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="venta" sqlType="DECIMAL" precision="10" scale="2" nullable="true" jdbcType="3"/>
       <column name="compra" sqlType="DECIMAL" precision="10" scale="2" nullable="true" jdbcType="3"/>
-      <column name="iva" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="iva" sqlType="DECIMAL" precision="10" scale="2" nullable="true" jdbcType="3"/>
       <column name="created_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="dto" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>

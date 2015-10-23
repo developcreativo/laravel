@@ -161,8 +161,9 @@ class ventas extends Model
         $subtotal = 0;
         foreach ($items_venta as $item) {
             $dto = ($item['dto'] / 100) * $item['valor'] * $item['cantidad'];
-            $iva += ($item['iva'] / 100) * (($item['valor'] * $item['cantidad']) - $dto);
-            $subtotal += ($item['valor'] * $item['cantidad']);
+            //$iva += ($item['iva'] / 100) * (($item['valor'] * $item['cantidad']) - $dto);
+            $iva += ($item['iva'] * $item['cantidad']);
+            $subtotal += ($item['valor'] * $item['cantidad']) - $iva;
             $compra += $item['compra'] * $item['cantidad'];
             $descuento += $dto;
         }

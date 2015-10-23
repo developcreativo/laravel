@@ -42,7 +42,7 @@ class Bodegas extends Model
                 $producto->codigo = $item['producto_configurable'];
                 $producto->cantidad = $item['cantidad'];
                 $producto->compra = ($item['sub_total'] / $item['cantidad']);
-                $producto->iva = $item['iva'] / 100;
+                $producto->iva = ($item['iva'] / 100);
                 $producto->remision = $remision;
                 $producto->save();
             }

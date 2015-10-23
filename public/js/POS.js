@@ -127,9 +127,10 @@ function vaciar() {
 function cantidad(){
     subtotal()
 }
-function AgItem(id, valor, img, nombre, iva, remision, compra) {
+function AgItem(id, valor, img, nombre, IVA, remision, compra) {
     var Content = '';
-    iva = iva * compra;
+    //iva = iva * compra;
+    iva = valor - (valor / (1 + parseFloat(IVA)));
     Content = '<div class="producto" ><div class="col-sm-3 col-xs-6 hidden-sm hidden-md"><img src="/' + img +
         '" class="img-circle img-corona" width="60px"></div><div class="info col-sm-12 col-md-9 col-xs-6">' +
         '<input type="text" name="items[' + i + '][nombre]" value="' + nombre + '" class="nombre font-w600" readonly>' +
@@ -149,7 +150,7 @@ function subtotal() {
     var suma = 0, iva = 0, subDTO = 0, Subtotal = 0, subIVA = 0, rete = 0;
     $('.producto').each(function () { //filas con clase 'dato', especifica una clase, asi no tomas el nombre de las columnas
         suma += parseInt($(this).find('.precio').val() || 0, 10) * parseInt($(this).find('.cantidad').val() || 0, 10)//numero de la celda 3
-        subIVA += parseInt($(this).find('.iva').val() || 0, 10)
+        subIVA += parseInt($(this).find('.iva').val() || 0, 10) * parseInt($(this).find('.cantidad').val() || 0, 10)
     })
     descuento = $('#descuento').val();
 

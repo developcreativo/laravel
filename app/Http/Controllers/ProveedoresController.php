@@ -47,7 +47,8 @@ class ProveedoresController extends Controller
     {
         //
         //dd($request->all());
-        proveedores::create($request);
+        proveedores::create($request->all());
+        return redirect('proveedores');
     }
 
     /**

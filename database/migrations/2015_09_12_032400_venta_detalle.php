@@ -22,7 +22,7 @@ class VentaDetalle extends Migration
         			$table->integer('cantidad');
         			$table->decimal('venta',10,2);
         			$table->decimal('compra',10,2);
-        			$table->integer('iva')->nullable();
+        			$table->decimal('iva',10,2)->nullable();
         			$table->integer('dto')->nullable();
 					$table->decimal('subtotal',10,2)->nullable();
         			$table->timestamps();

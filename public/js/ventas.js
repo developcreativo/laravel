@@ -29,25 +29,28 @@ var j = 0;
 
 function agregaritems(id, valor, nombre, iva, remision, compra) {
 
+
     var successContent = '<tr class ="dato" id="' + i + '"><td><input class="form-control input-sm" value="' + id + '" name="items[' + i + '][id]" type="text" readonly></td>' +
 
         '<td><input class="form-control input-sm cant" onkeyup="obtenerDatos(' + i + ')" value="1" name="items[' + i + '][cantidad]" type="text" id="cantidad' + i + '"></td>' +
 
-        '<td><input class="form-control input-sm" value="' + nombre + '" name="items[' + i + '][nombre]" type="text" disabled></td>' +
+        '<td><input class="form-control input-sm" value="' + nombre + '" name="items[' + i + '][nombre]" type="text" readonly></td>' +
 
         '<td><input class="form-control input-sm val" onkeyup="obtenerDatos(' + i + ')" value="' + valor + '" name="items[' + i + '][valor]" id="valor' + i + '" type="text"></td>' +
 
-        '<td><input class="form-control input-sm iva" onkeyup="obtenerDatos(' + i + ')" value="0" name="items[' + i + '][iva]" id="iva' + i + '" type="text" ></td>' +
+        '<td><input class="form-control input-sm iva" onkeyup="obtenerDatos(' + i + ')" value="' + iva * 100 + '" name="items[' + i + '][iva2]" id="iva2' + i + '" type="text" ></td>' +
 
         '<td><input class="form-control input-sm dto" onkeyup="obtenerDatos(' + i + ')" value="0" name="items[' + i + '][dto]" id="dto' + i + '" type="text" ></td>' +
 
-        '<td><input class="form-control input-sm sub" value="' + valor + '" name="items[' + i + '][sub_total]" id="sub_total' + i + '" type="text" readonly ></td>' +
+        '<td><input class="form-control input-sm sub" value="' + (parseFloat(valor / ( 1 + parseFloat(iva)))).toFixed(2) + '" name="items[' + i + '][sub_total]" id="sub_total' + i + '" type="text" readonly ></td>' +
 
         '<td> <a class="btn btn-danger btn-sm" href="#" onclick="return deletetr(' + i + ')"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>' +
 
         '<input type="hidden" name="items[' + i + '][remision]" value="' + remision + '">' +
 
         '<input type="hidden" name="items[' + i + '][compra]" value="' + compra + '">' +
+
+        '<input type="hidden" name="items[' + i + '][iva]" value="' + (parseFloat(valor) - (parseFloat(valor / ( 1 + parseFloat(iva))))).toFixed(2) + '" id="iva' + i + '">' +
 
         '</tr>';
 
@@ -74,13 +77,29 @@ function obtenerDatos(id) {
 
         celda_sub_total = '[id=sub_total' + id + ']',
 
+        celda_dto = '[id=dto' + id + ']',
+
+        celda_iva = '[id=iva' + id + ']',
+
+        celda_iva2 = '[id=iva2' + id + ']',
+
         cantidad = parseInt($(celda_cantidad).val()),
 
-        valor = parseInt($(celda_valor).val());
+        valor = parseInt($(celda_valor).val()),
 
-    var resultado = (valor) * (cantidad);
+        dto = (parseInt($(celda_dto).val()) / 100) * valor,
 
-    $(celda_sub_total).val(resultado.toFixed(2));
+        iva2 = parseInt($(celda_iva2).val());
+
+    ;
+
+    var resultado = ((valor - dto) / (1 + (iva2 / 100)) * (cantidad));
+
+    var iva = (valor - dto)  - ((valor - dto) / (1 + (iva2 / 100)));
+
+    $(celda_sub_total).val(parseFloat(resultado).toFixed(2));
+
+    $(celda_iva).val(parseFloat(iva).toFixed(2));
 
     subtotal();
 
@@ -94,24 +113,24 @@ function subtotal() {
 
     $('#tabla-todos tr').each(function () { //filas con clase 'dato', especifica una clase, asi no tomas el nombre de las columnas
 
-        suma += parseInt($(this).find('.sub').val() || 0, 10) //numero de la celda 3
+        suma += parseFloat($(this).find('.sub').val() || 0, 10) //numero de la celda 3
 
-        subDTO += (parseInt($(this).find('.cant').val()) * parseInt($(this).find('.val').val()) * (parseFloat($(this).find('.dto').val() / 100))) || 0, 10
+        subDTO += (parseFloat($(this).find('.cant').val()) * parseInt($(this).find('.val').val()) * (parseFloat($(this).find('.dto').val() / 100))) || 0, 10
 
-        subIVA += ((parseInt($(this).find('.cant').val()) * parseInt($(this).find('.val').val())) * (1 - (parseFloat($(this).find('.dto').val() / 100)))) * (parseFloat($(this).find('.iva').val() / 100)) || 0, 10
+        subIVA += (parseFloat($(this).find('.sub').val()) * (parseFloat($(this).find('.iva').val()) / 100)) || 0, 10
 
     })
 
     rete = parseInt($('#compras #rete').val()) || 0
 
-    total = suma - subDTO + subIVA - rete
+    total = suma + subIVA - rete
 
 
     //alert(suma)
 
     $('#compras #subT').val(suma.toFixed(2));
 
-    $('#compras #DTO').val(-subDTO.toFixed(2));
+    $('#compras #DTO').val(subDTO.toFixed(2));
 
     $('#compras #iva').val(subIVA.toFixed(2));
 

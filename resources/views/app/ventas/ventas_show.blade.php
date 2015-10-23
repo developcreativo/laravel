@@ -94,7 +94,7 @@
                             <td class="font-w600">{{ $item->productos_configurables->producto }}</td>
                             <td class="text-center"><span class="badge badge-primary">{{ $item->cantidad }}</span></td>
                             <td class="text-right">${{ number_format($item->venta)  }}</td>
-                            <td class="text-right">{{ $item->iva }}%</td>
+                            <td class="text-right">${{ number_format($item->iva) }}</td>
                             <td class="text-right">{{ $item->dto }}%</td>
                             <td class="text-right">${{ number_format($item->cantidad * $item->venta) }}</td>
                         </tr>

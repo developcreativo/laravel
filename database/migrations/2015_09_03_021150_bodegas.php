@@ -20,7 +20,7 @@ class Bodegas extends Migration
                     $table->integer('cantidad');
                     $table->integer('venta');
                     $table->integer('compra');
-                    $table->boolean('iva');
+                    $table->decimal('iva',4,2);
                     $table->boolean('remision');
                     $table->timestamps();
         		});
