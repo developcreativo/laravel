@@ -21,7 +21,8 @@ class Caja extends Migration
         			$table->decimal('cierre',10,2)->nullable();
         			$table->boolean('estado')->default(1);
         			$table->boolean('descuadre')->default(0);
-        			$table->longText('nota')->nullable();
+        			$table->longText('nota_apertura')->nullable();
+        			$table->longText('nota_cierre')->nullable();
                     $table->integer('user_id');
         			$table->timestamps();
         		});

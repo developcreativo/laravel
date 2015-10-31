@@ -18,7 +18,7 @@
             <td class="font-w600 text-center">{{$venta->clientes->cliente}} </td>
             <td class="text-center">{{$venta->tiendas->tienda}} </td>
             <td class="text-center">{{str_limit($venta->created_at, $limit = 10, $end = '')}} </td>
-            <td class="text-center">@if($venta->pagado == 1)<span class="label label-success">Pagado</span>
+            <td class="text-center">@if($venta->venta == $venta->pagado)<span class="label label-success">Pagado</span>
                 @else<span class="label label-danger">Pendiente</span>
                 @endif
             </td>

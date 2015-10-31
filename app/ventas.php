@@ -73,22 +73,25 @@ class ventas extends Model
     public static function separador_remision($datos)
     {
         //crear cliente
+        //dd($datos->all());
         if ($datos['cliente_id'] == "") {
             clientes::create($datos->all());
         }
         $items = $datos['items']; //obtengo los datos de los productos
         $j = 0;
         $i = 0;
-        //separo los prodcutos a facturar y los de remision
+        //separo los productos a facturar y los de remision
         foreach ($items as $item) {
             if ($item['remision'] == 0) {
                 $items_venta[] = $item;
+                //$venta = $item['remision'];
                 $i = 1;
             } else {
                 $items_remision[] = $item;
                 $j = 1;
             }
         }
+        //como separo los pagos para saber
         if ($j > 0) {
             //si tengo productos de remision los agrego y me traigo el id
             $lastid['remision'] = ventas::agregar_remision($datos, $items_remision);
@@ -141,7 +144,14 @@ class ventas extends Model
         $venta->descuento = $descuento;
         $venta->compra = $compra;
         if ($valor > 0) {
-            $venta->pagado = 1;
+            $sobrante = ($valor - $venta->venta);
+            if($sobrante > 0){
+                $venta->pagado = $venta->venta;
+                Session::put('sobrante',$sobrante);
+            }else{
+                $venta->pagado = $valor;
+            }
+
         } else {
             $venta->pagado = 0;
         }
@@ -191,7 +201,13 @@ class ventas extends Model
         $venta->descuento = $descuento;
         $venta->compra = $compra;
         if ($valor > 0) {
-            $venta->pagado = 1;
+            $sobrante = Session::get('sobrante');
+            if($sobrante > 0){
+                $venta->pagado = $sobrante;
+            }else{
+                $venta->pagado = $valor;
+            }
+
         } else {
             $venta->pagado = 0;
         }

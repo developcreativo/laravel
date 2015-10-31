@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Bodegas;
+use App\caja;
 use App\categorias;
 use App\ciudades;
 use App\clientes;
@@ -16,6 +17,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\Session;
 
 class PosController extends Controller
 {
@@ -27,6 +29,12 @@ class PosController extends Controller
     public function index()
     {
         //
+        //verificar si la caja esta abierta
+        $caja_abierta = caja::CajaAbierta();
+        if(!isset($caja_abierta)){
+            Session::flash('mensaje','Primero debe abrir al caja para vender');
+            return redirect('caja');
+        }
         $productos = Bodegas::with('productos_configurables.productos')->get()->toJson();
         $clientes = clientes::all();
         $categorias = categorias::orderBy('level')->get();
@@ -76,6 +84,7 @@ class PosController extends Controller
     public function show($id)
     {
         //
+
         $tipo = facturacion::find($id);
         
         if (!$tipo->venta_id == 0) {

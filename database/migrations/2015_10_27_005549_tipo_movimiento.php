@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CajaDetalle extends Migration
+class TipoMovimiento extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,10 @@ class CajaDetalle extends Migration
     public function up()
     {
         //
-        Schema::create('caja_detalle', function(Blueprint $table)
+        Schema::create('tipo_movimiento', function(Blueprint $table)
         		{
         			$table->increments('id');
-        			$table->integer('caja_id');
-        			$table->integer('formas_pago_id')->nullable();
-        			$table->string('concepto');
-        			$table->decimal('valor',10,2);
-                    $table->integer('tipo_movimiento');
+        			$table->string('tipo_movimiento');
         			$table->timestamps();
         		});
     }
@@ -33,6 +29,6 @@ class CajaDetalle extends Migration
     public function down()
     {
         //
-        Schema::drop('caja_detalle');
+        Schema::drop('tipo_movimiento');
     }
 }

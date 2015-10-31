@@ -122,6 +122,12 @@ class ComprasController extends Controller
         //
     }
 
+    public function pagar($id)
+    {
+        $compra = compras::find($id);
+        return $compra;
+    }
+
     public function pdf($id)
     {
         $pdf = compras::crear_pdf($id);

@@ -52,20 +52,22 @@
       <column name="cierre" sqlType="DECIMAL" precision="10" scale="2" nullable="true" jdbcType="3"/>
       <column name="estado" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MQ=="/>
       <column name="descuadre" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MA=="/>
-      <column name="nota" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="nota_apertura" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
       <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="created_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="nota_cierre" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="caja_detalle" schema="" catalog="contapp" type="TABLE">
       <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="caja_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="formas_pago_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="formas_pago_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="concepto" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="valor" sqlType="DECIMAL" precision="10" scale="2" nullable="false" jdbcType="3"/>
       <column name="created_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="tipo_movimiento" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="categorias" schema="" catalog="contapp" type="TABLE">
@@ -315,6 +317,13 @@
       <column name="remision" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
+    <table name="tipo_movimiento" schema="" catalog="contapp" type="TABLE">
+      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="tipo_movimiento" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="created_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="updated_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
     <table name="transportadoras" schema="" catalog="contapp" type="TABLE">
       <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="transportadora" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
@@ -361,7 +370,7 @@
       <column name="tienda_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="ingreso_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="pagado" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <column name="pagado" sqlType="DECIMAL" precision="10" scale="2" nullable="false" jdbcType="3"/>
       <column name="vencimiento" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
       <column name="created_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="updated_at" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>

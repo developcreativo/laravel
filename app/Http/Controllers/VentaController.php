@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Bodegas;
+use App\caja;
 use App\categorias;
 use App\ciudades;
 use App\clientes;
@@ -48,7 +49,12 @@ class VentaController extends Controller
      */
     public function create()
     {
-        //
+        //verificar si la caja esta abierta
+        $caja_abierta = caja::CajaAbierta();
+        if (!isset($caja_abierta)) {
+            Session::flash('mensaje', 'Primero debe abrir al caja para vender');
+            return redirect('caja');
+        }
         $tiendas = tiendas::lists('tienda', 'id');
         $clientes = clientes::all();
         $productos = Bodegas::with('productos_configurables.productos.marcas')->get()->toJson();
@@ -66,7 +72,6 @@ class VentaController extends Controller
     public function store(Request $request)
     {
         //
-        dd($request->all());
         $lastid = ventas::separador_remision($request);
         tiendas::numero_factura($lastid);
         Bodegas::Agregar_Venta($request->items);
@@ -140,6 +145,28 @@ class VentaController extends Controller
         $cuenta = cuentas_bancarias::where('principal', 1)->first();
         //dd($cuenta);
         return view('app/ventas/ventas_print', compact('venta', 'cuenta'));
+    }
+
+    public function pagar(Request $request, $id)
+    {
+
+        $venta = ventas::find($id);
+        $valor = 0;
+        foreach ($request->pagos as $pago) {
+            $valor += $pago['valor'];
+        }
+        $venta->pagado = $venta->pagado + $valor;
+        $venta->save();
+        if ($venta->remision == 1) {
+            $lastid['venta'] = "";
+            $lastid['remision'] = ['id' => $venta->id, 'factura' => $venta->factura];
+        } else {
+            $lastid['remision'] = "";
+            $lastid['venta'] = ['id' => $venta->id, 'factura' => $venta->factura];
+        }
+        ingresos::AgregarIngreso($lastid, $request->pagos);
+        return redirect('ventas/' . $id);
+
     }
 
 

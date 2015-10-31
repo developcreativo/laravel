@@ -26,7 +26,7 @@ class Ventas extends Migration
         			$table->decimal('descuento',10,2)->nullable();
         			$table->decimal('retefuente',10,2)->nullable();
         			$table->decimal('subtotal',10,2)->nullable();
-        			$table->boolean('pagado');
+        			$table->decimal('pagado',10,2);
         			$table->boolean('remision');
                     $table->integer('plazo');
         			$table->timestamps();

@@ -1,3 +1,4 @@
+
 /**
  * Created by userpc on 08/04/2015.
  */
@@ -10,17 +11,13 @@ $(document).ready(function () {
     $('#descuento').keyup(subtotal);
 
 });
+
 $('#buscar').keyup(buscar);
+
 var i = 0
 var j = 0
-$('#pagos').on('shown.bs.modal', function () {
-    valor = $('#total').val()
-    $('#total-pago').html('0')
-    $('#faltante').html(valor)
-    $('#PAGAR').prop('disabled', true);
-    $('#tienda_id').val($('#tienda').val())
 
-})
+
 function ClienteRapido() {
     AgCliente("1", "Cliente Preferencial")
 }
@@ -53,6 +50,21 @@ function AgClienteNuevo() {
     });
 }
 
+
+function AgCliente(idcliente, nombre) {
+    $('#nombre_cliente').html(nombre)
+    $('#cliente_id').val(idcliente)
+}
+
+$('#pagos').on('shown.bs.modal', function () {
+    valor = $('#total').val()
+    $('#total-pago').html('0')
+    $('#faltante').html(valor)
+    $('#PAGAR').prop('disabled', true);
+    $('#tienda_id').val($('#tienda').val())
+
+})
+
 function totalpago() {
     var total = $('#total').val()
     var faltante
@@ -69,10 +81,6 @@ function totalpago() {
         $('#PAGAR').prop('disabled', true);
     }
 
-}
-function AgCliente(idcliente, nombre) {
-    $('#nombre_cliente').html(nombre)
-    $('#cliente_id').val(idcliente)
 }
 
 function abrir_pagos() {
@@ -99,6 +107,7 @@ function abrir_pagos() {
     }
 
 }
+
 function Adpago(pago, id) {
     valor = document.getElementById("faltante").innerText
     item = '<tr class="success" id="' + j + '"><td><input type="text" name="pagos[' + j + '][pago]" value="' + pago +
@@ -111,6 +120,7 @@ function Adpago(pago, id) {
     totalpago()
     j++
 }
+
 function eliminar_pago(id) {
     $('#pagos-item').find('#' + id).html('')
     totalpago()
@@ -120,13 +130,16 @@ function anular(e) {
     tecla = (document.all) ? e.keyCode : e.which;
     return (tecla != 13);
 }
+
 function vaciar() {
     $('.productos').html('')
     subtotal()
 }
+
 function cantidad(){
     subtotal()
 }
+
 function AgItem(id, valor, img, nombre, IVA, remision, compra) {
     var Content = '';
     //iva = iva * compra;
@@ -146,6 +159,7 @@ function AgItem(id, valor, img, nombre, IVA, remision, compra) {
     i++;
     subtotal()
 }
+
 function subtotal() {
     var suma = 0, iva = 0, subDTO = 0, Subtotal = 0, subIVA = 0, rete = 0;
     $('.producto').each(function () { //filas con clase 'dato', especifica una clase, asi no tomas el nombre de las columnas
@@ -161,6 +175,7 @@ function subtotal() {
     $('#IVA').val(subIVA);
     $('#total').val(suma);
 }
+
 function buscar() {
     var data = $('.productos_pos').data("productos"); //obtengo los productos que cargue
     var successContent = '';
@@ -180,6 +195,7 @@ function buscar() {
     $('.productos_pos').html(successContent);
 
 }
+
 function categoria(id) {
     $('.categoria').hide();
     $('.id_' + id).show();

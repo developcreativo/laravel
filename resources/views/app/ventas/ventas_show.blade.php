@@ -179,12 +179,16 @@
 
                     </tbody>
                 </table>
-                @if($venta->pagado == 0)
+                @if($venta->pagado <> $venta->venta)
+                    {!! Form::open(['method'=>'put','action'=>['VentaController@pagar',$venta->id]]) !!}
                     <div align="center">
-                        <button class="btn btn-success push-15"><i class="fa fa-plus"></i> Agregar pago</button>
-
+                        <button id="pagar" class="btn btn-success push-15" onclick="abrir_pagos()" data-pago="{{$venta->venta - $venta->pagado}}">
+                            <i class="fa fa-plus"></i> Agregar pago
+                        </button>
                     </div>
-                 @endif
+                    @include('app.ventas.ventas_pos_pagos')
+                    {!! Form::close() !!}
+                @endif
             </div>
         </div>
     </div>
@@ -222,7 +226,9 @@
 
     @include('app.ventas.ventas_modal_email')
 
+
 @stop
 
 @section('scripts')
+    {!! HTML::script('js/pagos.js')!!}
 @stop

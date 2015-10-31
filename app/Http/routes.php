@@ -34,7 +34,8 @@ Route::resource('productos', 'ProductosController',['except' => ['carga_masiva',
 Route::get('compras/chart', 'ComprasController@chart');
 Route::get('compras/pdf/{id}', 'ComprasController@pdf');
 Route::get('compras/mail/{id}', 'ComprasController@mail');
-Route::resource('compras', 'ComprasController',['except' => ['chart','pdf','mail']]);
+Route::get('compras/pagar/{id}', 'ComprasController@pagar');
+Route::resource('compras', 'ComprasController',['except' => ['chart','pdf','mail','pagar']]);
 
 /******* marcas ********/
 Route::resource('marcas', 'MarcasController',['except' => []]);
@@ -69,8 +70,12 @@ Route::resource('remision', 'RemisionController',['except' => []]);
 /******* ventas ********/
 Route::get('ventas/pdf/{id}', 'VentaController@pdf');
 Route::get('ventas/print/{id}', 'VentaController@imprimir');
+Route::put('ventas/pagar/{id}', 'VentaController@pagar');
 Route::get('ventas/mail/{id}', 'VentaController@mail');
-Route::resource('ventas', 'VentaController',['except' => ['mail','pdf','imprimir']]);
+Route::resource('ventas', 'VentaController',['except' => ['mail','pdf','imprimir','pagar']]);
+
+/******* Caja ********/
+Route::resource('caja', 'CajaController',['except' => []]);
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
