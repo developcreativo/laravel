@@ -38,6 +38,7 @@ class VentaController extends Controller
     public function index()
     {
         //
+
         $ventas = ventas::with('clientes', 'tiendas', 'factura_venta')->where('remision', 0)->get();
         return view('app.ventas.ventas_index', compact('ventas'));
     }
@@ -149,21 +150,14 @@ class VentaController extends Controller
 
     public function pagar(Request $request, $id)
     {
+        //verificar si la caja esta abierta
+        $caja_abierta = caja::CajaAbierta();
+        if (!isset($caja_abierta)) {
+            Session::flash('mensaje', 'Primero debe abrir al caja para Agregar un pago a la venta');
+            return redirect('caja');
+        }
+        $lastid = ventas::pagar($id, $request);
 
-        $venta = ventas::find($id);
-        $valor = 0;
-        foreach ($request->pagos as $pago) {
-            $valor += $pago['valor'];
-        }
-        $venta->pagado = $venta->pagado + $valor;
-        $venta->save();
-        if ($venta->remision == 1) {
-            $lastid['venta'] = "";
-            $lastid['remision'] = ['id' => $venta->id, 'factura' => $venta->factura];
-        } else {
-            $lastid['remision'] = "";
-            $lastid['venta'] = ['id' => $venta->id, 'factura' => $venta->factura];
-        }
         ingresos::AgregarIngreso($lastid, $request->pagos);
         return redirect('ventas/' . $id);
 

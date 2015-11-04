@@ -170,10 +170,13 @@
                                 <a href="{{Url('caja')}}">Caja</a>
                             </li>
                             <li>
-                                <a href="{{Url('caja/movimientos')}}">Movimientos</a>
+                                <a href="{{Url('ingresos')}}">Ingresos</a>
                             </li>
                             <li>
                                 <a href="{{Url('gastos')}}">Gastos</a>
+                            </li>
+                            <li>
+                                <a href="{{Url('traslados')}}">Tranferencias</a>
                             </li>
                             <li>
                                 <a href="{{Url('caja/informes')}}">Informes</a>

@@ -190,7 +190,7 @@ input[placeholder] { width: 100% !important; }
     background: transparent;
     border: 0;
     font-size: 1.4em;
-    width: 90%;
+    /*width: 90%;*/
 
 }
 

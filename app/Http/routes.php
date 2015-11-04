@@ -77,6 +77,9 @@ Route::resource('ventas', 'VentaController',['except' => ['mail','pdf','imprimir
 /******* Caja ********/
 Route::resource('caja', 'CajaController',['except' => []]);
 
+/******* Ingresos ********/
+Route::resource('ingresos', 'IngresosController',['except' => []]);
+
 Route::controllers([
     'auth' => 'Auth\AuthController',
     'password' => 'Auth\PasswordController',

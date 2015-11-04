@@ -3,35 +3,36 @@
 namespace App\Http\Controllers;
 
 use App\caja;
-use App\caja_detalle;
+use App\ingresos;
+use App\ventas;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Session;
 
-class CajaController extends Controller
+class IngresosController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function index()
+    {
+        //primero verificamos que este abierta la caja
+        $caja_abierta = caja::CajaAbierta();
+        if (!isset($caja_abierta)) {
+            Session::flash('mensaje', 'Primero debe abrir al caja para Agregar un pago a la venta');
+            return redirect('caja');
+        }
+
+        $ventas = ventas::with('clientes')->whereraw('venta > pagado')->get();
+        return view('app.ingresos.ingresos_create', compact('ventas'));
+    }
 
     public function __construct()
     {
         $this->middleware('auth');
-    }
-    public function index()
-    {
-        //
-        $caja_abierta = caja::CajaAbierta();
-        if(isset($caja_abierta)){
-            $saldo = caja::Totales($caja_abierta->id);
-        }
-        //dd($caja_abierta);
-
-        $cajas = caja::with('tiendas','usuarios')->get();
-        return view('app.cajas.caja_index',compact('cajas','caja_abierta','saldo'));
     }
 
     /**
@@ -47,45 +48,40 @@ class CajaController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
-        if($request->cierre == 'no'){
-            caja::AbrirCaja($request->apertura,$request->nota);
-            Session::flash('mensaje', Session::get('caja'));
-            return redirect('caja');
-        }else{
-            //dd($request->all());
-            $caja_id = caja::CerrarCaja($request->apertura,$request->nota);
-            Session::flash('mensaje', Session::get('caja'));
-            return redirect('caja/'.$caja_id);
+        //dd($request->all());
+        if (isset($request->items)) {
+            ingresos::requestXfactura($request);
+        } else {
+            ingresos::ingresoSimple($request);
         }
 
+
+        Session::flash('mensaje', 'Ingreso creado con éxito');
+
+        return redirect('ingresos');
 
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
         //
-        $caja = caja::with('usuarios','tiendas')->find($id);
-        $saldo = caja::Totales($id);
-        $movimientos = caja_detalle::with('pagos')->where('caja_id',$id)->orderBy('created_at')->get();
-        return view('app.cajas.caja_show',compact('caja','movimientos','saldo'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -96,8 +92,8 @@ class CajaController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request $request
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -108,12 +104,11 @@ class CajaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
         //
     }
-
 }

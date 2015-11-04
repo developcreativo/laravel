@@ -69,6 +69,52 @@ class caja extends Model
 
     }
 
+    public static function ingresoCajaSimple($request){
+        $caja = caja::CajaAbierta();
+        foreach($request->pagos as $pago){
+            switch ($pago['id']) {
+                case 1:
+                    $tipo_movimiento = 2;
+                    break;
+                case 6:
+                    $tipo_movimiento = 4;
+                    break;
+                default:
+                    $tipo_movimiento = 3;
+                    break;
+            }
+            $concepto = $request->concepto. ' forma de pago '. $pago['pago'];
+            caja_detalle::movimiento($caja->id, $concepto, $pago['id'], $pago['valor'], $tipo_movimiento);
+
+        }
+    }
+
+    public static function IngresoCajaXfactura($ingresos, $facturas)
+    {
+
+        $caja = caja::CajaAbierta();
+        foreach ($ingresos as $ingreso) {
+            $concepto = 'pago de';
+            foreach ($facturas as $factura) {
+                $concepto = $concepto . ' la ' . $factura['nombre'] . ' #' . $factura['factura'] . ',';
+            }
+            $concepto = $concepto . ' en ' . $ingreso['pago'];
+
+            switch ($ingreso['id']) {
+                case 1:
+                    $tipo_movimiento = 2;
+                    break;
+                case 6:
+                    $tipo_movimiento = 4;
+                    break;
+                default:
+                    $tipo_movimiento = 3;
+                    break;
+            }
+            caja_detalle::movimiento($caja->id, $concepto, $ingreso['id'], $ingreso['valor'], $tipo_movimiento);
+        }
+    }
+
     public static function EgresoCaja($egresos)
     {
         $caja = caja::CajaAbierta();

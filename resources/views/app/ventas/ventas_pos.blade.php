@@ -7,9 +7,7 @@
 @stop
 
 @section('style')
-    <style type="text/css">
 
-    </style>
 @stop
 
 @section('breadcrumb')

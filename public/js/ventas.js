@@ -68,6 +68,7 @@ function agregaritems(id, valor, nombre, iva, remision, compra) {
 
 
 }
+
 function obtenerDatos(id) {
 
 
@@ -138,7 +139,6 @@ function subtotal() {
 
 
 }
-
 
 $('#buscar').keyup(function () {
     $('#productos-sugeridos').html('');
@@ -219,7 +219,6 @@ $('#pagos').on('shown.bs.modal', function () {
 
 })
 
-
 function Adpago(pago, id) {
     valor = document.getElementById("faltante").innerText
     item = '<tr class="success" id="' + j + '"><td><input type="text" name="pagos[' + j + '][pago]" value="' + pago +
@@ -232,6 +231,7 @@ function Adpago(pago, id) {
     totalpago()
     j++
 }
+
 function eliminar_pago(id) {
     $('#pagos-item').find('#' + id).html('')
     totalpago()
@@ -254,6 +254,7 @@ function totalpago() {
     }
 
 }
+
 $('#despacho').change(function () {
     $('#content_despacho').show();
 })

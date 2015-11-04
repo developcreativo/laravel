@@ -262,4 +262,23 @@ class ventas extends Model
 
         return $top;
     }
+
+    public static function pagar($id,$request){
+        $venta = ventas::find($id);
+        $valor = 0;
+        foreach ($request->pagos as $pago) {
+            $valor += $pago['valor'];
+        }
+        $venta->pagado = $venta->pagado + $valor;
+        $venta->save();
+        if ($venta->remision == 1) {
+            $lastid['venta'] = "";
+            $lastid['remision'] = ['id' => $venta->id, 'factura' => $venta->factura];
+        } else {
+            $lastid['remision'] = "";
+            $lastid['venta'] = ['id' => $venta->id, 'factura' => $venta->factura];
+        }
+
+        return $lastid;
+    }
 }
