@@ -69,9 +69,10 @@ class caja extends Model
 
     }
 
-    public static function ingresoCajaSimple($request){
+    public static function ingresoCajaSimple($request)
+    {
         $caja = caja::CajaAbierta();
-        foreach($request->pagos as $pago){
+        foreach ($request->pagos as $pago) {
             switch ($pago['id']) {
                 case 1:
                     $tipo_movimiento = 2;
@@ -83,7 +84,7 @@ class caja extends Model
                     $tipo_movimiento = 3;
                     break;
             }
-            $concepto = $request->concepto. ' forma de pago '. $pago['pago'];
+            $concepto = $request->concepto . ' forma de pago ' . $pago['pago'];
             caja_detalle::movimiento($caja->id, $concepto, $pago['id'], $pago['valor'], $tipo_movimiento);
 
         }
@@ -125,6 +126,30 @@ class caja extends Model
             $item->nombre = 'efectivo';
             $item->valor = $egreso['valor'];
             $item->save();
+        }
+    }
+
+    public static function EgresoXfactura($pagos, $caja_id, $factura)
+    {
+        //pendiente de revisar_todo el modulo de pagos
+        foreach ($pagos as $pago) {
+            switch ($pago['id']) {
+                case 1:
+                    $tipo_movimiento = 5;
+                    break;
+                case 6:
+                    $tipo_movimiento = 4;
+                    break;
+                default:
+                    $tipo_movimiento = 3;
+                    break;
+            }
+            if($tipo_movimiento == 5){
+                $concepto = 'pago de la compra con factura #' . $factura . ' en ' . $pago['pago'];
+                caja_detalle::movimiento($caja_id, $concepto, $pago['id'], $pago['valor'], $tipo_movimiento);
+            }
+
+
         }
     }
 

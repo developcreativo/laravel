@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title')
+@section('title')Imprimir
 
 @stop
 

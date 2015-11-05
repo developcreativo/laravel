@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Bodegas;
+use App\caja;
 use App\Compra_Detalle;
 use App\compras;
+use App\egresos;
 use App\Historico_Compras;
+use App\ingresos;
 use App\productos;
 use App\productos_configurables;
 use App\proveedores;
@@ -83,9 +86,9 @@ class ComprasController extends Controller
     public function show($id)
     {
         //
-        $compras = compras::with('proveedor')->findOrfail($id);
-        $items = compra_detalle::where('compra_id', '=', $id)->with('producto_configurable')->get();
-        return view('app/compras/compras_show', compact(['compras', 'items']));
+        $compra = compras::with('proveedor','egresos')->findOrfail($id);
+        $items = compra_detalle::where('compra_id', $id)->with('producto_configurable')->get();
+        return view('app/compras/compras_show', compact(['compra', 'items']));
     }
 
     /**
@@ -122,10 +125,20 @@ class ComprasController extends Controller
         //
     }
 
-    public function pagar($id)
+    public function pagar(Request $request, $id)
     {
-        $compra = compras::find($id);
-        return $compra;
+        //dd($request->all());
+        $caja_abierta = caja::CajaAbierta();
+        if (!isset($caja_abierta)) {
+            Session::flash('mensaje', 'Primero debe abrir al caja para Agregar un pago a la factura');
+            return redirect('caja');
+        }
+        egresos::egresoXcompra($request,$id, $caja_abierta->id);
+        Session::flash('mensaje', 'Pago realizado con exito');
+        return redirect('compras/'. $id);
+
+
+
     }
 
     public function pdf($id)
@@ -144,5 +157,12 @@ class ComprasController extends Controller
         });
         Session::flash('mensaje', 'factura enviada con exito');
         return back();
+    }
+
+    public function imprimir($id)
+    {
+        $compra = compras::with('proveedor')->findOrfail($id);
+        $items = compra_detalle::where('compra_id', '=', $id)->with('producto_configurable')->get();
+        return view('app/compras/compras_print', compact(['compra', 'items']));
     }
 }

@@ -5,20 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18d86ef8-f780-4f5f-a1fe-df88b14ebf4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/app/ingresos/ingesos_create_factura.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ingresos.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/app/ingresos/ingresos_create.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/app/ingresos/ingresos_create_ingreso.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/CajaController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CajaController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/VentaController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/VentaController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/app/compras/compras_modal_email.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/app/compras/compras_print.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/pagos_compras.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ComprasController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ComprasController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/caja.php" afterPath="$PROJECT_DIR$/app/caja.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/contapp.css" afterPath="$PROJECT_DIR$/public/css/contapp.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ingresos.php" afterPath="$PROJECT_DIR$/app/ingresos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/compras.php" afterPath="$PROJECT_DIR$/app/compras.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app/compras/compras_invoice.blade.php" afterPath="$PROJECT_DIR$/resources/views/app/compras/compras_invoice.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app/compras/compras_show.blade.php" afterPath="$PROJECT_DIR$/resources/views/app/compras/compras_show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/ventas.js" afterPath="$PROJECT_DIR$/public/js/ventas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ventas.php" afterPath="$PROJECT_DIR$/app/ventas.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app/ventas/ventas_pos.blade.php" afterPath="$PROJECT_DIR$/resources/views/app/ventas/ventas_pos.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app/ventas/ventas_print.blade.php" afterPath="$PROJECT_DIR$/resources/views/app/ventas/ventas_print.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="laravel.iws" />
@@ -68,7 +66,7 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="ingresos" />
+        <option name="myItemId" value="tipo_movimiento" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -81,36 +79,147 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="caja.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/caja.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.0769231">
+              <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+              <folding>
+                <element signature="e#596#690#0#PHP" expanded="false" />
+                <element signature="e#1833#2504#0#PHP" expanded="false" />
+                <element signature="e#1984#2300#0#PHP" expanded="false" />
+                <element signature="e#2510#3384#0#PHP" expanded="false" />
+                <element signature="e#2936#3255#0#PHP" expanded="false" />
+                <element signature="e#3390#3760#0#PHP" expanded="false" />
+                <element signature="e#4543#5368#0#PHP" expanded="false" />
+                <element signature="e#5374#6049#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compras.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/compras.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.884615">
+              <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compras_show.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/app/compras/compras_show.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3202847">
+              <caret line="160" column="91" selection-start-line="160" selection-start-column="91" selection-end-line="160" selection-end-column="91" />
+              <folding>
+                <marker date="1446697252746" expanded="true" signature="1393:1536" placeholder="..." />
+                <marker date="1446697252746" expanded="true" signature="1405:1535" placeholder="..." />
+                <marker date="1446697252746" expanded="true" signature="1439:1534" placeholder="..." />
+                <marker date="1446697252746" expanded="true" signature="1818:1998" placeholder="..." />
+                <marker date="1446697252746" expanded="true" signature="1830:1997" placeholder="..." />
+                <marker date="1446697252746" expanded="true" signature="1875:1996" placeholder="..." />
+                <marker date="1446697252746" expanded="true" signature="2395:2549" placeholder="..." />
+                <marker date="1446697252746" expanded="true" signature="2408:2548" placeholder="..." />
+                <marker date="1446697252746" expanded="true" signature="2446:2547" placeholder="..." />
+                <marker date="1446697252746" expanded="true" signature="2828:2984" placeholder="..." />
+                <marker date="1446697252746" expanded="true" signature="2840:2983" placeholder="..." />
+                <marker date="1446697252746" expanded="true" signature="2884:2982" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ComprasController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ComprasController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="127" column="23" selection-start-line="127" selection-start-column="23" selection-end-line="127" selection-end-column="23" />
+            <state vertical-scroll-proportion="-8.307693">
+              <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5737122">
-              <caret line="55" column="74" selection-start-line="55" selection-start-column="74" selection-end-line="55" selection-end-column="74" />
+      <file leaf-file-name="contapp.caja_detalle" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..caja_detalle">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VentaController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VentaController.php">
-          <provider selected="true" editor-type-id="text-editor">
+      <file leaf-file-name="contapp.tipo_movimiento" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..tipo_movimiento">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="5" selection-start-line="32" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="egresos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/egresos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.346154">
+              <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ingresos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/ingresos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.461538">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
-                <element signature="e#678#893#0#PHP" expanded="false" />
-                <element signature="e#996#1710#0#PHP" expanded="false" />
-                <element signature="e#1845#2430#0#PHP" expanded="false" />
+                <element signature="e#480#1184#0#PHP" expanded="false" />
+                <element signature="e#1190#1565#0#PHP" expanded="false" />
+                <element signature="e#1571#2878#0#PHP" expanded="false" />
+                <element signature="e#1891#1960#0#PHP" expanded="false" />
+                <element signature="e#2884#3178#0#PHP" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ventas.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/ventas.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3461539">
+              <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+              <folding>
+                <element signature="e#1386#1494#0#PHP" expanded="false" />
+                <element signature="e#1500#2791#0#PHP" expanded="false" />
+                <element signature="e#2797#4595#0#PHP" expanded="false" />
+                <element signature="e#4601#6530#0#PHP" expanded="false" />
+                <element signature="e#6536#7068#0#PHP" expanded="false" />
+                <element signature="e#7542#8221#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ventas_show.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_show.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.384615">
+              <caret line="165" column="35" selection-start-line="156" selection-start-column="24" selection-end-line="165" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,8 +229,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="blade" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -141,15 +250,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2015_09_11_231926_clientes.php" />
-        <option value="$PROJECT_DIR$/resources/views/app/clientes/clientes_delete.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/app/clientes/formulario_clientes.blade.php" />
-        <option value="$PROJECT_DIR$/app/clientes.php" />
-        <option value="$PROJECT_DIR$/app/ciudades.php" />
-        <option value="$PROJECT_DIR$/resources/views/app/clientes/clientes_index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/app/clientes/clientes_show_cliente.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/app/ventas/ventas_index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/app/clientes/clientes_show_ventas.blade.php" />
         <option value="$PROJECT_DIR$/app/productos.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProductosController.php" />
         <option value="$PROJECT_DIR$/app/venta_detalle.php" />
@@ -170,7 +270,6 @@
         <option value="$PROJECT_DIR$/resources/views/app/cajas/caja_index.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_09_12_035533_caja.php" />
         <option value="$PROJECT_DIR$/resources/views/app/cajas/caja_show.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ComprasController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_09_11_161549_ventas.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PosController.php" />
         <option value="$PROJECT_DIR$/resources/views/app/ventas/tabla_ventas.blade.php" />
@@ -179,7 +278,6 @@
         <option value="$PROJECT_DIR$/public/js/pagos.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CajaController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/app/ventas/ventas_pos.blade.php" />
         <option value="$PROJECT_DIR$/public/css/contapp.css" />
         <option value="$PROJECT_DIR$/public/js/ventas.js" />
@@ -191,7 +289,18 @@
         <option value="$PROJECT_DIR$/resources/views/app/ingresos/ingesos_create_factura.blade.php" />
         <option value="$PROJECT_DIR$/app/ingresos.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/IngresosController.php" />
+        <option value="$PROJECT_DIR$/resources/views/app/compras/compras_modal_email.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/app/compras/compras_invoice.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/app/ventas/ventas_print.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/app/compras/compras_print.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/pagos_compras.js" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_11_05_031207_egresos.php" />
+        <option value="$PROJECT_DIR$/app/egresos.php" />
         <option value="$PROJECT_DIR$/app/caja.php" />
+        <option value="$PROJECT_DIR$/app/compras.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ComprasController.php" />
+        <option value="$PROJECT_DIR$/resources/views/app/compras/compras_show.blade.php" />
       </list>
     </option>
   </component>
@@ -825,117 +934,11 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="17" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/app/compras/compras_show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06049822">
-          <caret line="2" column="46" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_12_044921_caja_detalle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app/cajas/caja_create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3846154">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app/cajas/caja_cerrar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.615385">
-          <caret line="30" column="97" selection-start-line="30" selection-start-column="97" selection-end-line="30" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/clientes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68327403">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.905694">
-          <caret line="72" column="44" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_27_005549_tipo_movimiento.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/tipo_movimiento.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48398575">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..caja_detalle">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..formas_pago">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..tipo_movimiento">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/caja_detalle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6838366">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app/cajas/caja_index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.346153">
-          <caret line="133" column="27" selection-start-line="133" selection-start-column="27" selection-end-line="133" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_12_035533_caja.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.730769">
@@ -962,13 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/compras.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..facturacion_1">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -985,6 +981,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,6 +1017,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1027,13 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384">
           <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847">
-          <caret line="189" column="41" selection-start-line="182" selection-start-column="20" selection-end-line="189" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1076,6 +1067,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="192" column="19" selection-start-line="192" selection-start-column="19" selection-end-line="192" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,13 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8188277">
           <caret line="42" column="10" selection-start-line="19" selection-start-column="4" selection-end-line="42" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/pagos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72156197">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1111,13 +1096,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="140" column="1" selection-start-line="108" selection-start-column="0" selection-end-line="140" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/ventas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.423077">
-          <caret line="246" column="5" selection-start-line="246" selection-start-column="5" selection-end-line="246" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!block;n#deletetr#0" expanded="false" />
+            <element signature="n#!!block;n#agregaritems#0" expanded="false" />
+            <element signature="n#!!block;n#obtenerDatos#0" expanded="false" />
+            <element signature="n#!!block;n#subtotal#0" expanded="false" />
+            <element signature="e#4290#5737#0" expanded="false" />
+            <element signature="n#!!block;n#AgCliente#0" expanded="false" />
+            <element signature="n#!!block;n#abrir_pagos#0" expanded="false" />
+            <element signature="e#6682#6862#0" expanded="false" />
+            <element signature="n#!!block;n#Adpago#0" expanded="false" />
+            <element signature="n#!!block;n#eliminar_pago#0" expanded="false" />
+            <element signature="n#!!block;n#totalpago#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1156,6 +1147,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43463498">
           <caret line="81" column="5" selection-start-line="77" selection-start-column="4" selection-end-line="81" selection-end-column="5" />
+          <folding>
+            <element signature="e#75#241#0" expanded="false" />
+            <element signature="n#!!block;n#Adpago#0" expanded="false" />
+            <element signature="n#!!block;n#eliminar_pago#0" expanded="false" />
+            <element signature="n#!!block;n#anular#0" expanded="false" />
+            <element signature="n#!!block;n#vaciar#0" expanded="false" />
+            <element signature="n#!!block;n#cantidad#0" expanded="false" />
+            <element signature="n#!!block;n#AgItem#0" expanded="false" />
+            <element signature="n#!!block;n#subtotal#0" expanded="false" />
+            <element signature="n#!!block;n#buscar#0" expanded="false" />
+            <element signature="n#!!block;n#categoria#0" expanded="false" />
+            <element signature="e#8396#9849#0" expanded="false" />
+            <element signature="n#!!block;n#buscador#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1163,6 +1168,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+            <element signature="n#!!block;n#totalpago#0" expanded="false" />
+            <element signature="n#!!block;n#Adpago#0" expanded="false" />
+            <element signature="n#!!block;n#eliminar_pago#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1180,13 +1191,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/ingresos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.384615">
-          <caret line="102" column="42" selection-start-line="102" selection-start-column="42" selection-end-line="102" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IngresosController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.7692308">
@@ -1194,25 +1198,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/caja.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35523978">
-          <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+    <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..proveedores">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ComprasController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/app/compras/compras_email.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="127" column="23" selection-start-line="127" selection-start-column="23" selection-end-line="127" selection-end-column="23" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/compras/compras_modal_email.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/compras/compras_print.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/compras/compras_invoice.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.154762">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_print.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33274022">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/pagos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="1" selection-start-line="4" selection-start-column="0" selection-end-line="49" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/pagos_compras.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9615386">
+          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VentaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="5" selection-start-line="32" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
+        <state vertical-scroll-proportion="-12.807693">
+          <caret line="157" column="9" selection-start-line="153" selection-start-column="8" selection-end-line="157" selection-end-column="9" />
           <folding>
             <element signature="e#678#893#0#PHP" expanded="false" />
             <element signature="e#996#1710#0#PHP" expanded="false" />
@@ -1221,11 +1291,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EgresosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5737122">
-          <caret line="55" column="74" selection-start-line="55" selection-start-column="74" selection-end-line="55" selection-end-column="74" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_11_05_031207_egresos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.961538">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ingresos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.461538">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#480#1184#0#PHP" expanded="false" />
+            <element signature="e#1190#1565#0#PHP" expanded="false" />
+            <element signature="e#1571#2878#0#PHP" expanded="false" />
+            <element signature="e#1891#1960#0#PHP" expanded="false" />
+            <element signature="e#2884#3178#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..caja_detalle">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3194d546/fb83f2d0-12de-453b-b2c9-5b18868b4114/contapp..tipo_movimiento">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/egresos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.346154">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/caja.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0769231">
+          <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+          <folding>
+            <element signature="e#596#690#0#PHP" expanded="false" />
+            <element signature="e#1833#2504#0#PHP" expanded="false" />
+            <element signature="e#1984#2300#0#PHP" expanded="false" />
+            <element signature="e#2510#3384#0#PHP" expanded="false" />
+            <element signature="e#2936#3255#0#PHP" expanded="false" />
+            <element signature="e#3390#3760#0#PHP" expanded="false" />
+            <element signature="e#4543#5368#0#PHP" expanded="false" />
+            <element signature="e#5374#6049#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ventas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3461539">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+          <folding>
+            <element signature="e#1386#1494#0#PHP" expanded="false" />
+            <element signature="e#1500#2791#0#PHP" expanded="false" />
+            <element signature="e#2797#4595#0#PHP" expanded="false" />
+            <element signature="e#4601#6530#0#PHP" expanded="false" />
+            <element signature="e#6536#7068#0#PHP" expanded="false" />
+            <element signature="e#7542#8221#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/compras.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.884615">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ComprasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.307693">
+          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/ventas/ventas_show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.384615">
+          <caret line="165" column="35" selection-start-line="156" selection-start-column="24" selection-end-line="165" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app/compras/compras_show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3202847">
+          <caret line="160" column="91" selection-start-line="160" selection-start-column="91" selection-end-line="160" selection-end-column="91" />
+          <folding>
+            <marker date="1446697252746" expanded="true" signature="1393:1536" placeholder="..." />
+            <marker date="1446697252746" expanded="true" signature="1405:1535" placeholder="..." />
+            <marker date="1446697252746" expanded="true" signature="1439:1534" placeholder="..." />
+            <marker date="1446697252746" expanded="true" signature="1818:1998" placeholder="..." />
+            <marker date="1446697252746" expanded="true" signature="1830:1997" placeholder="..." />
+            <marker date="1446697252746" expanded="true" signature="1875:1996" placeholder="..." />
+            <marker date="1446697252746" expanded="true" signature="2395:2549" placeholder="..." />
+            <marker date="1446697252746" expanded="true" signature="2408:2548" placeholder="..." />
+            <marker date="1446697252746" expanded="true" signature="2446:2547" placeholder="..." />
+            <marker date="1446697252746" expanded="true" signature="2828:2984" placeholder="..." />
+            <marker date="1446697252746" expanded="true" signature="2840:2983" placeholder="..." />
+            <marker date="1446697252746" expanded="true" signature="2884:2982" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

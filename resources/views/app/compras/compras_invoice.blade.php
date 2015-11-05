@@ -7,32 +7,32 @@
             <button class="btn btn-success" data-toggle="modal" data-target="#modal-email">
                 <i class="si si-envelope"></i> Enviar
             </button>
-            <a class="btn btn-danger" href="{{ url('compras/pdf',$compras->id) }}">
+            <a class="btn btn-danger" href="{{ url('compras/pdf',$compra->id) }}">
                 <i class="si si-cloud-download"></i> PDF
             </a>
         </div>
     </div>
     <div class="block-content block-content-narrow">
-        <div class="h1 text-center push-10-t">COMPRA #{{ $compras->factura }} </div>
-        <div class="text-center push-30">paguese antes de {{$compras->fecha_vencimiento  }}</div>
+        <div class="h1 text-center push-10-t">COMPRA #{{ $compra->factura }} </div>
+        <div class="text-center push-30">paguese antes de {{$compra->fecha_vencimiento  }}</div>
         <hr class="hidden-print">
         <div class="row items-push">
             <div class="col-xs-6 col-sm-4 col-lg-3">
                 <p class="h2 font-w400 push-5">Proveedor</p>
                 <address>
-                    {{ $compras->proveedor->proveedor }}<br>
-                    NIT: {{ $compras->proveedor->nit }}<br>
-                    <i class="si si-envelope"> </i> : {{ $compras->proveedor->email }}<br>
-                    <i class="si si-call-end"> </i> : {{ $compras->proveedor->telefono }}
+                    {{ $compra->proveedor->proveedor }}<br>
+                    NIT: {{ $compra->proveedor->nit }}<br>
+                    <i class="si si-envelope"> </i> : {{ $compra->proveedor->email }}<br>
+                    <i class="si si-call-end"> </i> : {{ $compra->proveedor->telefono }}
                 </address>
             </div>
             <div class="col-xs-6 col-sm-4  col-lg-3 pull-right text-right">
                 <p class="h2 font-w400 push-5">Tienda</p>
                 <address>
-                    {{ $compras->tienda->tienda }}<br>
-                    {{ $compras->tienda->direccion }}<br>
+                    {{ $compra->tienda->tienda }}<br>
+                    {{ $compra->tienda->direccion }}<br>
                     Region, Zip/Postal Code<br>
-                    <i class="si si-call-end"></i> : {{ $compras->tienda->telefono }}
+                    <i class="si si-call-end"></i> : {{ $compra->tienda->telefono }}
                 </address>
             </div>
         </div>
@@ -64,23 +64,23 @@
 
                 <tr>
                     <td colspan="6" class="font-w600 text-right">Subtotal</td>
-                    <td class="text-right">$ {{ number_format($compras->sub_total)}}</td>
+                    <td class="text-right">$ {{ number_format($compra->sub_total)}}</td>
                 </tr>
                 <tr>
                     <td colspan="6" class="font-w600 text-right">IVA</td>
-                    <td class="text-right">$ {{ number_format($compras->iva)}}</td>
+                    <td class="text-right">$ {{ number_format($compra->iva)}}</td>
                 </tr>
                 <tr>
                     <td colspan="6" class="font-w600 text-right">Descuento</td>
-                    <td class="text-right">$ {{ number_format($compras->dto)}}</td>
+                    <td class="text-right">$ {{ number_format($compra->dto)}}</td>
                 </tr>
                 <tr>
                     <td colspan="6" class="font-w600 text-right">Retefuente</td>
-                    <td class="text-right">$ {{ number_format($compras->retefuente)}}</td>
+                    <td class="text-right">$ {{ number_format($compra->retefuente)}}</td>
                 </tr>
                 <tr class="active">
                     <td colspan="6" class="font-w700 text-uppercase text-right">Total a Pagar</td>
-                    <td class="font-w700 text-right">$ {{ number_format($compras->valor_total)}}</td>
+                    <td class="font-w700 text-right">$ {{ number_format($compra->valor_total)}}</td>
                 </tr>
                 </tbody>
             </table>
@@ -94,30 +94,5 @@
     </div>
 
 </div>
-<div class="modal fade" id="modal-email" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog modal-dialog-popout modal-sm">
-        <div class="modal-content">
-            {!! Form::open(['method'=>'get','action' => ['ComprasController@mail', $compras->id]]) !!}
-            <div class="block block-themed block-transparent remove-margin-b">
-                <div class="block-header bg-success">
-                    <ul class="block-options">
-                        <li>
-                            <button data-dismiss="modal" type="button"><i class="si si-close"></i></button>
-                        </li>
-                    </ul>
-                    <h3 class="block-title">Enviar Factura</h3>
-                </div>
-                <div class="block-content">
-                    {!!Form::label('email', 'E-Mail:') !!}
-                    {!!Form::email('email_address', null, ['class' => 'form-control field','placeholder'=>'email destinatario']) !!}
-                </div>
-            </div>
-            <div class="modal-footer push-20-t">
-                <button class="btn btn-sm btn-default" type="button" data-dismiss="modal">Close</button>
-                {!! Form::submit('Enviar!',['class'=>'btn btn-sm btn-primary'])!!}
-            </div>
-            {!! Form::close() !!}
-        </div>
-    </div>
-</div>
+@include('app.compras.compras_modal_email')
 

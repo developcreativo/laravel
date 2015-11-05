@@ -33,6 +33,11 @@ class compras extends Model
         return $this->belongsTo('App\proveedores');
     }
 
+    public function egresos()
+    {
+        return $this->hasMany('App\egresos', 'compra_id');
+    }
+
     public function tienda()
     {
         return $this->belongsTo('App\tiendas');

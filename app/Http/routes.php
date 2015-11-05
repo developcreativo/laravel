@@ -32,10 +32,11 @@ Route::resource('productos', 'ProductosController',['except' => ['carga_masiva',
 
 /******* compras ********/
 Route::get('compras/chart', 'ComprasController@chart');
+Route::get('compras/print/{id}', 'ComprasController@imprimir');
 Route::get('compras/pdf/{id}', 'ComprasController@pdf');
 Route::get('compras/mail/{id}', 'ComprasController@mail');
-Route::get('compras/pagar/{id}', 'ComprasController@pagar');
-Route::resource('compras', 'ComprasController',['except' => ['chart','pdf','mail','pagar']]);
+Route::put('compras/pagar/{id}', 'ComprasController@pagar');
+Route::resource('compras', 'ComprasController',['except' => ['chart','print','pdf','mail','pagar']]);
 
 /******* marcas ********/
 Route::resource('marcas', 'MarcasController',['except' => []]);
