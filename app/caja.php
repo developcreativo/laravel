@@ -36,6 +36,10 @@ class caja extends Model
         return $this->belongsTo('App\User', 'user_id');
     }
 
+
+
+
+
     public static function IngresoCaja($ingresos, $factura)
     {
 

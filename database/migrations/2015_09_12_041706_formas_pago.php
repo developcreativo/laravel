@@ -17,7 +17,8 @@ class FormasPago extends Migration
         		{
         			$table->increments('id');
         			$table->string('forma_pago');
-                    $table->decimal('comision',5,2)->nullable();
+                    $table->decimal('comision',5,2)->default(0);
+                    $table->integer('cuenta_bancaria_id')->nullable();
         			$table->timestamps();
         		});
     }

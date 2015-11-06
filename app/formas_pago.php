@@ -19,4 +19,9 @@ class formas_pago extends Model
             'comision'
 
         ];
+
+    public function cuenta_bancaria()
+    {
+        return $this->belongsTo('App\cuentas_bancarias', 'cuenta_bancaria_id');
+    }
 }

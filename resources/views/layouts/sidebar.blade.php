@@ -183,6 +183,18 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-main-heading"><span class="sidebar-mini-hide">Finanzas</span></li>
+                    <li>
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="{{Url('configuracion')}}"><i class="si si-wrench"></i><span class="sidebar-mini-hide">Configuración</span></a>
+                        <ul>
+                            <li>
+                                <a href="{{Url('configuracion/cuentas-bancarias')}}">Cuentas Bancarias</a>
+                            </li>
+                            <li>
+                                <a href="{{Url('configuracion/formas-pago')}}">Formas de pago</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="nav-main-heading"><span class="sidebar-mini-hide">Configuraciones</span></li>
                     <li>
                         <a class="nav-submenu" data-toggle="nav-submenu" href="{{Url('productos')}}"><i class="si si-home"></i><span class="sidebar-mini-hide">Tiendas</span></a>

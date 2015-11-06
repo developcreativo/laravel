@@ -17,7 +17,10 @@ Route::get('/', 'inicioController@index');
 Route::get('home', 'inicioController@index');
 
 /******* configuracion ********/
+Route::resource('configuracion/formas-pago', 'formapagoController',['except' => []]);
 Route::resource('configuracion', 'ConfiguracionController',['except' => []]);
+
+/******* users ********/
 Route::resource('users', 'UserController',['except' => []]);
 
 /******* productos configurables ********/
