@@ -183,7 +183,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/formapagoController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.45373666">
-              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
               <folding>
                 <element signature="e#40#60#0#PHP" expanded="true" />
               </folding>
@@ -1272,7 +1272,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/formapagoController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45373666">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
           <folding>
             <element signature="e#40#60#0#PHP" expanded="true" />
           </folding>

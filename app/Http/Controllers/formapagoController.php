@@ -16,7 +16,7 @@ class formapagoController extends Controller
      */
     public function index()
     {
-        //
+        //  
         $forma_pagos = formas_pago::all();
         return view('app.finanzas.forma_pago.forma_pago_index', compact('forma_pagos'));
     }
