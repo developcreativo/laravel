@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18d86ef8-f780-4f5f-a1fe-df88b14ebf4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/app/finanzas/forma_pago/forma_pago_index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_09_12_041706_formas_pago.php" afterPath="$PROJECT_DIR$/database/migrations/2015_09_12_041706_formas_pago.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/caja.php" afterPath="$PROJECT_DIR$/app/caja.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/formas_pago.php" afterPath="$PROJECT_DIR$/app/formas_pago.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/formapagoController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/formapagoController.php" />
     </list>
     <ignored path="laravel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -183,7 +175,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/formapagoController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.45373666">
-              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
               <folding>
                 <element signature="e#40#60#0#PHP" expanded="true" />
               </folding>
@@ -1272,7 +1264,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/formapagoController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45373666">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding>
             <element signature="e#40#60#0#PHP" expanded="true" />
           </folding>
